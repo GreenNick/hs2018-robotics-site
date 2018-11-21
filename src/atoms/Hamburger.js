@@ -7,7 +7,8 @@ const hamburgerStyle = {
   width: 30,
   justifyContent: 'space-between',
   margin: '20px auto',
-  padding: '8px 0'
+  padding: '8px 0',
+  cursor: 'pointer'
 }
 
 const barStyle = {
@@ -20,7 +21,7 @@ const barStyle = {
 class Hamburger extends Component {
   render () {
     return (
-      <div style={hamburgerStyle}>
+      <div onClick={this.props.onClick} style={hamburgerStyle}>
         <div style={barStyle}></div>
         <div style={barStyle}></div>
         <div style={barStyle}></div>

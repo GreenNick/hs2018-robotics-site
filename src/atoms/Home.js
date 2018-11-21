@@ -4,7 +4,8 @@ import homeButton from '../images/svg/Home.svg'
 const style = {
   width: 30,
   margin: 'auto',
-  display: 'block'
+  display: 'block',
+  cursor: 'pointer'
 }
 
 class Home extends Component {

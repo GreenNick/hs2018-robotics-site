@@ -7,8 +7,12 @@ class Landing extends Component {
     return (
       <main className='landing'>
         <div style={{gridArea: 'section'}}>
-          <h1 style={{marginTop: 100}}>Tucker High<br></br>School</h1>
-          <h1 style={{fontWeight: 'normal', fontSize: 64}}>Robotigers</h1>
+          <h1 style={{marginTop: 100}}>
+            Tucker High
+            <br />
+            School
+          </h1>
+          <h1 style={{fontWeight: 'normal', fontSize: 56}}>Robotigers</h1>
         </div>
         <PageIndicator />
         <Navigation />

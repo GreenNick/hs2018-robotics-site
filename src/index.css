@@ -9,7 +9,7 @@ body {
 h1 {
   font-family: 'Roboto Condensed';
   color: white;
-  font-size: 96px;
+  font-size: 72px;
   font-weight: bold;
   line-height: 1.1;
   margin: 0;
@@ -18,7 +18,7 @@ h1 {
 h2 {
   font-family: 'Roboto Condensed';
   color: #353535;
-  font-size: 72px;
+  font-size: 56px;
   font-weight: bold;
   margin: 0;
 }
@@ -42,7 +42,7 @@ p {
 main {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 160px auto 60px;
+  grid-template-columns: 160px 1fr auto;
   grid-template-rows: 80px auto 0;
   grid-template-areas: 
     "header header nav"
@@ -66,9 +66,8 @@ section {
 nav {
   grid-area: nav;
   background-color: rgba(0, 0, 0, 0.2);
-  position: fixed;
   display: block;
-  width: 60px;
+  min-width: 60px;
   height: 100%;
   right: 0;
 }
