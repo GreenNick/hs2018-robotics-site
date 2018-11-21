@@ -11,6 +11,7 @@ h1 {
   color: white;
   font-size: 96px;
   font-weight: bold;
+  line-height: 1.1;
   margin: 0;
 }
 
@@ -40,8 +41,9 @@ p {
 
 main {
   display: grid;
-  grid-template-columns: 160px auto 40px;
-  grid-template-rows: auto;
+  min-height: 100vh;
+  grid-template-columns: 160px auto 60px;
+  grid-template-rows: 80px auto 0;
   grid-template-areas: 
     "header header nav"
     "gap section nav"
@@ -62,10 +64,17 @@ section {
 
 nav {
   grid-area: nav;
-  background-color: #353535;
+  background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   display: block;
-  width: 40px;
+  width: 60px;
   height: 100%;
   right: 0;
+}
+
+.landing {
+  background: url('./images/TuckerHighBlur.png');
+  background-size: cover;
+  background-position: bottom center;
+  text-shadow: #757575 1px 1px 2px;
 }
