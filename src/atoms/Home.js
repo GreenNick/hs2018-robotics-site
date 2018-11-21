@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import homeButton from '../images/svg/Home.svg'
+import homeButton from '../pictures/svg/Home.svg'
 
 const style = {
   width: 30,
