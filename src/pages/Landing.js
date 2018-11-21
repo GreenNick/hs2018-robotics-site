@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Navigation from '../organisms/Navigation.js'
-import PageIndicator from '../atoms/PageIndicator.js'
+import Navigation from '../organisms/Navigation'
+import PageIndicator from '../atoms/PageIndicator'
 
 class Landing extends Component {
   render () {

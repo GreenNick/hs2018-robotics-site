@@ -15,7 +15,7 @@ const containerStyle = {
 const indicatorStyle = {
   width: 10,
   height: 10,
-  border: '2px solid white',
+  border: '3px solid white',
   display: 'block',
   margin: 'auto',
   borderRadius: 10
