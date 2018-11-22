@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import homeButton from '../pictures/svg/Home.svg'
+import homeImg from '../pictures/svg/Home.svg'
 
 const style = {
   width: 30,
@@ -8,12 +8,12 @@ const style = {
   cursor: 'pointer'
 }
 
-class Home extends Component {
+class HomeButton extends Component {
   render () {
     return (
-      <img style={style} src={homeButton} alt='Home Button'/>
+      <img style={style} src={homeImg} />
     )
   }
 }
 
-export default Home
+export default HomeButton

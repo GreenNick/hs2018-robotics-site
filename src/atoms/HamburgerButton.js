@@ -18,7 +18,7 @@ const barStyle = {
   display: 'block'
 }
 
-class Hamburger extends Component {
+class HamburgerButton extends Component {
   render () {
     return (
       <div onClick={this.props.onClick} style={hamburgerStyle}>
@@ -30,4 +30,4 @@ class Hamburger extends Component {
   }
 }
 
-export default Hamburger
+export default HamburgerButton

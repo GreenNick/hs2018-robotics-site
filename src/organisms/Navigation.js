@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Hamburger from '../atoms/Hamburger.js'
-import Home from '../atoms/Home.js'
+import HamburgerButton from '../atoms/HamburgerButton.js'
+import HomeButton from '../atoms/HomeButton.js'
 
 const listStyle = {
   color: 'white',
@@ -32,8 +32,8 @@ class Navigation extends Component {
           this.state.active ?
             {display: 'flex'} :
             {display: 'flex', flexDirection: 'column'}}>
-          <Hamburger onClick={this.handleClick} />
-          <Home />
+          <HamburgerButton onClick={this.handleClick} />
+          <HomeButton />
         </div>
         { (this.state.active === true) &&
           <ul style={listStyle} >

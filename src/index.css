@@ -43,24 +43,32 @@ main {
   display: grid;
   min-height: 100vh;
   grid-template-columns: 160px 1fr auto;
-  grid-template-rows: 80px auto 0;
+  grid-template-rows: 80px auto 1fr;
   grid-template-areas: 
     "header header nav"
     "gap section nav"
-    "footer footer footer";
+    "footer footer nav";
 }
 
 section {
   background: white;
   padding: 40px;
   margin: 20px;
-  box-shadow: #BDBDBD 2px 2px 2px;
-  border-radius: 4px;
+  box-shadow: #757575 1px 1px 2px;
+  border-radius: 2px;
   display: block;
   max-width: 1280px;
   grid-area: section;
   display: flex;
   justify-content: space-between;
+}
+
+section > img {
+  width: 620px;
+  height: 500px;
+  border-radius: 2px;
+  background: pink;
+  box-shadow: #757575 1px 1px 2px;
 }
 
 nav {
@@ -77,4 +85,8 @@ nav {
   background-size: cover;
   background-position: bottom center;
   text-shadow: #757575 1px 1px 2px;
+}
+
+.gradient-bg {
+  background: linear-gradient(to bottom right, #0097A7, #BB6BD9)
 }
