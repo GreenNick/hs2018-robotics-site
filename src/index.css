@@ -75,9 +75,7 @@ nav {
   grid-area: nav;
   background-color: rgba(0, 0, 0, 0.2);
   display: block;
-  min-width: 60px;
-  height: 100%;
-  right: 0;
+  padding: 20px;
 }
 
 .landing {

@@ -3,8 +3,8 @@ import homeImg from '../pictures/svg/Home.svg'
 
 const style = {
   width: 30,
-  margin: 'auto',
   display: 'block',
+  marginBottom: 20,
   cursor: 'pointer'
 }
 

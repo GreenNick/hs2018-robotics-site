@@ -6,7 +6,7 @@ const hamburgerStyle = {
   height: 24,
   width: 30,
   justifyContent: 'space-between',
-  margin: '20px auto',
+  marginBottom: 20,
   padding: '8px 0',
   cursor: 'pointer'
 }

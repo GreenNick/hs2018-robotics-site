@@ -3,12 +3,13 @@ import HamburgerButton from '../atoms/HamburgerButton.js'
 import HomeButton from '../atoms/HomeButton.js'
 
 const listStyle = {
+  marginTop: 0,
   color: 'white',
   fontSize: 24,
   fontFamily: 'Roboto Condensed',
   lineHeight: '3',
   listStyle: 'none',
-  padding: '0 20px',
+  padding: '0 40px 0 0',
   textShadow: 'none'
 }
 
@@ -30,7 +31,7 @@ class Navigation extends Component {
       <nav style={{gridArea: 'nav'}}>
         <div style={
           this.state.active ?
-            {display: 'flex'} :
+            {display: 'flex', justifyContent: 'space-between'} :
             {display: 'flex', flexDirection: 'column'}}>
           <HamburgerButton onClick={this.handleClick} />
           <HomeButton />
