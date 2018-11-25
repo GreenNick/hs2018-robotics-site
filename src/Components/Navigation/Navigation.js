@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import HamburgerButton from '../atoms/HamburgerButton.js'
-import HomeButton from '../atoms/HomeButton.js'
+import HamburgerButton from './HamburgerButton/HamburgerButton'
+import HomeButton from './HomeButton/HomeButton'
 
 const listStyle = {
   marginTop: 0,
@@ -36,7 +36,7 @@ class Navigation extends Component {
           <HamburgerButton onClick={this.handleClick} />
           <HomeButton />
         </div>
-        { (this.state.active === true) &&
+        { (this.state.active) &&
           <ul style={listStyle} >
             <li>Tucker High</li>
             <li>2019 Season</li>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 const hamburgerStyle = {
   display: 'flex',
@@ -18,16 +18,14 @@ const barStyle = {
   display: 'block'
 }
 
-class HamburgerButton extends Component {
-  render () {
-    return (
-      <div onClick={this.props.onClick} style={hamburgerStyle}>
-        <div style={barStyle}></div>
-        <div style={barStyle}></div>
-        <div style={barStyle}></div>
-      </div>
-    )
-  }
-}
+const HamburgerButton = props => (
+  <div
+    onClick={props.onClick}
+    style={hamburgerStyle}>
+    <div style={barStyle}></div>
+    <div style={barStyle}></div>
+    <div style={barStyle}></div>
+  </div>
+)
 
 export default HamburgerButton
