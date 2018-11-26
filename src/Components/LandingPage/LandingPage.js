@@ -46,7 +46,7 @@ class LandingPage extends Component {
             </h1>
             <h1 style={{fontWeight: 'normal', fontSize: 56}}>Robotigers</h1>
           </div>
-          <PageIndicator />
+          <PageIndicator pageIndex={this.state.pageIndex} />
           <Navigation />
         </main>
       )
@@ -58,7 +58,7 @@ class LandingPage extends Component {
           <BasicSection
             heading={sectionContent[this.state.pageIndex - 1].heading}
             paragraph={sectionContent[this.state.pageIndex - 1].paragraph} />
-          <PageIndicator />
+          <PageIndicator pageIndex={this.state.pageIndex} />
           <Navigation />
         </main>
       )
@@ -67,7 +67,8 @@ class LandingPage extends Component {
         <main
           onWheel={this.handleWheel}
           className="gradient-bg" >
-          <PageIndicator />
+          <section></section>
+          <PageIndicator pageIndex={this.state.pageIndex} />
           <Navigation />
         </main>
       )
