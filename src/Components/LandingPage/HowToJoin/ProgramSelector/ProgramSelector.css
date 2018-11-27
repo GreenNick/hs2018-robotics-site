@@ -1,0 +1,26 @@
+.selector-container {
+  display: flex;
+  height: 80px;
+  width: 120px;
+  border: 2px solid #BDBDBD;
+  border-radius: 8px;
+  margin-right: 40px;
+  transition: border 150ms ease-in-out;
+}
+
+.tick-box {
+  height: 8px;
+  width: 8px;
+  border: 2px solid #BDBDBD;
+  border-radius: 6px;
+  margin: auto 6px;
+  transition: border 150ms ease-in-out;
+}
+
+.selector-container:hover {
+  border: 2px solid #0097A7;
+}
+
+.selector-container:hover > .tick-box {
+  border: 2px solid #0097A7;
+}

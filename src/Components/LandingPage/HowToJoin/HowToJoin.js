@@ -26,9 +26,9 @@ class HowToJoin extends Component {
           <h2>How to join</h2>
           <h3>Enter your information</h3>
           <div style={{display: 'flex', margin: '10px 0'}}>
-            <ProgramSelector program="VEX" price={20}/>
-            <ProgramSelector program="TSA" price={20}/>
-            <ProgramSelector program="STEM" price={20}/>
+            <ProgramSelector program="VEX" price={30}/>
+            <ProgramSelector program="TSA" price={30}/>
+            <ProgramSelector program="STEM" price={0}/>
           </div>
         </section>
         <section style={{gridColumnStart: '2', gridColumnEnd: '3', gridRowStart: '1', gridRowEnd: '2', margin: 0, flexDirection: 'column', justifyContent: 'initial'}}>
