@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ProgramSelector from './ProgramSelector/ProgramSelector'
 
 const style = {
   gridArea: 'section',
@@ -12,6 +13,11 @@ const style = {
 }
 
 class HowToJoin extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {}
+  }
+  
   render () {
     return (
       <div
@@ -19,6 +25,11 @@ class HowToJoin extends Component {
         <section style={{gridColumnStart: '1', gridColumnEnd: '2', gridRowStart: '1', gridRowEnd: '4', margin: 0, flexDirection: 'column', justifyContent: 'initial'}}>
           <h2>How to join</h2>
           <h3>Enter your information</h3>
+          <div style={{display: 'flex', margin: '10px 0'}}>
+            <ProgramSelector program="VEX" price={20}/>
+            <ProgramSelector program="TSA" price={20}/>
+            <ProgramSelector program="STEM" price={20}/>
+          </div>
         </section>
         <section style={{gridColumnStart: '2', gridColumnEnd: '3', gridRowStart: '1', gridRowEnd: '2', margin: 0, flexDirection: 'column', justifyContent: 'initial'}}>
           <h3>Dues owed: </h3>
