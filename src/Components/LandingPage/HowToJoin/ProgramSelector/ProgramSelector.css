@@ -4,7 +4,6 @@
   width: 120px;
   border: 2px solid #BDBDBD;
   border-radius: 8px;
-  margin-right: 40px;
   transition: border 150ms ease-in-out;
 }
 
@@ -17,10 +16,26 @@
   transition: border 150ms ease-in-out;
 }
 
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .selector-container:hover {
   border: 2px solid #0097A7;
 }
 
 .selector-container:hover > .tick-box {
   border: 2px solid #0097A7;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
 }

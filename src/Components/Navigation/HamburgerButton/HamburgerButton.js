@@ -1,4 +1,5 @@
 import React from 'react'
+import { func } from 'prop-types'
 
 const hamburgerStyle = {
   display: 'flex',
@@ -27,5 +28,9 @@ const HamburgerButton = props => (
     <div style={barStyle}></div>
   </div>
 )
+
+HamburgerButton.propTypes = {
+  onClick: func.isRequired
+}
 
 export default HamburgerButton

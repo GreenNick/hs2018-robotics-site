@@ -14,26 +14,17 @@ const sectionContent = [
 ]
 
 class LandingPage extends Component {
-  constructor (props) {
-    super (props)
-    this.state = { pageIndex: 0 }
-    this.handleWheel = this.handleWheel.bind(this)
-  }
+  state = { pageIndex: 0 }
 
-  handleWheel (event) {
+  handleWheel = event => {
     if (event.deltaY > 0 && this.state.pageIndex < 4) {
-      this.setState((state) => ({
-        pageIndex: state.pageIndex + 1
-      }))
+      this.setState(prevState => ({ pageIndex: prevState.pageIndex + 1 }))
     } else if (event.deltaY < 0 && this.state.pageIndex > 0) {
-      this.setState((state) => ({
-        pageIndex: state.pageIndex - 1
-      }))
+      this.setState(prevState => ({ pageIndex: prevState.pageIndex - 1 }))
     }
   }
 
   render () {
-    console.log(this.state.pageIndex)
     if (this.state.pageIndex === 0) {
       return (
         <main

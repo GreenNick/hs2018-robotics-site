@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { number } from 'prop-types'
 
 const containerStyle = {
   gridArea: 'header',
@@ -42,71 +43,73 @@ const prevIndicatorStyle = {
   borderRadius: 10
 }
 
-class PageIndicator extends Component {
-  render () {
-    switch (this.props.pageIndex) {
-      case (0):
-        return (
-          <div style={containerStyle}>
-            <div style={activeIndicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-          </div>
-        )
-      case (1):
-        return (
-          <div style={containerStyle}>
-            <div style={prevIndicatorStyle}></div>
-            <div style={activeIndicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-          </div>
-        )
-      case (2):
-        return (
-          <div style={containerStyle}>
-            <div style={prevIndicatorStyle}></div>
-            <div style={prevIndicatorStyle}></div>
-            <div style={activeIndicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-          </div>
-        )
-      case (3):
-        return (
-          <div style={containerStyle}>
-            <div style={prevIndicatorStyle}></div>
-            <div style={prevIndicatorStyle}></div>
-            <div style={prevIndicatorStyle}></div>
-            <div style={activeIndicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-          </div>
-        )
-      case (4):
-        return (
-          <div style={containerStyle}>
-            <div style={prevIndicatorStyle}></div>
-            <div style={prevIndicatorStyle}></div>
-            <div style={prevIndicatorStyle}></div>
-            <div style={prevIndicatorStyle}></div>
-            <div style={activeIndicatorStyle}></div>
-          </div>
-        )
-      default:
-        return (
-          <div style={containerStyle}>
-            <div style={indicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-            <div style={indicatorStyle}></div>
-          </div>
-        )
-    }
+const PageIndicator = props => {
+  switch (props.pageIndex) {
+    case 0:
+      return (
+        <div style={containerStyle}>
+          <div style={activeIndicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+        </div>
+      )
+    case 1:
+      return (
+        <div style={containerStyle}>
+          <div style={prevIndicatorStyle}></div>
+          <div style={activeIndicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+        </div>
+      )
+    case 2:
+      return (
+        <div style={containerStyle}>
+          <div style={prevIndicatorStyle}></div>
+          <div style={prevIndicatorStyle}></div>
+          <div style={activeIndicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+        </div>
+      )
+    case 3:
+      return (
+        <div style={containerStyle}>
+          <div style={prevIndicatorStyle}></div>
+          <div style={prevIndicatorStyle}></div>
+          <div style={prevIndicatorStyle}></div>
+          <div style={activeIndicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+        </div>
+      )
+    case 4:
+      return (
+        <div style={containerStyle}>
+          <div style={prevIndicatorStyle}></div>
+          <div style={prevIndicatorStyle}></div>
+          <div style={prevIndicatorStyle}></div>
+          <div style={prevIndicatorStyle}></div>
+          <div style={activeIndicatorStyle}></div>
+        </div>
+      )
+    default:
+      return (
+        <div style={containerStyle}>
+          <div style={indicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+          <div style={indicatorStyle}></div>
+        </div>
+      )
   }
+}
+
+PageIndicator.propTypes = {
+  pageIndex: number
 }
 
 export default PageIndicator

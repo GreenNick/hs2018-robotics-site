@@ -8,7 +8,7 @@ const style = {
   cursor: 'pointer'
 }
 
-const HomeButton = props => (
+const HomeButton = () => (
   <img
     style={style}
     src={homeImg}

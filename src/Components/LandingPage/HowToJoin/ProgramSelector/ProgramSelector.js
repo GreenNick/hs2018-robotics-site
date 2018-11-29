@@ -1,35 +1,39 @@
 import React, { Component } from 'react'
+import { string, number } from 'prop-types'
 import './ProgramSelector.css'
 
 class ProgramSelector extends Component {
-  constructor (props) {
-    super (props)
-    this.state = {
-      buttonActive: false,
-      selectorStyle: {background: 'white', border: ''},
-      tickStyle: {background: 'white', border: ''}
-    }
-    this.handleClick = this.handleClick.bind(this)
+  state = { buttonActive: false }
+
+  static propTypes = {
+    program: string,
+    price: number
   }
 
-  handleClick (event) {
-    this.setState({ buttonActive: !this.state.buttonActive })
-    if (this.state.buttonActive) {
-      this.setState({selectorStyle: {background: 'rgba(158, 213, 225, 0.2)', border: '2px solid #0097A7'}})
-      this.setState({tickStyle: {background: '#0097A7', border: '2px solid #0097A7'}})
-    } else {
-      this.setState({selectorStyle: {background: 'white', border: ''}})
-      this.setState({tickStyle: {background: 'white', border: ''}})
-    }
+  static defaultProps ={
+    program: 'Program',
+    price: 0
+  }
+
+  handleClick = () => {
+    this.setState(prevState => ({ buttonActive: !prevState.buttonActive }))
   }
 
   render () {
+    const selectorStyle = this.state.buttonActive ?
+      { background: 'rgba(158, 213, 225, 0.2)', border: '2px solid #0097A7' } :
+      { background: 'white', border: '' }
+
+    const tickStyle = this.state.buttonActive ?
+      { background: '#0097A7', border: '2px solid #0097A7'  } :
+      { background: 'white', border: '' }
+
     return (
-      <div style={this.state.selectorStyle} className='selector-container' onClick={this.handleClick} >
-        <div style={this.state.tickStyle} className='tick-box' ></div>
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-          <h3 style={{fontSize: 20, margin: 0}}>{this.props.program}</h3>
-          <p style={{fontSize: 16, margin: 0}}>${this.props.price}.00</p>
+      <div style={selectorStyle} className='selector-container' onClick={this.handleClick} >
+        <div style={tickStyle} className='tick-box' ></div>
+        <div className='text-container' >
+          <h3>{this.props.program}</h3>
+          <p>${this.props.price}.00</p>
         </div>
       </div>
     )

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ProgramSelector from './ProgramSelector/ProgramSelector'
+import './HowToJoin.css'
 
 const style = {
   gridArea: 'section',
@@ -13,11 +14,6 @@ const style = {
 }
 
 class HowToJoin extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {}
-  }
-  
   render () {
     return (
       <div
@@ -25,11 +21,29 @@ class HowToJoin extends Component {
         <section style={{gridColumnStart: '1', gridColumnEnd: '2', gridRowStart: '1', gridRowEnd: '4', margin: 0, flexDirection: 'column', justifyContent: 'initial'}}>
           <h2>How to join</h2>
           <h3>Enter your information</h3>
-          <div style={{display: 'flex', margin: '10px 0'}}>
-            <ProgramSelector program="VEX" price={30}/>
-            <ProgramSelector program="TSA" price={30}/>
-            <ProgramSelector program="STEM" price={0}/>
+          <div style={{display: 'flex', margin: '10px 0', width: 450, justifyContent: 'space-between'}}>
+            <ProgramSelector program='VEX' price={30} />
+            <ProgramSelector program='TSA' price={30} />
+            <ProgramSelector program='STEM' price={0} />
           </div>
+          <form>
+            <label htmlFor='name' style={{display: 'block'}}>Full Name</label>
+            <input type='text' id='name' ></input>
+            <label htmlFor='email' style={{display: 'block'}}>Email Address</label>
+            <input type='email' id='email' ></input>
+            <label htmlFor='phone-number' style={{display: 'block'}}>Phone Number</label>
+            <input type='tel' id='phone-number' ></input>
+            <label htmlFor='grade-level' style={{display: 'block'}}>Grade Level</label>
+            <div className='select-container'>
+              <select id='grade-level' >
+                <option value='freshman'>Freshman</option>
+                <option value='sophomore'>Sophomore</option>
+                <option value='junior'>Junior</option>
+                <option value="senior">Senior</option>
+              </select>
+            </div>
+            <input type='submit' value='Submit' />
+          </form>
         </section>
         <section style={{gridColumnStart: '2', gridColumnEnd: '3', gridRowStart: '1', gridRowEnd: '2', margin: 0, flexDirection: 'column', justifyContent: 'initial'}}>
           <h3>Dues owed: </h3>
