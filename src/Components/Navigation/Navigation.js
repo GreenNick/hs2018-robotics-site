@@ -11,9 +11,9 @@ class Navigation extends Component {
   }
 
   render () {
-    const buttonContainerStyle = this.state.active ?
-      {display: 'flex', justifyContent: 'space-between'} :
-      {display: 'flex', flexDirection: 'column'}
+    const buttonContainerStyle = this.state.active
+      ? {display: 'flex', justifyContent: 'space-between'}
+      : {display: 'flex', flexDirection: 'column'}
 
     return (
       <nav>

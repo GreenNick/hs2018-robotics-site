@@ -1,0 +1,10 @@
+.landing {
+  background: url('../../Images/TuckerHighBlur.png');
+  background-size: cover;
+  background-position: bottom center;
+  text-shadow: #757575 1px 1px 2px;
+}
+
+.gradient {
+  background: linear-gradient(to bottom right, #0097A7, #BB6BD9)
+}

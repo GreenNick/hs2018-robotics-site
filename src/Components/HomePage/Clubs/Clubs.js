@@ -11,14 +11,9 @@ const sectionContent = [
 ]
 
 const Clubs = props => (
-  <main
-    onWheel={props.onWheel}
-    className='gradientBg' >
-    <BasicSection
-      heading={sectionContent[props.pageId].heading}
-      paragraph={sectionContent[props.pageId].paragraph} />
-    { props.children }
-  </main>
+  <BasicSection
+    heading={sectionContent[props.pageId].heading}
+    paragraph={sectionContent[props.pageId].paragraph} />
 )
 
 export default Clubs

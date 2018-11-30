@@ -4,6 +4,7 @@ import PageIndicator from './PageIndicator/PageIndicator'
 import Landing from './Landing/Landing'
 import Clubs from './Clubs/Clubs'
 import Join from './Join/Join'
+import styles from './HomePage.module.css'
 
 class HomePage extends Component {
   state = { pageIndex: 0 }
@@ -17,34 +18,24 @@ class HomePage extends Component {
   }
 
   render () {
-    if (this.state.pageIndex === 0) {
-      return (
-        <Landing
-          onWheel={this.handleWheel}>
-          <PageIndicator
+    const background = this.state.pageIndex === 0
+      ? styles.landing
+      : styles.gradient
+
+    return (
+      <main
+        className={background}
+        onWheel={this.handleWheel}>
+        { this.state.pageIndex === 0
+          ? <Landing />
+          : this.state.pageIndex < 4
+            ? <Clubs pageId={this.state.pageIndex - 1} />
+            : <Join /> }
+        <PageIndicator
           pageIndex={this.state.pageIndex} />
-          <Navigation />
-        </Landing>
-      )
-    } else if (this.state.pageIndex < 4) {
-      return (
-        <Clubs
-          onWheel={this.handleWheel}
-          pageId={this.state.pageIndex - 1}>
-          <PageIndicator
-          pageIndex={this.state.pageIndex} />
-          <Navigation />
-        </Clubs>
-      )
-    } else {
-      return (
-        <Join
-          onWheel={this.handleWheel}>
-          <PageIndicator pageIndex={this.state.pageIndex} />
-          <Navigation />
-        </Join>
-      )
-    }
+        <Navigation />
+      </main>
+    )
   }
 }
 

@@ -118,7 +118,3 @@ select {
   -webkit-appearance: none;
   border-radius: 0;
 }
-
-.gradientBg {
-  background: linear-gradient(to bottom right, #0097A7, #BB6BD9)
-}
