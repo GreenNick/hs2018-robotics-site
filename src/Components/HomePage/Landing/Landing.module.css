@@ -1,0 +1,17 @@
+.background {
+  background: url('../../../Images/TuckerHighBlur.png');
+  background-size: cover;
+  background-position: bottom center;
+  text-shadow: #757575 1px 1px 2px;
+}
+
+.container {
+  grid-area: section;
+  margin: 20px;
+  padding: 40px;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 56px;
+}

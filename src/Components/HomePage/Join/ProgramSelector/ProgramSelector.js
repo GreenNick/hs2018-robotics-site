@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { string, number } from 'prop-types'
-import './ProgramSelector.css'
+import styles from'./ProgramSelector.module.css'
 
 class ProgramSelector extends Component {
   state = { buttonActive: false }
@@ -29,9 +29,9 @@ class ProgramSelector extends Component {
       { background: 'white', border: '' }
 
     return (
-      <div style={selectorStyle} className='selector-container' onClick={this.handleClick} >
-        <div style={tickStyle} className='tick-box' ></div>
-        <div className='text-container' >
+      <div style={selectorStyle} className={styles.container} onClick={this.handleClick} >
+        <div style={tickStyle} className={styles.tickBox} ></div>
+        <div className={styles.textBox} >
           <h3>{this.props.program}</h3>
           <p>${this.props.price}.00</p>
         </div>

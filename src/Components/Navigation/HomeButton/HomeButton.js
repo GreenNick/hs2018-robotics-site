@@ -1,16 +1,10 @@
 import React from 'react'
 import homeImg from '../../../Images/svg/Home.svg'
-
-const style = {
-  width: 30,
-  display: 'block',
-  marginBottom: 20,
-  cursor: 'pointer'
-}
+import styles from './HomeButton.module.css'
 
 const HomeButton = () => (
   <img
-    style={style}
+    className={styles.homeButton}
     src={homeImg}
     alt='home' />
 )

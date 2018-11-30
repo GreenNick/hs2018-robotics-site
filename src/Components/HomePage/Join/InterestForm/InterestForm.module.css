@@ -1,0 +1,11 @@
+.selectContainer {
+  margin-right: 100%;
+  margin-bottom: 10px;
+  background: white;
+  border: 2px solid #BDBDBD;
+  border-radius: 4px;
+  width: 250px;
+  height: 20px;
+  padding: 2px;
+  background: url("../../../../Images/DownArrow.png") no-repeat right #fff
+}

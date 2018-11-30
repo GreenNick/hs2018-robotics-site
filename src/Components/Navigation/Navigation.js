@@ -1,17 +1,7 @@
 import React, { Component } from 'react'
 import HamburgerButton from './HamburgerButton/HamburgerButton'
 import HomeButton from './HomeButton/HomeButton'
-
-const listStyle = {
-  marginTop: 0,
-  color: 'white',
-  fontSize: 24,
-  fontFamily: 'Roboto Condensed',
-  lineHeight: '3',
-  listStyle: 'none',
-  padding: '0 40px 0 0',
-  textShadow: 'none'
-}
+import styles from './Navigation.module.css'
 
 class Navigation extends Component {
   state = { active: true }
@@ -26,13 +16,13 @@ class Navigation extends Component {
       {display: 'flex', flexDirection: 'column'}
 
     return (
-      <nav style={{gridArea: 'nav'}}>
+      <nav>
         <div style={buttonContainerStyle}>
           <HamburgerButton onClick={this.handleClick} />
           <HomeButton />
         </div>
         { (this.state.active) &&
-          <ul style={listStyle} >
+          <ul className={styles.navItems}>
             <li>Tucker High</li>
             <li>2019 Season</li>
             <li>History</li>
