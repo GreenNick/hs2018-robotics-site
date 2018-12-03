@@ -2,10 +2,9 @@
   margin-right: 100%;
   margin-bottom: 10px;
   background: white;
-  border: 2px solid #BDBDBD;
-  border-radius: 4px;
-  width: 250px;
+  border-bottom: 2px solid #BDBDBD;
+  width: 246px;
   height: 20px;
-  padding: 2px;
+  padding: 2px 2px 2px 0;
   background: url("../../../../Images/DownArrow.png") no-repeat right #fff
 }

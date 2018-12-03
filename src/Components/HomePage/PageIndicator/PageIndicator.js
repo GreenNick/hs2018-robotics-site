@@ -7,61 +7,61 @@ const PageIndicator = props => {
     case 0:
       return (
         <div className={styles.container}>
-          <div className={styles.active}></div>
-          <div className={styles.default}></div>
-          <div className={styles.default}></div>
-          <div className={styles.default}></div>
-          <div className={styles.default}></div>
+          <div className={styles.active} />
+          <div className={styles.default} />
+          <div className={styles.default} />
+          <div className={styles.default} />
+          <div className={styles.default} />
         </div>
       )
     case 1:
       return (
         <div className={styles.container}>
-          <div className={styles.previous}></div>
-          <div className={styles.active}></div>
-          <div className={styles.default}></div>
-          <div className={styles.default}></div>
-          <div className={styles.default}></div>
+          <div className={styles.previous} />
+          <div className={styles.active} />
+          <div className={styles.default} />
+          <div className={styles.default} />
+          <div className={styles.default} />
         </div>
       )
     case 2:
       return (
         <div className={styles.container}>
-          <div className={styles.previous}></div>
-          <div className={styles.previous}></div>
-          <div className={styles.active}></div>
-          <div className={styles.default}></div>
-          <div className={styles.default}></div>
+          <div className={styles.previous} />
+          <div className={styles.previous} />
+          <div className={styles.active} />
+          <div className={styles.default} />
+          <div className={styles.default} />
         </div>
       )
     case 3:
       return (
         <div className={styles.container}>
-          <div className={styles.previous}></div>
-          <div className={styles.previous}></div>
-          <div className={styles.previous}></div>
-          <div className={styles.active}></div>
-          <div className={styles.default}></div>
+          <div className={styles.previous} />
+          <div className={styles.previous} />
+          <div className={styles.previous} />
+          <div className={styles.active} />
+          <div className={styles.default} />
         </div>
       )
     case 4:
       return (
         <div className={styles.container}>
-          <div className={styles.previous}></div>
-          <div className={styles.previous}></div>
-          <div className={styles.previous}></div>
-          <div className={styles.previous}></div>
-          <div className={styles.active}></div>
+          <div className={styles.previous} />
+          <div className={styles.previous} />
+          <div className={styles.previous} />
+          <div className={styles.previous} />
+          <div className={styles.active} />
         </div>
       )
     default:
       return (
         <div className={styles.container}>
-          <div className={styles.default}></div>
-          <div className={styles.default}></div>
-          <div className={styles.default}></div>
-          <div className={styles.default}></div>
-          <div className={styles.default}></div>
+          <div className={styles.default} />
+          <div className={styles.default} />
+          <div className={styles.default} />
+          <div className={styles.default} />
+          <div className={styles.default} />
         </div>
       )
   }

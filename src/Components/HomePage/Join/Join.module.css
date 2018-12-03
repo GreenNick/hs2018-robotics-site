@@ -12,6 +12,6 @@
 .selectorContainer {
   display: flex;
   margin: 10px 0;
-  width: 458px;
+  width: 456px;
   justify-content: space-between;
 }

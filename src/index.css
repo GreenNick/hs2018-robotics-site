@@ -80,15 +80,22 @@ nav {
 label {
   font-family: 'Roboto Condensed';
   display: block;
+  padding-left: 4px;
 }
 
 input {
   margin-bottom: 10px;
+  font-family: 'Fira Sans';
   width: 450px;
   height: 20px;
-  padding: 2px;
-  border: 2px solid #BDBDBD;
-  border-radius: 4px;
+  padding: 2px 2px 2px 4px;
+  border: none;
+  border-bottom: 2px solid #BDBDBD;
+  transition: border-bottom 150ms ease-in-out
+}
+
+input:focus {
+  border-bottom: 2px solid #0097A7;
 }
 
 input[type='submit'] {
@@ -110,6 +117,8 @@ input[type='tel'] {
 
 select {
   background: transparent;
+  font-family: 'Fira Sans';
+  color: #757575;
   border: 0;
   margin: 0;
   padding: 0;

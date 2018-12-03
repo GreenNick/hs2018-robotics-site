@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
-import { string, number } from 'prop-types'
-import styles from'./ProgramSelector.module.css'
+import { string, bool, func } from 'prop-types'
+import styles from './ProgramSelector.module.css'
 
 class ProgramSelector extends Component {
-  state = { buttonActive: false }
-
   static propTypes = {
     program: string,
-    price: number
+    price: string,
+    buttonActive: bool,
+    onClick: func.isRequired
   }
 
   static defaultProps ={
     program: 'Program',
-    price: 0
+    price: '0'
   }
 
   render () {
