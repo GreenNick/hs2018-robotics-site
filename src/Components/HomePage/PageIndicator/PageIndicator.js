@@ -2,69 +2,30 @@ import React from 'react'
 import { number } from 'prop-types'
 import styles from './PageIndicator.module.css'
 
+const stylesArray = ['default', 'default', 'default', 'default', 'default']
+
 const PageIndicator = props => {
-  switch (props.pageIndex) {
-    case 0:
+  const indicatorArray = stylesArray.map((className, i) => {
+    if (props.pageIndex < i) {
       return (
-        <div className={styles.container}>
-          <div className={styles.active} />
-          <div className={styles.default} />
-          <div className={styles.default} />
-          <div className={styles.default} />
-          <div className={styles.default} />
-        </div>
+        <div className={styles[className]} />
       )
-    case 1:
+    } else if (props.pageIndex > i) {
       return (
-        <div className={styles.container}>
-          <div className={styles.previous} />
-          <div className={styles.active} />
-          <div className={styles.default} />
-          <div className={styles.default} />
-          <div className={styles.default} />
-        </div>
+        <div className={styles['previous']} />
       )
-    case 2:
+    } else if (props.pageIndex === i) {
       return (
-        <div className={styles.container}>
-          <div className={styles.previous} />
-          <div className={styles.previous} />
-          <div className={styles.active} />
-          <div className={styles.default} />
-          <div className={styles.default} />
-        </div>
+        <div className={styles['active']} />
       )
-    case 3:
-      return (
-        <div className={styles.container}>
-          <div className={styles.previous} />
-          <div className={styles.previous} />
-          <div className={styles.previous} />
-          <div className={styles.active} />
-          <div className={styles.default} />
-        </div>
-      )
-    case 4:
-      return (
-        <div className={styles.container}>
-          <div className={styles.previous} />
-          <div className={styles.previous} />
-          <div className={styles.previous} />
-          <div className={styles.previous} />
-          <div className={styles.active} />
-        </div>
-      )
-    default:
-      return (
-        <div className={styles.container}>
-          <div className={styles.default} />
-          <div className={styles.default} />
-          <div className={styles.default} />
-          <div className={styles.default} />
-          <div className={styles.default} />
-        </div>
-      )
-  }
+    }
+  })
+
+  return (
+    <div className={styles.container}>
+      { indicatorArray }
+    </div>
+  )
 }
 
 PageIndicator.propTypes = {
