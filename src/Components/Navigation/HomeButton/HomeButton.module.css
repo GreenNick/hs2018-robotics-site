@@ -1,6 +1,7 @@
 .homeButton {
   width: 30px;
-  display: block;
+  height: 30px;
   margin-bottom: 20px;
+  display: block;
   cursor: pointer;
 }

@@ -1,0 +1,31 @@
+.background {
+  background: #C4C4C4
+}
+
+.container {
+  grid-area: section;
+  width: 1360px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container > h4 {
+  text-align: center;
+  padding: 0;
+  margin: 20px 0 10px;
+  font-weight: normal;
+}
+
+.container > ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+  font-family: 'Roboto Condensed';
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-size: 56px;
+  line-height: 1.8;
+}

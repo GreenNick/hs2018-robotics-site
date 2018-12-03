@@ -30,6 +30,12 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-family: 'Roboto Condensed';
+  color: white;
+  font-size: 36px;
+}
+
 p {
   font-family: 'Fira Sans';
   color: #757575;
@@ -41,25 +47,24 @@ p {
 main {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 160px 1fr auto;
+  grid-template-columns: 1fr auto;
   grid-template-rows: 80px auto 1fr;
   grid-template-areas: 
-    "header header nav"
-    "gap section nav"
-    "footer footer nav";
+    "header nav"
+    "section nav"
+    "footer nav";
 }
 
 section {
   background: white;
   padding: 40px;
-  margin: 20px;
+  margin: 40px auto;
   box-shadow: #757575 1px 1px 2px;
   border-radius: 2px;
   display: block;
   max-width: 1280px;
   grid-area: section;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
 }
 
 section > img {

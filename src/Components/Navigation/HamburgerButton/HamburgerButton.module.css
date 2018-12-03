@@ -1,11 +1,11 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 24px;
+  height: 30px;
   width: 30px;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 20px;
-  padding: 8px 0;
+  padding: 0;
   cursor: pointer;
 }
 

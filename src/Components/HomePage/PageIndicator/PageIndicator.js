@@ -6,19 +6,22 @@ const stylesArray = ['default', 'default', 'default', 'default', 'default']
 
 const PageIndicator = props => {
   const indicatorArray = stylesArray.map((className, i) => {
+    let newItem
+
     if (props.pageIndex < i) {
-      return (
+      newItem = (
         <div className={styles[className]} />
       )
     } else if (props.pageIndex > i) {
-      return (
+      newItem = (
         <div className={styles['previous']} />
       )
     } else if (props.pageIndex === i) {
-      return (
+      newItem = (
         <div className={styles['active']} />
       )
     }
+    return newItem
   })
 
   return (

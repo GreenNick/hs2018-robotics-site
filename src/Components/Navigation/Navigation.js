@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import HamburgerButton from './HamburgerButton/HamburgerButton'
 import HomeButton from './HomeButton/HomeButton'
 import styles from './Navigation.module.css'
+
+const linkStyle = {
+  textDecoration: 'none',
+  color: 'white'
+}
 
 class Navigation extends Component {
   state = { active: true }
@@ -23,11 +29,11 @@ class Navigation extends Component {
         </div>
         { (this.state.active) &&
           <ul className={styles.navItems}>
-            <li>Tucker High</li>
-            <li>2019 Season</li>
-            <li>History</li>
-            <li>Teams</li>
-            <li>Contact</li>
+            <li><Link style={linkStyle} to='/TuckerHigh'>Tucker High</Link></li>
+            <li><Link style={linkStyle} to='/2019Season'>2019 Season</Link></li>
+            <li><Link style={linkStyle} to='/History'>History</Link></li>
+            <li><Link style={linkStyle} to='/Teams'>Teams</Link></li>
+            <li><Link style={linkStyle} to='/Contact'>Contact</Link></li>
           </ul> }
       </nav>
     )

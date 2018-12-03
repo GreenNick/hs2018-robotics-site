@@ -1,6 +1,6 @@
 .container {
   grid-area: section;
-  margin: 20px;
+  margin: 20px 20px 20px 160px;
   padding: 40px;
 }
 
