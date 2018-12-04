@@ -23,7 +23,9 @@ class Navigation extends Component {
 
     return (
       <nav>
-        <div style={buttonContainerStyle}>
+        <div
+          style={buttonContainerStyle}
+          className={styles.buttonContainer} >
           <HamburgerButton onClick={this.handleClick} />
           <HomeButton />
         </div>
