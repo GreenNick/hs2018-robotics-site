@@ -16,6 +16,15 @@ class Join extends Component {
     stemActive: false
   }
 
+  handleTextChange = event => {
+    event.target.value = event.target.value.replace(/\D/, '')
+    if (event.target.value.length === 10) {
+      event.target.value = `(${event.target.value.slice(0, 3)}) ${event.target.value.slice(3, 6)}-${event.target.value.slice(6)}`
+    } else {
+      event.target.value = event.target.value.replace(/\D/g, '')
+    }
+  }
+
   handleVexClick = () => {
     this.setState(prevState => ({ vexActive: !prevState.vexActive }))
     if (!this.state.vexActive && this.state.tsaActive) {
@@ -68,7 +77,8 @@ class Join extends Component {
               price={this.state.stemPrice.toFixed(2)}
               buttonActive={this.state.stemActive} />
           </div>
-          <InterestForm />
+          <InterestForm
+            onChange={this.handleTextChange} />
         </SectionInput>
         <SectionDues 
           subtotal={subtotal.toFixed(2)} />

@@ -10,15 +10,15 @@ const PageIndicator = props => {
 
     if (props.pageIndex < i) {
       newItem = (
-        <div className={styles[className]} />
+        <div key={i} className={styles[className]} />
       )
     } else if (props.pageIndex > i) {
       newItem = (
-        <div className={styles['previous']} />
+        <div key={i} className={styles['previous']} />
       )
     } else if (props.pageIndex === i) {
       newItem = (
-        <div className={styles['active']} />
+        <div key={i} className={styles['active']} />
       )
     }
     return newItem
