@@ -21,7 +21,7 @@ class ProgramSelector extends Component {
       : { background: 'white', border: '' }
 
     const tickStyle = this.props.buttonActive
-      ? { background: '#0097A7', border: '2px solid #0097A7'  }
+      ? { background: '#0097A7', border: '2px solid #0097A7' }
       : { background: 'white', border: '' }
 
     return (

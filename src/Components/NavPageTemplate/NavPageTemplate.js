@@ -1,4 +1,5 @@
 import React from 'react'
+import { string, array } from 'prop-types'
 import Navigation from '../Navigation/Navigation'
 import styles from './NavPageTemplate.module.css'
 
@@ -14,6 +15,11 @@ const NavPageTemplate = props => {
       <Navigation />
     </main>
   )
+}
+
+NavPageTemplate.propTypes = {
+  heading: string.isRequired,
+  children: array.isRequired
 }
 
 export default NavPageTemplate

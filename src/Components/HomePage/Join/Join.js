@@ -80,7 +80,7 @@ class Join extends Component {
           <InterestForm
             onChange={this.handleTextChange} />
         </SectionInput>
-        <SectionDues 
+        <SectionDues
           subtotal={subtotal.toFixed(2)} />
         <SectionDesc />
       </div>
