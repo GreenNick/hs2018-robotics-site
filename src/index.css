@@ -99,6 +99,10 @@ input {
   transition: border-bottom 150ms ease-in-out
 }
 
+input:hover {
+  border-bottom: 2px solid #0097A7;
+}
+
 input:focus {
   border-bottom: 2px solid #0097A7;
 }
@@ -131,4 +135,5 @@ select {
   height: 100%;
   -webkit-appearance: none;
   border-radius: 0;
+  cursor: pointer;
 }

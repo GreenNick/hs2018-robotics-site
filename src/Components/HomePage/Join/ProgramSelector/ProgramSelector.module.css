@@ -5,6 +5,7 @@
   border: 2px solid #BDBDBD;
   border-radius: 8px;
   transition: border 150ms ease-in-out;
+  cursor: pointer;
 }
 
 .tickBox {
