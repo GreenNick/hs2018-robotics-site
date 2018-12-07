@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Navigation from '../Navigation/Navigation'
 
-class HomePage extends Component {
+class TeamsPage extends Component {
   render () {
     return (
       <main>
@@ -11,4 +11,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage
+export default TeamsPage
