@@ -1,0 +1,49 @@
+.container {
+  grid-area: section;
+  display: grid;
+  width: 1360px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin: 40px auto;
+  min-height: 550px;
+}
+
+.background {
+  background-image: url('/Images/svg/WigglyBit2.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.teamContainer {
+  background: white;
+  max-width: 660px;
+  height: 300px;
+  box-shadow: #BDBDBD 1px 1px 2px;
+  border-radius: 2px;
+  transition: transform 150ms ease-out;
+  cursor: pointer;
+}
+
+.teamContainer:hover {
+  transform: scale(1.025);
+}
+
+.teamContainer > img {
+  width: 100%;
+  height: 250px;
+  border-radius: 2px 2px 0 0;
+  object-fit: cover;
+}
+
+.teamContainer > h3 {
+  margin-left: 10px;
+  color: #353535;
+}
+
+.header {
+  grid-area: header;
+  display: block;
+  width: 1360px;
+  margin: 40px auto 0;
+}

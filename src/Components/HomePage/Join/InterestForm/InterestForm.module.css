@@ -6,7 +6,7 @@
   width: 254px;
   height: 20px;
   padding: 2px 2px 2px 0;
-  background: url("../../../../Images/DownArrow.png") no-repeat right #fff;
+  background: url("/Images/DownArrow.png") no-repeat right #fff;
   transition: border-bottom 150ms ease-in-out;
   cursor: pointer;
 }

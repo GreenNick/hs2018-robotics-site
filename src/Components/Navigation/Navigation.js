@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import HamburgerButton from './HamburgerButton/HamburgerButton'
 import HomeButton from './HomeButton/HomeButton'
+import { object } from 'prop-types'
 import styles from './Navigation.module.css'
 
 const linkStyle = {
@@ -11,6 +12,10 @@ const linkStyle = {
 
 class Navigation extends Component {
   state = { active: true }
+
+  static propTypes = {
+    style: object
+  }
 
   handleClick = () => {
     this.setState(prevState => ({ active: !prevState.active }))
@@ -22,7 +27,7 @@ class Navigation extends Component {
       : { display: 'flex', flexDirection: 'column' }
 
     return (
-      <nav>
+      <nav style={this.props.style}>
         <div
           style={buttonContainerStyle}
           className={styles.buttonContainer} >
