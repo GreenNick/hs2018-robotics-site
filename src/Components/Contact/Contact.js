@@ -5,7 +5,7 @@ import styles from './Contact.module.css'
 class Contact extends Component {
   render () {
     return (
-      <main className={styles.background}>
+      <main>
         <section className={styles.container}>
           <h2>Contact</h2>
           <div className={styles.col1}>

@@ -6,13 +6,6 @@
   grid-gap: auto;
 }
 
-.background {
-  background-image: url('/Images/svg/WigglyBit2.svg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
 iframe {
   border: 2px solid #BDBDBD;
 }

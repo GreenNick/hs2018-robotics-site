@@ -8,13 +8,6 @@
   min-height: 550px;
 }
 
-.background {
-  background-image: url('/Images/svg/WigglyBit2.svg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
 .teamContainer {
   background: white;
   max-width: 660px;
@@ -22,6 +15,7 @@
   box-shadow: #BDBDBD 1px 1px 2px;
   border-radius: 2px;
   transition: transform 150ms ease-out;
+  text-decoration: none;
   cursor: pointer;
 }
 

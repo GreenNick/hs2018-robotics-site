@@ -36,6 +36,14 @@ h4 {
   font-size: 36px;
 }
 
+h5 {
+  font-family: 'Roboto Condensed';
+  margin: 0;
+  color: #353535;
+  font-weight: normal;
+  font-size: 26px;
+}
+
 p {
   font-family: 'Fira Sans';
   color: #757575;
@@ -45,6 +53,10 @@ p {
 }
 
 main {
+  background-image: url('/Images/svg/WigglyBit2.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr auto;

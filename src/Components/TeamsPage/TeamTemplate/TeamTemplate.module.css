@@ -1,0 +1,55 @@
+.section {
+  width: 1280px;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section > h2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.wrapper {
+  grid-area: section;
+}
+
+.teamNumber {
+  margin-top: auto;
+  padding: 10px
+}
+
+.overview {
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.stats > p {
+  margin: 15px 0;
+}
+
+.graph {
+  height: 350px;
+  width: 500px;
+  background: pink;
+}
+
+.teamContainer {
+  display: grid;
+  grid-template-areas:
+    "img heading"
+    "img heading"
+    "img paragraph";
+}
+
+.teamContainer > h3 {
+  line-height: 1.05;
+}
+
+.teamContainer > img {
+  grid-area: img;
+  width: 150px;
+  height: 150px;
+  background: pink;
+  margin: auto 20px auto auto;
+  box-shadow: #757575 1px 1px 2px;
+}
