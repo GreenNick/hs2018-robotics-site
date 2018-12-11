@@ -48,7 +48,7 @@ main {
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: minmax(80px, auto) auto 1fr;
   grid-template-areas: 
     "header nav"
     "section nav"
@@ -87,6 +87,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.2);
   display: block;
   padding: 20px;
+  right: 0;
 }
 
 label {
@@ -102,11 +103,14 @@ textarea {
   font-size: 14px;
   padding: 2px 2px 2px 4px;
   border: none;
-  border-left: 2px solid #BDBDBD;
   border-bottom: 2px solid #BDBDBD;
   transition: border 150ms ease-in-out;
   resize: none;
   background: none;
+}
+
+textarea:hover {
+  border-bottom: 2px solid #0097A7;
 }
 
 input {

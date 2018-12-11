@@ -2,8 +2,23 @@
   grid-template-areas:
     'header header'
     'col1 col2';
-  min-width: 1280px;
-  grid-column-gap: 180px;
+  width: 1280px;
+  grid-gap: auto;
+}
+
+.background {
+  background-image: url('/Images/svg/WigglyBit2.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+iframe {
+  border: 2px solid #BDBDBD;
+}
+
+.heading {
+  margin-bottom: 10px;
 }
 
 .container > h2 {
@@ -12,28 +27,17 @@
 
 .col1 {
   grid-area: col1;
-  display: flex;
-  flex-direction: column;
-}
-
-.col1 > textarea {
-  width: 100%;
 }
 
 .input {
   width: 100%;
 }
 
-.col1 > input {
+.col1 > textarea {
   width: 100%;
 }
 
 .col2 {
   grid-area: col2;
-}
-
-.map {
-  width: 100%;
-  height: 300px;
-  background: pink;
+  margin-left: auto;
 }
