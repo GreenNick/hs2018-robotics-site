@@ -27,7 +27,7 @@ class Contact extends Component {
               <textarea
                 className={styles.input}
                 id='message'
-                placeholder='Tell us whats on your mind'
+                placeholder="Tell us what's on your mind"
                 rows='12'></textarea>
               <input
                 type='submit'

@@ -7,12 +7,12 @@ const data = {
   teamMembers: [
     {
       name: 'Grant Duffee',
-      job: 'Captain / Builder / Driver',
+      job: 'Co-Captain / Builder / Driver',
       desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
     },
     {
       name: 'Justin Wade',
-      job: 'Programmer',
+      job: 'Co-Captain / Programmer',
       desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
     },
     {
