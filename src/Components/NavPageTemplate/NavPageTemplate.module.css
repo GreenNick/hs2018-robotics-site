@@ -29,3 +29,13 @@
   font-size: 56px;
   line-height: 1.8;
 }
+
+.link {
+  color: white;
+  text-decoration: none;
+  transition: transform 300ms ease-out;
+}
+
+.link > li:hover {
+  transform: scale(1.1);
+}

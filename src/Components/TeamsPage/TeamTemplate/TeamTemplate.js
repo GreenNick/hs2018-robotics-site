@@ -13,25 +13,26 @@ const headerStyle = {
 }
 
 const TeamTemplate = props => {
-  const teamMemberArray = props.teamMembers.map((member, i) => {
-    return (
-      <div key={i} className={styles.teamContainer}>
-        <img
-          src='#'
-          alt='' />
-        <h3>{member.name}</h3>
-        <h5>{member.job}</h5>
-        <p>{member.desc}</p>
-      </div>
-    )
-  })
+  const teamMemberArray = props.teamMembers
+    .map((member, i) => {
+      return (
+        <div key={i} className={styles.teamContainer}>
+          <img
+            src='#'
+            alt='' />
+          <h3>{member.name}</h3>
+          <h5>{member.job}</h5>
+          <p>{member.desc}</p>
+        </div>
+      )
+    })
 
   return (
     <main>
       <header style={headerStyle}>
         <h1 className={styles.teamNumber}>{props.teamNumber}</h1>
       </header>
-      <div className={styles.wrapper}>
+      <div className='wrapper'>
         <section className={styles.section}>
           <img src='#' alt='' />
           <div>

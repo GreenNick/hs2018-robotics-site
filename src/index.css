@@ -175,3 +175,7 @@ select {
   border-radius: 0;
   cursor: pointer;
 }
+
+.wrapper {
+  grid-area: section;
+}
