@@ -50,7 +50,7 @@ class TeamsPage extends Component {
             <h3>1320E</h3>
           </Link>
         </div>
-        <Navigation style={{ backgroundColor: '#353535', opacity: '0.8' }} />
+        <Navigation dark={true} />
       </main>
     )
   }

@@ -63,7 +63,7 @@ const TeamTemplate = props => {
           </div>
         </section>
       </div>
-      <Navigation style={{ backgroundColor: '#353535', opacity: '0.8' }} />
+      <Navigation dark={true} />
     </main>
   )
 }

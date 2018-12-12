@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import HamburgerButton from './HamburgerButton/HamburgerButton'
 import HomeButton from './HomeButton/HomeButton'
-import { object } from 'prop-types'
+import { bool } from 'prop-types'
 import styles from './Navigation.module.css'
 
 const linkStyle = {
@@ -14,7 +14,7 @@ class Navigation extends Component {
   state = { active: true }
 
   static propTypes = {
-    style: object
+    dark: bool
   }
 
   handleClick = () => {
@@ -22,12 +22,15 @@ class Navigation extends Component {
   }
 
   render () {
+    const navStyle = this.props.dark &&
+      { backgroundColor: '#353535', opacity: '0.8' }
+
     const buttonContainerStyle = this.state.active
       ? { display: 'flex', justifyContent: 'space-between' }
       : { display: 'flex', flexDirection: 'column' }
 
     return (
-      <nav style={this.props.style}>
+      <nav style={navStyle}>
         <div
           style={buttonContainerStyle}
           className={styles.buttonContainer} >

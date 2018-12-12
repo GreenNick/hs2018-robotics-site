@@ -40,7 +40,7 @@
        x2="571.5"
        y2="-782.50006"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,0.83377656,0,-130.06981)" />
+       gradientTransform="matrix(1.3549024,0,0,0.83377656,0,-130.06981)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -50,7 +50,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.16"
-     inkscape:cx="2028.8814"
+     inkscape:cx="1032.0064"
      inkscape:cy="1880.6262"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -85,8 +85,8 @@
      id="layer1"
      transform="translate(0,783)">
     <path
-       style="fill:url(#linearGradient825);fill-opacity:1;stroke:none;stroke-width:0.24159464px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 571.50002,-782.50007 c 0,0 47.95573,181.4463 -121.37763,287.33593 -169.33332,105.88962 -38.37637,236.57746 -76.72917,337.52318 C 312.20832,3.3995198 0,46.968688 0,46.968688 V -782.50007 Z"
+       style="fill:url(#linearGradient825);fill-opacity:1;stroke:none;stroke-width:0.28121683px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 774.32676,-782.50007 c 0,0 74.07265,203.93654 -164.45484,287.33593 C 259.72564,-372.73806 498.34443,-228.82105 472.83846,-137.79721 423.96739,36.610338 0,46.968688 0,46.968688 V -782.50007 Z"
        id="path817"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssccc" />

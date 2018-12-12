@@ -11,7 +11,8 @@ import Team1320B from './Components/TeamsPage/Team1320B/Team1320B'
 import Team1320C from './Components/TeamsPage/Team1320C/Team1320C'
 import Team1320D from './Components/TeamsPage/Team1320D/Team1320D'
 import Team1320E from './Components/TeamsPage/Team1320E/Team1320E'
-import Tucker from './Components/Tucker/Tucker'
+import AboutUs from './Components/AboutUs/AboutUs'
+import AboutTheGame from './Components/AboutTheGame/AboutTheGame'
 
 class App extends Component {
   render () {
@@ -20,8 +21,9 @@ class App extends Component {
         <div>
           <Route path='/' component={HomePage} exact />
           <Route path='/TuckerHigh' component={NavTuckerHigh} exact />
-          <Route path='/TuckerHigh/Tucker' component={Tucker} exact />
+          <Route path='/TuckerHigh/AboutUs' component={AboutUs} exact />
           <Route path='/2019Season' component={Nav2019Season} exact />
+          <Route path='/2019Season/AboutTheGame' component={AboutTheGame} exact />
           <Route path='/History' component={NavHistory} exact />
           <Route path='/Teams' component={TeamsPage} exact />
           <Route path='/Teams/1320A' component={Team1320A} exact />

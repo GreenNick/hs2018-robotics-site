@@ -17,8 +17,16 @@
 }
 
 .values {
-  display: flex;
+  display: grid;
+  grid-template:
+    "heading heading heading"
+    "value value value";
   text-align: center;
+}
+
+.values > h2 {
+  grid-area: heading;
+  margin-bottom: 20px;
 }
 
 .valueContainer {

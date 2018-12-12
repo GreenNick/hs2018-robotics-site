@@ -1,11 +1,11 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
-import styles from './Tucker.module.css'
+import styles from './AboutUs.module.css'
 
-const Tucker = () => {
+const AboutUs = () => {
   return (
     <main>
-      <h1 className={styles.header}>Tucker</h1>
+      <h1 className={styles.header}>About Us</h1>
       <div className='wrapper'>
         <section className={styles.section}>
           <img src='#' alt='' />
@@ -17,6 +17,7 @@ const Tucker = () => {
           </div>
         </section>
         <section className={styles.values}>
+          <h2>Our Values</h2>
           <div className={styles.valueContainer}>
             <div className={styles.icon}>
               <img src='/Images/svg/DetIcon.svg' alt='Hammer, symbolizing determination' />
@@ -49,9 +50,9 @@ const Tucker = () => {
           <img src='#' alt='' />
         </section>
       </div>
-      <Navigation style={{ backgroundColor: '#353535', opacity: '0.8' }} />
+      <Navigation dark={true} />
     </main>
   )
 }
 
-export default Tucker
+export default AboutUs
