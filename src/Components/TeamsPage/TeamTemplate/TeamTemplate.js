@@ -49,16 +49,16 @@ const TeamTemplate = props => {
           <div className={styles.stats}>
             <h2>Statistics</h2>
             <p>
-              Driver Skills Rank: {} <br />
-              Programming Skills Rank: {} <br />
-              Robot Skills Rank: {} <br />
+              Driver Skills Rank: {props.driveSkillRank} <br />
+              Programming Skills Rank: {props.programSkillRank} <br />
+              Robot Skills Rank: {props.robotSkillRank} <br />
             </p>
             <p>
-              State Qualifications: {} <br />
-              Worlds Qualifications: {} <br />
+              State Qualifications: {props.stateQual} <br />
+              Worlds Qualifications: {props.worldQual} <br />
             </p>
             <p>
-              Total Awards: {} <br />
+              Total Awards: {props.awardNum} <br />
             </p>
           </div>
         </section>
