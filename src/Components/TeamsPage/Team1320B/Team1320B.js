@@ -11,7 +11,7 @@ const data = {
       desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
     },
     {
-      name: 'Shakira Hussein',
+      name: 'Shakira Hussien',
       job: 'Notebook Manager / Binder Manager',
       desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
     },
@@ -65,10 +65,10 @@ class Team1320B extends Component {
       if (response.ok) {
         const jsonResponse = await response.json()
         return jsonResponse.result.reduce((acc, event) => {
-          return event.divisions.length > 1
+          return event.name.includes('World')
             ? acc + 1
             : acc
-        }, 1)
+        }, 0)
       }
       throw new Error('Request failed')
     } catch (error) {
@@ -82,10 +82,10 @@ class Team1320B extends Component {
       if (response.ok) {
         const jsonResponse = await response.json()
         return jsonResponse.result.reduce((acc, event) => {
-          return event.loc_venue === 'Ola High School'
+          return event.name.includes('State Championship')
             ? acc + 1
             : acc
-        }, -1)
+        }, 0)
       }
       throw new Error('Request failed')
     } catch (error) {

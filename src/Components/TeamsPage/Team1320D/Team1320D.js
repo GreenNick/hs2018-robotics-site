@@ -80,7 +80,7 @@ class Team1320D extends Component {
       if (response.ok) {
         const jsonResponse = await response.json()
         return jsonResponse.result.reduce((acc, event) => {
-          return event.divisions.length > 1
+          return event.name.includes('World')
             ? acc + 1
             : acc
         }, 0)
@@ -97,7 +97,7 @@ class Team1320D extends Component {
       if (response.ok) {
         const jsonResponse = await response.json()
         return jsonResponse.result.reduce((acc, event) => {
-          return event.loc_venue === 'Ola High School'
+          return event.name.includes('State Championship')
             ? acc + 1
             : acc
         }, 0)
