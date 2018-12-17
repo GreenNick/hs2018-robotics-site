@@ -1,5 +1,6 @@
 import React from 'react'
 import { array, string, number } from 'prop-types'
+import { Doughnut } from 'react-chartjs-2'
 import Navigation from '../../Navigation/Navigation'
 import styles from './TeamTemplate.module.css'
 
@@ -46,20 +47,79 @@ const TeamTemplate = props => {
           { teamMemberArray }
         </section>
         <section className={styles.section}>
-          <div className={styles.graph}></div>
+          <div className={styles.graph}>
+            <Doughnut
+              height={175}
+              data={{
+                labels: ['Wins', 'Losses', 'Ties'],
+                datasets: [{
+                  label: 'Win/Loss Ratio',
+                  data: [props.wins, props.losses, props.ties],
+                  backgroundColor: [
+                    '#00BCD4',
+                    '#8BC34A',
+                    '#FF9800'
+                  ],
+                  borderColor: [
+                    'white',
+                    'white',
+                    'white'
+                  ],
+                  borderWidth: 2
+                }]
+              }}
+              options={{
+                legend: {
+                  position: 'right',
+                  labels: {
+                    boxWidth: 16,
+                    fontSize: 16
+                  },
+                  title: {
+                    display: true,
+                    text: 'Win/Loss Ratio',
+                    position: 'bottom'
+                  }
+                }
+              }} />
+          </div>
           <div className={styles.stats}>
             <h2>Statistics</h2>
             <p>
-              Driver Skills Rank: {props.driveSkillRank} <br />
-              Programming Skills Rank: {props.programSkillRank} <br />
-              Robot Skills Rank: {props.robotSkillRank} <br />
+              Driver Skills Rank: {
+                props.driveSkillRank === 0
+                  ? 'N/A'
+                  : props.driveSkillRank
+              } <br />
+              Programming Skills Rank: {
+                props.programSkillRank === 0
+                  ? 'N/A'
+                  : props.programSkillRank
+              } <br />
+              Robot Skills Rank: {
+                props.robotSkillRank === 0
+                  ? 'N/A'
+                  : props.robotSkillRank
+              } <br />
             </p>
             <p>
-              State Appearances: {props.stateQual} <br />
-              Worlds Appearances: {props.worldQual} <br />
+              State Appearances: {
+                props.stateQual === 0
+                  ? 'N/A'
+                  : props.stateQual
+              } <br />
+              Worlds Appearances: {
+                props.worldQual === 0
+                  ? 'N/A'
+                  : props.worldQual
+              } <br />
             </p>
             <p>
-              Total Awards: {props.awardNum} <br />
+              Total Awards: {
+                props.awardNum === 0
+                  ? 'N/A'
+                  : props.awardNum
+              } <br />
             </p>
           </div>
         </section>
@@ -78,7 +138,10 @@ TeamTemplate.propTypes = {
   robotSkillRank: number,
   stateQual: number,
   worldQual: number,
-  awardNum: number
+  awardNum: number,
+  wins: number,
+  losses: number,
+  ties: number
 }
 
 export default TeamTemplate

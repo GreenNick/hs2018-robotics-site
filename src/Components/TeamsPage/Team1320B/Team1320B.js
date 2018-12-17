@@ -25,12 +25,15 @@ const data = {
 
 class Team1320B extends Component {
   state = {
-    robotSkillRank: 'N/A',
-    programSkillRank: 'N/A',
-    driveSkillRank: 'N/A',
-    awardNum: 'N/A',
-    worldQual: 'N/A',
-    stateQual: 'N/A'
+    robotSkillRank: 0,
+    programSkillRank: 0,
+    driveSkillRank: 0,
+    awardNum: 0,
+    worldQual: 0,
+    stateQual: 0,
+    wins: 0,
+    losses: 0,
+    ties: 0
   }
 
   fetchSkillRank = async (url) => {
@@ -93,19 +96,97 @@ class Team1320B extends Component {
     }
   }
 
+  fetchWins = async (url) => {
+    try {
+      const response = await fetch(url)
+      if (response.ok) {
+        const jsonResponse = await response.json()
+        return jsonResponse.result.reduce((acc, match) => {
+          for (let i in match) {
+            if (match[i] === data.teamNumber) {
+              let color = i.slice(0, i.length - 1)
+              if (color === 'red' && match.redscore > match.bluescore) {
+                return acc + 1
+              } else if (color === 'blue' && match.bluescore > match.redscore) {
+                return acc + 1
+              }
+            }
+          }
+          return acc
+        }, 0)
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  fetchLosses = async (url) => {
+    try {
+      const response = await fetch(url)
+      if (response.ok) {
+        const jsonResponse = await response.json()
+        return jsonResponse.result.reduce((acc, match) => {
+          for (let i in match) {
+            if (match[i] === data.teamNumber) {
+              let color = i.slice(0, i.length - 1)
+              if (color === 'red' && match.redscore < match.bluescore) {
+                return acc + 1
+              } else if (color === 'blue' && match.bluescore < match.redscore) {
+                return acc + 1
+              }
+            }
+          }
+          return acc
+        }, 0)
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  fetchTies = async (url) => {
+    try {
+      const response = await fetch(url)
+      if (response.ok) {
+        const jsonResponse = await response.json()
+        return jsonResponse.result.reduce((acc, match) => {
+          for (let i in match) {
+            if (match[i] === data.teamNumber) {
+              let color = i.slice(0, i.length - 1)
+              if (color === 'red' && match.redscore === match.bluescore) {
+                return acc + 1
+              } else if (color === 'blue' && match.bluescore === match.redscore) {
+                return acc + 1
+              }
+            }
+          }
+          return acc
+        }, 0)
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   componentDidMount () {
-    this.fetchSkillRank('https://api.vexdb.io/v1/get_skills?season_rank=true&team=1320B&season=current&type=2')
+    this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=2`)
       .then(response => this.setState({ robotSkillRank: response }))
-    this.fetchSkillRank('https://api.vexdb.io/v1/get_skills?season_rank=true&team=1320B&season=current&type=0')
+    this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=0`)
       .then(response => this.setState({ driveSkillRank: response }))
-    this.fetchSkillRank('https://api.vexdb.io/v1/get_skills?season_rank=true&team=1320B&season=current&type=1')
+    this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=1`)
       .then(response => this.setState({ programSkillRank: response }))
-    this.fetchAwardNum('https://api.vexdb.io/v1/get_awards?team=1320B')
+    this.fetchAwardNum(`https://api.vexdb.io/v1/get_awards?team=${data.teamNumber}`)
       .then(response => this.setState({ awardNum: response }))
-    this.fetchWorldQual('https://api.vexdb.io/v1/get_events?team=1320B')
+    this.fetchWorldQual(`https://api.vexdb.io/v1/get_events?team=${data.teamNumber}`)
       .then(response => this.setState({ worldQual: response }))
-    this.fetchStateQual('https://api.vexdb.io/v1/get_events?team=1320B')
+    this.fetchStateQual(`https://api.vexdb.io/v1/get_events?team=${data.teamNumber}`)
       .then(response => this.setState({ stateQual: response }))
+    this.fetchWins(`https://api.vexdb.io/v1/get_matches?team=${data.teamNumber}&season=current`)
+      .then(response => this.setState({ wins: response }))
+    this.fetchLosses(`https://api.vexdb.io/v1/get_matches?team=${data.teamNumber}&season=current`)
+      .then(response => this.setState({ losses: response }))
+    this.fetchTies(`https://api.vexdb.io/v1/get_matches?team=${data.teamNumber}&season=current`)
+      .then(response => this.setState({ ties: response }))
   }
 
   render () {
@@ -119,7 +200,10 @@ class Team1320B extends Component {
         driveSkillRank={this.state.driveSkillRank}
         awardNum={this.state.awardNum}
         worldQual={this.state.worldQual}
-        stateQual={this.state.stateQual} />
+        stateQual={this.state.stateQual}
+        wins={this.state.wins}
+        losses={this.state.losses}
+        ties={this.state.ties} />
     )
   }
 }
