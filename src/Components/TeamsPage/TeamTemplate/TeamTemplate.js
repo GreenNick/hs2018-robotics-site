@@ -55,8 +55,8 @@ const TeamTemplate = props => {
               Robot Skills Rank: {props.robotSkillRank} <br />
             </p>
             <p>
-              State Qualifications: {props.stateQual} <br />
-              Worlds Qualifications: {props.worldQual} <br />
+              State Appearances: {props.stateQual} <br />
+              Worlds Appearances: {props.worldQual} <br />
             </p>
             <p>
               Total Awards: {props.awardNum} <br />
