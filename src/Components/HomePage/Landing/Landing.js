@@ -3,13 +3,15 @@ import styles from './Landing.module.css'
 
 const Landing = () => {
   return (
-    <div className={styles.container}>
-      <h1>
-        Tucker High
-        <br />
-        School
-      </h1>
-      <h1 className={styles.subtitle}>Robotigers</h1>
+    <div className='wrapper'>
+      <div className={styles.container}>
+        <h1>
+          Tucker High
+          <br />
+          School
+        </h1>
+        <h1 className={styles.subtitle}>Robotigers</h1>
+      </div>
     </div>
   )
 }

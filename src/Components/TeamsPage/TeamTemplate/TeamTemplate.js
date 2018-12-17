@@ -9,7 +9,8 @@ const headerStyle = {
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',
-  boxShadow: '#757575 1px 1px 2px'
+  boxShadow: '#757575 1px 1px 2px',
+  gridColumn: '1 / 4'
 }
 
 const TeamTemplate = props => {

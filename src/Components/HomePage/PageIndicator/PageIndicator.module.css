@@ -1,5 +1,5 @@
 .container {
-  grid-area: header;
+  grid-column: 1 / 4;
   height: 40px;
   width: 160px;
   padding: 0 8px;

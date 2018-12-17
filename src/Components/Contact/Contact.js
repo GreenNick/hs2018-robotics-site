@@ -9,7 +9,7 @@ class Contact extends Component {
         <div className="wrapper">
           <section className={styles.container}>
             <h2>Contact</h2>
-            <div className={styles.col1}>
+            <div className={styles.form}>
               <h3 className={styles.heading}>Send us a message</h3>
               <form>
                 <label htmlFor='name'>Name</label>
@@ -36,7 +36,7 @@ class Contact extends Component {
                   className={styles.submit} />
               </form>
             </div>
-            <div className={styles.col2}>
+            <div className={styles.info}>
               <h3 className={styles.heading}>Tucker High School</h3>
               <p>
                 5036 Lavista Rd <br />

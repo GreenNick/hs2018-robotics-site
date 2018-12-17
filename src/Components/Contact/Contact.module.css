@@ -1,8 +1,7 @@
 .container {
   grid-template-areas:
     'header header'
-    'col1 col2';
-  width: 1280px;
+    'form info';
   grid-gap: auto;
 }
 
@@ -18,19 +17,19 @@ iframe {
   grid-area: header;
 }
 
-.col1 {
-  grid-area: col1;
+.form {
+  grid-area: form;
 }
 
 .input {
   width: 100%;
 }
 
-.col1 > textarea {
+.form > textarea {
   width: 100%;
 }
 
-.col2 {
-  grid-area: col2;
+.info {
+  grid-area: info;
   margin-left: auto;
 }

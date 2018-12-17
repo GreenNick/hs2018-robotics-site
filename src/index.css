@@ -59,12 +59,12 @@ main {
   background-repeat: no-repeat;
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr minmax(auto, 1380px) 1fr auto;
   grid-template-rows: minmax(80px, auto) auto 1fr;
   grid-template-areas: 
-    "header nav"
-    "section nav"
-    "footer nav";
+    "lg header rg nav"
+    "lg section rg nav"
+    "lg footer rg nav";
 }
 
 hr {
@@ -81,8 +81,6 @@ section {
   margin: 40px 20px;
   box-shadow: #757575 1px 1px 2px;
   border-radius: 2px;
-  max-width: 1280px;
-  grid-area: section;
   display: grid;
 }
 
@@ -179,5 +177,4 @@ select {
 
 .wrapper {
   grid-area: section;
-  margin: auto;
 }

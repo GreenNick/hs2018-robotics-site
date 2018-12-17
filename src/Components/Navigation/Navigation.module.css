@@ -3,12 +3,15 @@
   color: white;
   font-size: 24px;
   font-family: 'Roboto Condensed';
-  line-height: 3;
   list-style: none;
   padding: 0 40px 0 0;
   text-shadow: none;
   position: sticky;
   top: 80px;
+}
+
+.navItems > li {
+  margin-bottom: 32px;
 }
 
 .buttonContainer {
