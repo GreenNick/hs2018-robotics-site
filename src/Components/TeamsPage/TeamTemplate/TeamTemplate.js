@@ -1,5 +1,5 @@
 import React from 'react'
-import { array, string } from 'prop-types'
+import { array, string, number } from 'prop-types'
 import Navigation from '../../Navigation/Navigation'
 import styles from './TeamTemplate.module.css'
 
@@ -72,7 +72,13 @@ const TeamTemplate = props => {
 TeamTemplate.propTypes = {
   teamMembers: array,
   teamNumber: string,
-  overviewDesc: string
+  overviewDesc: string,
+  driveSkillRank: number,
+  programSkillRank: number,
+  robotSkillRank: number,
+  stateQual: number,
+  worldQual: number,
+  awardNum: number
 }
 
 export default TeamTemplate
