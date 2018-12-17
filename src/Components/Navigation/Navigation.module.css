@@ -7,8 +7,12 @@
   list-style: none;
   padding: 0 40px 0 0;
   text-shadow: none;
+  position: sticky;
+  top: 80px;
 }
 
 .buttonContainer {
-  padding: 5px 0
+  padding: 5px 0;
+  position: sticky;
+  top: 20px;
 }

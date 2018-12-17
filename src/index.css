@@ -78,7 +78,7 @@ hr {
 section {
   background: white;
   padding: 40px;
-  margin: 40px auto;
+  margin: 40px 20px;
   box-shadow: #757575 1px 1px 2px;
   border-radius: 2px;
   max-width: 1280px;
@@ -87,8 +87,9 @@ section {
 }
 
 section > img {
-  width: 620px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
   border-radius: 2px;
   background: pink;
   box-shadow: #757575 1px 1px 2px;
@@ -178,4 +179,5 @@ select {
 
 .wrapper {
   grid-area: section;
+  margin: auto;
 }

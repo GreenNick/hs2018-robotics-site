@@ -57,32 +57,34 @@ class Join extends Component {
     }
 
     return (
-      <div
-        className={styles.container}>
-        <SectionInput>
-          <div className={styles.selectorContainer}>
-            <ProgramSelector
-              onClick={this.handleVexClick}
-              program='VEX'
-              price={this.state.vexPrice.toFixed(2)}
-              buttonActive={this.state.vexActive} />
-            <ProgramSelector
-              onClick={this.handleTsaClick}
-              program='TSA'
-              price={this.state.tsaPrice.toFixed(2)}
-              buttonActive={this.state.tsaActive} />
-            <ProgramSelector
-              onClick={this.handleStemClick}
-              program='STEM'
-              price={this.state.stemPrice.toFixed(2)}
-              buttonActive={this.state.stemActive} />
-          </div>
-          <InterestForm
-            onChange={this.handleTextChange} />
-        </SectionInput>
-        <SectionDues
-          subtotal={subtotal.toFixed(2)} />
-        <SectionDesc />
+      <div className="wrapper">
+        <div
+          className={styles.container}>
+          <SectionInput>
+            <div className={styles.selectorContainer}>
+              <ProgramSelector
+                onClick={this.handleVexClick}
+                program='VEX'
+                price={this.state.vexPrice.toFixed(2)}
+                buttonActive={this.state.vexActive} />
+              <ProgramSelector
+                onClick={this.handleTsaClick}
+                program='TSA'
+                price={this.state.tsaPrice.toFixed(2)}
+                buttonActive={this.state.tsaActive} />
+              <ProgramSelector
+                onClick={this.handleStemClick}
+                program='STEM'
+                price={this.state.stemPrice.toFixed(2)}
+                buttonActive={this.state.stemActive} />
+            </div>
+            <InterestForm
+              onChange={this.handleTextChange} />
+          </SectionInput>
+          <SectionDues
+            subtotal={subtotal.toFixed(2)} />
+          <SectionDesc />
+        </div>
       </div>
     )
   }
