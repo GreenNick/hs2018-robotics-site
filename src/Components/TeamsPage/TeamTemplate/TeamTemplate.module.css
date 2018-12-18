@@ -12,11 +12,6 @@
   padding: 10px
 }
 
-.overview {
-  grid-gap: 40px;
-  grid-template-columns: 1fr 1fr;
-}
-
 .stats > p {
   margin: 15px 0;
 }
