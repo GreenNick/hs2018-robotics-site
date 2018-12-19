@@ -6,7 +6,7 @@ import styles from './TeamTemplate.module.css'
 
 const headerStyle = {
   height: 550,
-  backgroundImage: 'url(/Images/TeamImages/1320D.JPG',
+  backgroundImage: 'url(/Images/TeamImages/1320D.JPG)',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',
@@ -42,47 +42,11 @@ const TeamTemplate = props => {
             <p>{props.overviewDesc}</p>
           </div>
         </section>
-        <section className={styles.section}>
+        <section className={styles.members}>
           <h2>Team Members</h2>
           { teamMemberArray }
         </section>
         <section className={styles.section}>
-          <div className={styles.graph}>
-            <Doughnut
-              height={175}
-              data={{
-                labels: ['Wins', 'Losses', 'Ties'],
-                datasets: [{
-                  label: 'Win/Loss Ratio',
-                  data: [props.wins, props.losses, props.ties],
-                  backgroundColor: [
-                    '#00BCD4',
-                    '#8BC34A',
-                    '#FF9800'
-                  ],
-                  borderColor: [
-                    'white',
-                    'white',
-                    'white'
-                  ],
-                  borderWidth: 2
-                }]
-              }}
-              options={{
-                legend: {
-                  position: 'right',
-                  labels: {
-                    boxWidth: 16,
-                    fontSize: 16
-                  },
-                  title: {
-                    display: true,
-                    text: 'Win/Loss Ratio',
-                    position: 'bottom'
-                  }
-                }
-              }} />
-          </div>
           <div className={styles.stats}>
             <h2>Statistics</h2>
             <p>
@@ -121,6 +85,42 @@ const TeamTemplate = props => {
                   : props.awardNum
               } <br />
             </p>
+          </div>
+          <div className={styles.graph}>
+            <Doughnut
+              height={175}
+              data={{
+                labels: ['Wins', 'Losses', 'Ties'],
+                datasets: [{
+                  label: 'Win/Loss Ratio',
+                  data: [props.wins, props.losses, props.ties],
+                  backgroundColor: [
+                    '#00BCD4',
+                    '#8BC34A',
+                    '#FF9800'
+                  ],
+                  borderColor: [
+                    'white',
+                    'white',
+                    'white'
+                  ],
+                  borderWidth: 2
+                }]
+              }}
+              options={{
+                legend: {
+                  position: 'right',
+                  labels: {
+                    boxWidth: 16,
+                    fontSize: 16
+                  },
+                  title: {
+                    display: true,
+                    text: 'Win/Loss Ratio',
+                    position: 'bottom'
+                  }
+                }
+              }} />
           </div>
         </section>
       </div>
