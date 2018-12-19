@@ -96,7 +96,6 @@ section > img {
 nav {
   grid-area: nav;
   background-color: rgba(0, 0, 0, 0.2);
-  display: block;
   padding: 20px;
 }
 
@@ -192,5 +191,6 @@ select {
     top: 0;
     left: 0;
     right: 0;
+    background-color: #353535;
   }
 }

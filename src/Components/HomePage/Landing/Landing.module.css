@@ -4,7 +4,12 @@
   padding: 40px;
 }
 
+.heading {
+  opacity: 0.9;
+}
+
 .subtitle {
   font-weight: normal;
   font-size: 56px;
+  opacity: 0.8;
 }

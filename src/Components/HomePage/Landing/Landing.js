@@ -5,7 +5,7 @@ const Landing = () => {
   return (
     <div className='wrapper'>
       <div className={styles.container}>
-        <h1>
+        <h1 className={styles.heading}>
           Tucker High
           <br />
           School

@@ -57,7 +57,7 @@ class Join extends Component {
     }
 
     return (
-      <div className="wrapper">
+      <div className='wrapper'>
         <div
           className={styles.container}>
           <SectionInput>
