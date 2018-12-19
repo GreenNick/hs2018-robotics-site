@@ -98,7 +98,6 @@ nav {
   background-color: rgba(0, 0, 0, 0.2);
   display: block;
   padding: 20px;
-  right: 0;
 }
 
 label {
@@ -177,4 +176,20 @@ select {
 
 .wrapper {
   grid-area: section;
+}
+
+@media (max-width: 1000px) {
+  main {
+    grid-template-areas:
+      "nav nav nav"
+      "lg header rg"
+      "lg section rg";
+    background-position: 0 50px;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }

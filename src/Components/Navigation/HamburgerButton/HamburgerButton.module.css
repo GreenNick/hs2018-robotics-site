@@ -15,3 +15,9 @@
   background-color: white;
   display: block;
 }
+
+@media (max-width: 1000px) {
+  .container {
+    margin-bottom: 0;
+  }
+}
