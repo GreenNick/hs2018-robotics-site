@@ -54,7 +54,7 @@ p {
 
 main {
   background-image: url('/Images/svg/WigglyBit2.svg');
-  background-size: cover;
+  background-size: 800px auto;
   background-attachment: fixed;
   background-repeat: no-repeat;
   display: grid;
@@ -185,6 +185,7 @@ select {
       "lg header rg"
       "lg section rg";
     background-position: 0 50px;
+    background-size: 80vw 90vh;
   }
   nav {
     position: fixed;
