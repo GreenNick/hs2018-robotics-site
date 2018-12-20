@@ -4,7 +4,6 @@
 
 .container {
   grid-area: section;
-  width: 1360px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -27,13 +26,17 @@
   text-align: center;
   color: white;
   font-size: 56px;
-  line-height: 1.8;
+  line-height: 1.05;
 }
 
 .link {
   color: white;
   text-decoration: none;
   transition: transform 300ms ease-out;
+}
+
+.link > li {
+  margin-bottom: 40px;
 }
 
 .link > li:hover {

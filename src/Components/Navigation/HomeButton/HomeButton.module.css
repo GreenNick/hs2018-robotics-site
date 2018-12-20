@@ -5,3 +5,9 @@
   display: block;
   cursor: pointer;
 }
+
+@media (max-width: 1000px) {
+  .homeButton {
+    margin-bottom: 0;
+  }
+}

@@ -54,7 +54,7 @@ p {
 
 main {
   background-image: url('/Images/svg/WigglyBit2.svg');
-  background-size: cover;
+  background-size: 800px auto;
   background-attachment: fixed;
   background-repeat: no-repeat;
   display: grid;
@@ -96,9 +96,7 @@ section > img {
 nav {
   grid-area: nav;
   background-color: rgba(0, 0, 0, 0.2);
-  display: block;
   padding: 20px;
-  right: 0;
 }
 
 label {
@@ -177,4 +175,22 @@ select {
 
 .wrapper {
   grid-area: section;
+}
+
+@media (max-width: 1000px) {
+  main {
+    grid-template-areas:
+      "nav nav nav"
+      "lg header rg"
+      "lg section rg";
+    background-position: 0 50px;
+    background-size: 80vw 90vh;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #353535;
+  }
 }
