@@ -45,7 +45,8 @@ class Contact extends Component {
                 tuckerrobotigers@gmail.com
               </p>
               <hr />
-              <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.2968629690345!2d-84.21829048439588!3d33.85623948065977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a639f18977a3%3A0x571e231c5d648a4f!2sTucker+High+School!5e0!3m2!1sen!2sus!4v1544502940707' width='400' height='300' frameBorder='0' allowFullScreen title='map'></iframe>
+              <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.2968629690345!2d-84.21829048439588!3d33.85623948065977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a639f18977a3%3A0x571e231c5d648a4f!2sTucker+High+School!5e0!3m2!1sen!2sus!4v1544502940707' width='400' height='300' frameBorder='0' allowFullScreen title='largeMap' className={styles.largeMap}></iframe>
+              <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.2968629690345!2d-84.21829048439588!3d33.85623948065977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a639f18977a3%3A0x571e231c5d648a4f!2sTucker+High+School!5e0!3m2!1sen!2sus!4v1544502940707' width='240' height='240' frameBorder='0' allowFullScreen title='smallMap' className={styles.smallMap}></iframe>
             </div>
           </section>
         </div>

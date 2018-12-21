@@ -33,3 +33,34 @@ iframe {
   grid-area: info;
   margin-left: auto;
 }
+
+.largeMap {
+  display: block;
+}
+
+.smallMap {
+  display: none;
+}
+
+@media(max-width: 1200px) {
+  .container {
+    grid-template-areas:
+      'header'
+      'form'
+      'info';
+  }
+
+  .info {
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 600px) {
+  .largeMap {
+    display: none;
+  }
+
+  .smallMap {
+    display: block;
+  }
+}

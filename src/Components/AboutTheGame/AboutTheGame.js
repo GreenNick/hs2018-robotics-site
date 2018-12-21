@@ -16,7 +16,7 @@ const AboutTheGame = () => {
           </div>
           <img src='/Images/svg/Field.svg' alt='A VEX Turning Point field' />
         </section>
-        <section>
+        <section className={styles.gameContainer}>
           <h2>Game Pieces</h2>
           <div className={styles.gamePieces}>
             <img src='#' alt='' />

@@ -3,9 +3,8 @@
   margin: 40px 20px 0;
 }
 
-.section {
-  grid-gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+.gameContainer {
+  display: block;
 }
 
 .section > img {
