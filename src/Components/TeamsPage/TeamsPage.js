@@ -7,7 +7,7 @@ class TeamsPage extends Component {
   render () {
     return (
       <main>
-        <h1 className={styles.header}>Teams</h1>
+        <h1 className='headerText'>Teams</h1>
         <div className='wrapper'>
           <div className={styles.container}>
             <Link

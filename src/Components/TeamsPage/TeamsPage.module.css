@@ -32,11 +32,6 @@
   color: #353535;
 }
 
-.header {
-  grid-area: header;
-  margin: 40px 20px 0;
-}
-
 @media (max-width: 800px) {
   .container {
     grid-template-columns: auto;

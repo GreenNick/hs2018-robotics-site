@@ -1,9 +1,3 @@
-.header {
-  grid-area: header;
-  display: block;
-  margin: 40px 20px 0;
-}
-
 .section > h2 {
   grid-column: 1 / 3;
 }

@@ -5,7 +5,7 @@ import styles from './AboutUs.module.css'
 const AboutUs = () => {
   return (
     <main>
-      <h1 className={styles.header}>About Us</h1>
+      <h1 className='headerText'>About Us</h1>
       <div className='wrapper'>
         <section className={styles.section}>
           <img src='#' alt='' />

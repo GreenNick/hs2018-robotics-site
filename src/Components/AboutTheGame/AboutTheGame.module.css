@@ -1,8 +1,3 @@
-.header {
-  grid-area: header;
-  margin: 40px 20px 0;
-}
-
 .gameContainer {
   display: block;
 }

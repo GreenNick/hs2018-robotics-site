@@ -13,6 +13,7 @@ import Team1320D from './Components/TeamsPage/Team1320D/Team1320D'
 import Team1320E from './Components/TeamsPage/Team1320E/Team1320E'
 import AboutUs from './Components/AboutUs/AboutUs'
 import AboutTheGame from './Components/AboutTheGame/AboutTheGame'
+import Teachers from './Components/Teachers/Teachers';
 
 class App extends Component {
   render () {
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path='/' component={HomePage} exact />
           <Route path='/TuckerHigh' component={NavTuckerHigh} exact />
           <Route path='/TuckerHigh/AboutUs' component={AboutUs} exact />
+          <Route path='/TuckerHigh/Teachers' component={Teachers} exact />
           <Route path='/2019Season' component={Nav2019Season} exact />
           <Route path='/2019Season/AboutTheGame' component={AboutTheGame} exact />
           <Route path='/History' component={NavHistory} exact />

@@ -179,6 +179,11 @@ select {
   grid-area: section;
 }
 
+.headerText {
+  grid-area: header;
+  margin: 40px 20px 0;
+}
+
 @media (max-width: 1000px) {
   main {
     grid-template-areas:
