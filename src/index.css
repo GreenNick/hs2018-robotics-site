@@ -203,7 +203,7 @@ select {
   }
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   section {
     grid-template-columns: 1fr;
     padding: 15px;

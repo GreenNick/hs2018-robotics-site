@@ -5,6 +5,7 @@ import Landing from './Landing/Landing'
 import Clubs from './Clubs/Clubs'
 import Join from './Join/Join'
 import styles from './HomePage.module.css'
+import PageButton from './PageButton/PageButton';
 
 class HomePage extends Component {
   state = { pageIndex: 0 }
@@ -15,6 +16,11 @@ class HomePage extends Component {
     } else if (event.deltaY < 0 && this.state.pageIndex > 0) {
       this.setState(prevState => ({ pageIndex: prevState.pageIndex - 1 }))
     }
+  }
+
+  handleClick = () => {
+    this.state.pageIndex < 4 &&
+      this.setState(prevState => ({ pageIndex: prevState.pageIndex + 1 }))
   }
 
   render () {
@@ -34,6 +40,7 @@ class HomePage extends Component {
         <PageIndicator
           pageIndex={this.state.pageIndex} />
         <Navigation />
+        <PageButton onClick={this.handleClick} />
       </main>
     )
   }
