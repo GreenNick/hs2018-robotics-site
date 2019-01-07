@@ -19,7 +19,7 @@
 
 .container > ul {
   list-style: none;
-  padding: 0;
+  padding: 0 10px;
   margin: 10px 0 20px;
   font-family: 'Roboto Condensed';
   font-weight: bold;

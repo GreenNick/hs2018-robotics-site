@@ -47,7 +47,7 @@ h5 {
 p {
   font-family: 'Fira Sans';
   color: #757575;
-  font-size: 1.25rem;
+  font-size: 20px;
   max-width: 620px;
   margin: 0;
 }
@@ -207,6 +207,33 @@ select {
     grid-template-columns: 1fr;
     padding: 15px;
     margin: 20px 10px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-family: 'Roboto Condensed';
+    color: #0097A7;
+    font-size: 26px;
+    margin: 0;
+  }
+  
+  h4 {
+    font-size: 30px;
+  }
+  
+  h5 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 16px;
   }
 }
 

@@ -1,0 +1,28 @@
+.clubContainer {
+  display: block;
+}
+
+.clubs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clubs > h2 {
+  width: 100%;
+}
+
+.clubs > img {
+  flex: 0 1 300px;
+  margin: 0 40px 40px 0;
+  background-color: pink;
+}
+
+.clubs > div {
+  margin-bottom: 40px;
+}
+
+@media(max-width: 800px) {
+  .clubs > img {
+    margin: 0;
+  }
+}
