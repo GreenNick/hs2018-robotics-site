@@ -13,7 +13,8 @@ import Team1320D from './Components/TeamsPage/Team1320D/Team1320D'
 import Team1320E from './Components/TeamsPage/Team1320E/Team1320E'
 import AboutUs from './Components/AboutUs/AboutUs'
 import AboutTheGame from './Components/AboutTheGame/AboutTheGame'
-import Teachers from './Components/Teachers/Teachers';
+import Teachers from './Components/Teachers/Teachers'
+import Calendar from './Components/Calendar/Calendar'
 
 class App extends Component {
   render () {
@@ -26,6 +27,7 @@ class App extends Component {
           <Route path='/TuckerHigh/Teachers' component={Teachers} exact />
           <Route path='/2019Season' component={Nav2019Season} exact />
           <Route path='/2019Season/AboutTheGame' component={AboutTheGame} exact />
+          <Route path='/2019Season/Calendar' component={Calendar} exact />
           <Route path='/History' component={NavHistory} exact />
           <Route path='/Teams' component={TeamsPage} exact />
           <Route path='/Teams/1320A' component={Team1320A} exact />
