@@ -3,7 +3,6 @@ import ProgramSelector from './ProgramSelector/ProgramSelector'
 import InterestForm from './InterestForm/InterestForm'
 import SectionInput from './SectionInput/SectionInput'
 import SectionDues from './SectionDues/SectionDues'
-import SectionDesc from './SectionDesc/SectionDesc'
 import styles from './Join.module.css'
 
 class Join extends Component {
@@ -83,7 +82,6 @@ class Join extends Component {
           </SectionInput>
           <SectionDues
             subtotal={subtotal.toFixed(2)} />
-          <SectionDesc />
         </div>
       </div>
     )

@@ -5,7 +5,7 @@ import Landing from './Landing/Landing'
 import Clubs from './Clubs/Clubs'
 import Join from './Join/Join'
 import styles from './HomePage.module.css'
-import PageButton from './PageButton/PageButton';
+import PageButton from './PageButton/PageButton'
 
 class HomePage extends Component {
   state = { pageIndex: 0 }

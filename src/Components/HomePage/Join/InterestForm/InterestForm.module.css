@@ -14,3 +14,9 @@
 .selectContainer:hover {
   border-bottom: 2px solid #0097A7;
 }
+
+@media (max-width: 550px) {
+  .selectContainer {
+    width: 100%;
+  }
+}

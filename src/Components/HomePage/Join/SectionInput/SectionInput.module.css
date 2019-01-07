@@ -1,9 +1,7 @@
 .container {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 4;
   margin: 0;
+  display: flex;
+  grid-gap: 0;
   flex-direction: column;
   justify-content: initial;
 }

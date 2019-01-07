@@ -3,6 +3,7 @@
   height: 80px;
   width: 120px;
   border: 2px solid #BDBDBD;
+  margin: 10px 0;
   border-radius: 8px;
   transition: border 150ms ease-in-out;
   cursor: pointer;
