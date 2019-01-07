@@ -7,7 +7,7 @@ const AboutUs = () => {
     <main>
       <h1 className='headerText'>About Us</h1>
       <div className='wrapper'>
-        <section className={styles.section}>
+        <section>
           <img src='#' alt='' />
           <div>
             <h2>Our School</h2>
@@ -40,7 +40,7 @@ const AboutUs = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi minima sequi similique reprehenderit quibusdam modi aspernatur officiis inventore, deleniti unde excepturi, est dolorem? Aliquid saepe eius obcaecati fugit dolorum?</p>
           </div>
         </section>
-        <section className={styles.section}>
+        <section>
           <div>
             <h2>Our Mission</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate?
