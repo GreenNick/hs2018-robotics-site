@@ -1,0 +1,50 @@
+.graphs {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  padding: 0 20px;
+}
+
+.img {
+  background: white;
+  box-shadow: none;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: flex;
+  position: static;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.year {
+  text-align: center;
+  background: white;
+  border-radius: 2px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: #757575 1px 1px 2px;
+}
+
+.team {
+  text-align: center;
+  background: white;
+  border-radius: 2px;
+  padding: 20px;
+  box-shadow: #757575 1px 1px 2px;
+  margin-bottom: 40px;
+  align-self: start;
+}

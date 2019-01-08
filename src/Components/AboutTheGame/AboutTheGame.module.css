@@ -2,15 +2,6 @@
   display: block;
 }
 
-.section > img {
-  background: none;
-  min-height: 0;
-  max-height: 500px;
-  width: 100%;
-  height: auto;
-  box-shadow: none;
-}
-
 .gamePieces {
   display: flex;
   flex-wrap: wrap;
@@ -31,10 +22,6 @@
 }
 
 @media(max-width: 800px) {
-  .section {
-    grid-template-columns: 1fr;
-  }
-
   .gamePieces > img {
     margin: 0;
   }

@@ -1,6 +1,7 @@
 button {
   width: 64px;
   height: 64px;
+  cursor: pointer;
   border-radius: 100%;
   position: fixed;
   background: #353535;
@@ -19,6 +20,6 @@ button > img {
 
 @media (max-width: 800px) {
   button {
-    display: block;
+    display: flex;
   }
 }
