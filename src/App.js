@@ -18,6 +18,7 @@ import Calendar from './Components/Calendar/Calendar'
 import Diversity from './Components/Diversity/Diversity'
 import TuckerTournament from './Components/TuckerTournament/TuckerTournament'
 import Awards from './Components/Awards/Awards'
+import PhotoGallery from './Components/PhotoGallery/PhotoGallery'
 
 class App extends Component {
   render () {
@@ -35,6 +36,7 @@ class App extends Component {
           <Route path='/2019Season/TuckerTournament' component={TuckerTournament} exact />
           <Route path='/History' component={NavHistory} exact />
           <Route path='/History/Awards' component={Awards} exact />
+          <Route path='/History/PhotoGallery' component={PhotoGallery} exact />
           <Route path='/Teams' component={TeamsPage} exact />
           <Route path='/Teams/1320A' component={Team1320A} exact />
           <Route path='/Teams/1320B' component={Team1320B} exact />
