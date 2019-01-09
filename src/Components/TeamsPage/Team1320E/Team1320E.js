@@ -8,32 +8,38 @@ const data = {
     {
       name: 'Carter Foley',
       job: 'Captain / Builder / Driver',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
+      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      src: '/Images/Teams/1320E/Carter.jpg'
     },
     {
       name: 'William Thomas',
       job: 'Builder',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
+      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      src: '/Images/Teams/1320E/William.jpg'
     },
     {
       name: 'Nigel Hoffman',
       job: 'Programmer',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
+      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      src: '/Images/Teams/1320E/Nigel.jpg'
     },
     {
       name: 'Evan Leatass',
       job: 'Notebook Manager / Binder Manager',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
+      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      src: '/Images/Teams/1320E/Evan.jpg'
     },
     {
       name: 'Zoree Litzenburg',
       job: 'Notebook Manager / Binder Manager',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
+      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      src: '/Images/Teams/1320E/Zoree.jpg'
     },
     {
       name: 'Adam Shavkin',
       job: 'Member-in-training',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
+      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      src: '/Images/Teams/1320E/Adam.jpg'
     }
   ]
 }
@@ -183,7 +189,7 @@ class Team1320E extends Component {
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=2`)
       .then(response => this.setState({ robotSkillRank: response }))
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=0`)
@@ -204,7 +210,7 @@ class Team1320E extends Component {
       .then(response => this.setState({ ties: response }))
   }
 
-  render () {
+  render() {
     return (
       <TeamTemplate
         teamNumber={data.teamNumber}

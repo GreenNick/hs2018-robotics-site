@@ -8,17 +8,20 @@ const data = {
     {
       name: 'Josh Perlmutter',
       job: 'Captain / Builder / Driver / Programmer',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
+      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      src: '/Images/Teams/1320B/Josh.jpg'
     },
     {
       name: 'Shakira Hussien',
       job: 'Notebook Manager / Binder Manager',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
+      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      src: '/Images/Teams/1320B/Shakira.jpg'
     },
     {
       name: 'Andy Todd',
       job: 'Builder',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
+      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      src: '/Images/Teams/1320B/Andy.jpg'
     }
   ]
 }
@@ -168,7 +171,7 @@ class Team1320B extends Component {
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=2`)
       .then(response => this.setState({ robotSkillRank: response }))
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=0`)
@@ -189,7 +192,7 @@ class Team1320B extends Component {
       .then(response => this.setState({ ties: response }))
   }
 
-  render () {
+  render() {
     return (
       <TeamTemplate
         teamNumber={data.teamNumber}
