@@ -16,7 +16,7 @@ const data = {
       desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
     },
     {
-      name: 'Nicholas Bowers',
+      name: 'Nicholas Bowels',
       job: 'Notebook Manager',
       desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
     },
@@ -183,7 +183,7 @@ class Team1320D extends Component {
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=2`)
       .then(response => this.setState({ robotSkillRank: response }))
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=0`)
@@ -204,7 +204,7 @@ class Team1320D extends Component {
       .then(response => this.setState({ ties: response }))
   }
 
-  render () {
+  render() {
     return (
       <TeamTemplate
         teamNumber={data.teamNumber}

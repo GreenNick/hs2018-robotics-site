@@ -20,7 +20,7 @@ const TeamTemplate = props => {
       return (
         <div key={i} className={styles.teamContainer}>
           <img
-            src='#'
+            src={member.src}
             alt='' />
           <h3>{member.name}</h3>
           <h5>{member.job}</h5>
@@ -36,7 +36,7 @@ const TeamTemplate = props => {
       </header>
       <div className='wrapper'>
         <section className={styles.section}>
-          <img src='#' alt='' />
+          <img src={props.robotImage} alt='' />
           <div>
             <h2>Overview</h2>
             <p>{props.overviewDesc}</p>
@@ -44,7 +44,7 @@ const TeamTemplate = props => {
         </section>
         <section className={styles.members}>
           <h2>Team Members</h2>
-          { teamMemberArray }
+          {teamMemberArray}
         </section>
         <section className={styles.section}>
           <div className={styles.stats}>
