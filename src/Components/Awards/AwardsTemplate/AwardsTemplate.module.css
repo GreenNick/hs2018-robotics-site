@@ -8,6 +8,7 @@
 .img {
   background: white;
   box-shadow: none;
+  animation: load-in 800ms ease-in-out;
 }
 
 .textContainer {
@@ -47,4 +48,16 @@
   box-shadow: #757575 1px 1px 2px;
   margin-bottom: 40px;
   align-self: start;
+}
+
+@keyframes load-in {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
