@@ -1,33 +1,27 @@
-.gameContainer {
+.container {
   display: block;
 }
 
-.img {
-  background: white;
-  box-shadow: none;
-}
-
-.gamePieces {
+.item {
   display: flex;
   flex-wrap: wrap;
 }
 
-.gamePieces > h2 {
+.item > h2 {
   width: 100%;
 }
 
-.gamePieces > img {
+.item > img {
   flex: 0 1 300px;
   margin: 0 40px 40px 0;
-  background-color: pink;
 }
 
-.gamePieces > div {
+.item > div {
   margin-bottom: 40px;
 }
 
 @media(max-width: 800px) {
-  .gamePieces > img {
+  .item > img {
     margin: 0;
     margin-bottom: 20px;
   }

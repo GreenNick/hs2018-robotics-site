@@ -5,7 +5,7 @@ const links = [
   { title: 'About the Game', url: '2019Season/AboutTheGame' },
   { title: 'Calendar', url: '2019Season/Calendar' },
   { title: 'Tucker Tournament', url: '2019Season/TuckerTournament' },
-  { title: 'Online Challenges', url: '2019Season/OnlineChallenges' }
+  { title: 'Online Challenge', url: '2019Season/OnlineChallenge' }
 ]
 
 const Nav2019Season = () => {
