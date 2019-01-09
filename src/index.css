@@ -180,6 +180,7 @@ select {
 
 .headerText {
   grid-area: header;
+  max-width: 60%;
   margin: 40px 20px 0;
 }
 
