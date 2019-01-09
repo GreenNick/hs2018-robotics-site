@@ -19,6 +19,7 @@ import Diversity from './Components/Diversity/Diversity'
 import TuckerTournament from './Components/TuckerTournament/TuckerTournament'
 import Awards from './Components/Awards/Awards'
 import PhotoGallery from './Components/PhotoGallery/PhotoGallery'
+import OnlineChallenge from './Components/OnlineChallenge/OnlineChallenge'
 
 class App extends Component {
   render () {
@@ -34,6 +35,7 @@ class App extends Component {
           <Route path='/2019Season/AboutTheGame' component={AboutTheGame} exact />
           <Route path='/2019Season/Calendar' component={Calendar} exact />
           <Route path='/2019Season/TuckerTournament' component={TuckerTournament} exact />
+          <Route path='/2019Season/OnlineChallenge' component={OnlineChallenge} exact />
           <Route path='/History' component={NavHistory} exact />
           <Route path='/History/Awards' component={Awards} exact />
           <Route path='/History/PhotoGallery' component={PhotoGallery} exact />
