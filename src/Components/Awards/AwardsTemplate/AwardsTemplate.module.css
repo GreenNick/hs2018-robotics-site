@@ -61,3 +61,10 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 800px) {
+  .graphs {
+    padding: 0 10px;
+    grid-template-columns: 1fr;
+  }
+}

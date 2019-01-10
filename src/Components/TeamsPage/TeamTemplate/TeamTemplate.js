@@ -35,7 +35,7 @@ const TeamTemplate = props => {
         <h1 className={styles.teamNumber}>{props.teamNumber}</h1>
       </header>
       <div className='wrapper'>
-        <section className={styles.section}>
+        <section>
           <img src={props.robotImage} alt='' />
           <div>
             <h2>Overview</h2>
@@ -46,8 +46,8 @@ const TeamTemplate = props => {
           <h2>Team Members</h2>
           {teamMemberArray}
         </section>
-        <section className={styles.section}>
-          <div className={styles.stats}>
+        <div className={styles.statContainer}>
+          <div>
             <h2>Statistics</h2>
             <p>
               Driver Skills Rank: {
@@ -86,9 +86,8 @@ const TeamTemplate = props => {
               } <br />
             </p>
           </div>
-          <div className={styles.graph}>
+          <div>
             <Doughnut
-              height={175}
               data={{
                 labels: ['Wins', 'Losses', 'Ties'],
                 datasets: [{
@@ -109,20 +108,15 @@ const TeamTemplate = props => {
               }}
               options={{
                 legend: {
-                  position: 'right',
+                  position: 'left',
                   labels: {
                     boxWidth: 16,
                     fontSize: 16
-                  },
-                  title: {
-                    display: true,
-                    text: 'Win/Loss Ratio',
-                    position: 'bottom'
                   }
                 }
               }} />
           </div>
-        </section>
+        </div>
       </div>
       <Navigation dark={true} />
     </main>
