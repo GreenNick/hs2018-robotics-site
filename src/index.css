@@ -88,10 +88,17 @@ section {
 
 section > img {
   width: 100%;
+  object-fit: cover;
   height: 500px;
   border-radius: 2px;
   background: pink;
   box-shadow: #757575 1px 1px 2px;
+}
+
+#svg {
+  object-fit: scale-down;
+  background: white;
+  box-shadow: none;
 }
 
 nav {

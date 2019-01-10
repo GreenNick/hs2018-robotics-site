@@ -5,9 +5,7 @@
   padding: 0 20px;
 }
 
-.img {
-  background: white;
-  box-shadow: none;
+.animate {
   animation: load-in 800ms ease-in-out;
 }
 
@@ -66,5 +64,6 @@
   .graphs {
     padding: 0 10px;
     grid-template-columns: 1fr;
+    grid-gap: 0;
   }
 }
