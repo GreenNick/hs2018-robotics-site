@@ -31,7 +31,7 @@ const TeamTemplate = props => {
 
   return (
     <main>
-      <header style={headerStyle}>
+      <header style={{ ...headerStyle, backgroundImage: `url(${props.teamImage})` }}>
         <h1 className={styles.teamNumber}>{props.teamNumber}</h1>
       </header>
       <div className='wrapper'>
@@ -132,6 +132,8 @@ const TeamTemplate = props => {
 TeamTemplate.propTypes = {
   teamMembers: array,
   teamNumber: string,
+  robotImage: string,
+  teamImage: string,
   overviewDesc: string,
   driveSkillRank: number,
   programSkillRank: number,
