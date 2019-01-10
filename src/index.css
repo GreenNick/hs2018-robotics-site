@@ -97,7 +97,7 @@ section > img {
 
 #svg {
   object-fit: scale-down;
-  background: white;
+  background: none;
   box-shadow: none;
 }
 
