@@ -3,27 +3,28 @@ import TeamTemplate from '../TeamTemplate/TeamTemplate'
 
 const data = {
   teamNumber: '1320C',
+  teamImage: '/Images/Teams/1320C/Team.jpg',
+  robotImage: '/Images/Teams/1320C/Robot.jpg',
   overviewDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deserunt minima corrupti cupiditate doloremque quae, consectetur eum! Nisi quidem perspiciatis eaque, dolor explicabo ullam natus sed ratione facilis dolores architecto? Neque repellendus debitis distinctio nulla nobis totam sint quam amet rerum cupiditate molestias at blanditiis sapiente, labore illum quisquam sunt minus nostrum aperiam iste ea voluptatibus perferendis. Autem, nostrum. Ipsum?',
   teamMembers: [
     {
       name: 'Mamadou Ly',
       job: 'Captain / Builder / Driver',
-      //desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.'
-      desc: "Mamadou Ly is the Captian, Driver and Builder of 1320C. His wonderful building skills are matched by his passion and dedication to robotics and the program that he has worked so hard to build up from when he was in middle school. As the leader of one of Dekalb's strongest teams, he has spearheaded new records and has brought the success of the Tucker RoboTigers to new heights. Mamadou is a STEM student and hopes to study biomedical engineering in college to help better the world through technology and medicine. If his passion for changing the world is anything like his dedication to robotics, the world will be in safe hands.",
-      src: '/Images/Teams/1320B/Mamadou.jpg'
+      desc: "Mamadou's wonderful building skills are matched by his passion and dedication to robotics and the program that he has worked to build up. He has spearheaded new records and has brought the success of the Tucker Robotigers to new heights. Mamadou is a STEM student and hopes to study biomedical engineering in college. If his passion for changing the world is anything like his dedication to robotics, the world will be in safe hands.",
+      src: '/Images/Teams/1320C/Mamadou.jpg'
 
     },
     {
       name: 'Sam Torbert',
       job: 'Programmer',
       desc: 'Sam is the programmer for 1320C. He is one of the most innovative and spectacular members of the Tucker Robotics Program. Sam is a STEM senior and hopes to study aerospace engineering in the Fall. He is able to solve many problems through programming to allow the driver to focus on the game and is constantly re-iterating to create greater efficiency within the Robotics program.',
-      src: '/Images/Teams/1320B/Sam.jpg'
+      src: '/Images/Teams/1320C/Sam.jpg'
     },
     {
       name: 'James Bunting',
       job: 'Notebook Manager',
       desc: 'James Bunting is the primary drafter, daily notebook manager, and CAD specialist. He hopes to study mechanical engineering at Georgia Tech and promotes community education in STEAM.',
-      src: '/Images/Teams/1320B/James.jpg'
+      src: '/Images/Teams/1320C/James.jpg'
     },
     {
       name: 'Deborah Sodiya',
@@ -216,6 +217,8 @@ class Team1320C extends Component {
     return (
       <TeamTemplate
         teamNumber={data.teamNumber}
+        teamImage={data.teamImage}
+        robotImage={data.robotImage}
         overviewDesc={data.overviewDesc}
         teamMembers={data.teamMembers}
         robotSkillRank={this.state.robotSkillRank}

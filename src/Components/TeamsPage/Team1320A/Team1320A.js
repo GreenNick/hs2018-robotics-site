@@ -10,13 +10,13 @@ const data = {
     {
       name: 'Tanjid Mitul',
       job: 'Captain / Builder / Programmer / Driver',
-      desc: 'Tanjid is a natural leader who helps organize the team. He is very dedicated and almost always works on VEX, even in his spare time.',
+      desc: 'Tanjid is a natural leader who helps organize the team. He is very dedicated and is almost always working on VEX, even during his spare time.',
       src: '/Images/Teams/1320A/Tanjid.jpg'
     },
     {
       name: 'Chris Maclin',
       job: 'Builder',
-      desc: 'Chris is extremely hard-working and dedicated. He frequently makes necessary adjustments to the robot and inputs innovative ideas.',
+      desc: 'Chris is extremely hard-working and dedicated. He frequently makes necessary adjustments to the robot and inputs innovative design ideas to further improve the performance of te robot.',
       src: '/Images/Teams/1320A/Chris.jpg'
     },
     {

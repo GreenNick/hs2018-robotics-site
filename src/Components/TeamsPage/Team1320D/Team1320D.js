@@ -3,6 +3,8 @@ import TeamTemplate from '../TeamTemplate/TeamTemplate'
 
 const data = {
   teamNumber: '1320D',
+  teamImage: '/Images/Teams/1320D/Team.jpg',
+  robotImage: '/Images/Teams/1320D/Robot.jpg',
   overviewDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deserunt minima corrupti cupiditate doloremque quae, consectetur eum! Nisi quidem perspiciatis eaque, dolor explicabo ullam natus sed ratione facilis dolores architecto? Neque repellendus debitis distinctio nulla nobis totam sint quam amet rerum cupiditate molestias at blanditiis sapiente, labore illum quisquam sunt minus nostrum aperiam iste ea voluptatibus perferendis. Autem, nostrum. Ipsum?',
   teamMembers: [
     {
@@ -214,6 +216,8 @@ class Team1320D extends Component {
     return (
       <TeamTemplate
         teamNumber={data.teamNumber}
+        teamImage={data.teamImage}
+        robotImage={data.robotImage}
         overviewDesc={data.overviewDesc}
         teamMembers={data.teamMembers}
         robotSkillRank={this.state.robotSkillRank}
