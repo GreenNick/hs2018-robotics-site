@@ -24,6 +24,12 @@
 @media (max-width: 800px) {
   .eventContainer {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    margin: 20px 10px;
+    grid-gap: 10px;
+  }
+
+  .eventContainer > article {
+    padding: 15px;
   }
 }
