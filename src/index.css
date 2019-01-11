@@ -200,8 +200,7 @@ select {
       "nav nav nav"
       "lg header rg"
       "lg section rg";
-    background-position: 0 50px;
-    background-size: 80vw 90vh;
+    background-size: auto 90%;
   }
   
   nav {
