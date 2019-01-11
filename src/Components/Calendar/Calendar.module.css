@@ -14,22 +14,29 @@
 }
 
 .eventContainer > img {
+  min-height: 200px;
   height: 100%;
   width: 100%;
-  background: pink;
+  object-fit: contain;
+  background: white;
   box-shadow: #757575 1px 1px 2px;
   border-radius: 2px;
 }
 
 @media (max-width: 800px) {
   .eventContainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content 1fr;
     margin: 20px 10px;
     grid-gap: 10px;
   }
 
   .eventContainer > article {
     padding: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .eventContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
   }
 }
