@@ -28,14 +28,14 @@ class Diversity extends Component {
           </section>
           <section className={styles.students}>
             <h2>Student Body</h2>
-            <div className={styles.carousel}>
-              <img />
-              <img />
-              <img />
-              <img />
-              <img />
-              <img />
-            </div>
+            <ul className={styles.collage}>
+              <li><img src='#' alt='' /></li>
+              <li><img src='#' alt='' /></li>
+              <li><img src='#' alt='' /></li>
+              <li><img src='#' alt='' /></li>
+              <li><img src='#' alt='' /></li>
+              <li><img src='#' alt='' /></li>
+            </ul>
           </section>
         </div>
         <Navigation dark={true} />
