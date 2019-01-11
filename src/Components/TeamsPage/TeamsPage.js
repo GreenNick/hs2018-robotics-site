@@ -4,7 +4,7 @@ import Navigation from '../Navigation/Navigation'
 import styles from './TeamsPage.module.css'
 
 class TeamsPage extends Component {
-  render () {
+  render() {
     return (
       <main>
         <h1 className='headerText'>Teams</h1>
@@ -30,7 +30,7 @@ class TeamsPage extends Component {
               to='/Teams/1320C'
               className={styles.teamContainer}>
               <img
-                src='/Images/TeamImages/1320D.JPG'
+                src='/Images/Teams/1320C/Team.jpg'
                 alt='' />
               <h3>1320C</h3>
             </Link>
@@ -38,7 +38,7 @@ class TeamsPage extends Component {
               to='/Teams/1320D'
               className={styles.teamContainer}>
               <img
-                src='/Images/TeamImages/1320D.JPG'
+                src='/Images/Teams/1320D/Team.jpg'
                 alt='' />
               <h3>1320D</h3>
             </Link>
@@ -46,7 +46,7 @@ class TeamsPage extends Component {
               to='/Teams/1320E'
               className={styles.teamContainer}>
               <img
-                src='/Images/TeamImages/1320D.JPG'
+                src='/Images/Teams/1320E/Team.jpg'
                 alt='' />
               <h3>1320E</h3>
             </Link>

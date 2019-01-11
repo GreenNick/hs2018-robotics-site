@@ -5,7 +5,7 @@ const data = {
   teamNumber: '1320E',
   teamImage: '/Images/Teams/1320E/Team.jpg',
   robotImage: '/Images/Teams/1320E/Robot.jpg',
-  overviewDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deserunt minima corrupti cupiditate doloremque quae, consectetur eum! Nisi quidem perspiciatis eaque, dolor explicabo ullam natus sed ratione facilis dolores architecto? Neque repellendus debitis distinctio nulla nobis totam sint quam amet rerum cupiditate molestias at blanditiis sapiente, labore illum quisquam sunt minus nostrum aperiam iste ea voluptatibus perferendis. Autem, nostrum. Ipsum?',
+  overviewDesc: 'As part of the Tucker Tiger’s VEX program, we are happy to represent team 1320E. We are a team of seven people each holding a specific job. Carter Foley serves as the captain of the team providing organization while also being a builder. Working alongside him are William and Jared, both who are builders specializing a specific area of the robot. Nigel, a second- year robotics programmer, takes on the lead again and is in charge of driver control as well as making many autonomous to select from. Zorée switched courses from being programmer her previous years, to documenting the daily notebook and working on the binder. Helping her is Evan Lazaro, who does binder research and draws for the daily entries.',
   teamMembers: [
     {
       name: 'Carter Foley',
@@ -32,7 +32,7 @@ const data = {
       src: '/Images/Teams/1320E/Evan.jpg'
     },
     {
-      name: 'Zoree Litzenburg',
+      name: 'Zorée Litzenburg',
       job: 'Notebook Manager / Binder Manager',
       desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
       src: '/Images/Teams/1320E/Zoree.jpg'
@@ -191,7 +191,7 @@ class Team1320E extends Component {
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=2`)
       .then(response => this.setState({ robotSkillRank: response }))
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=0`)
@@ -212,7 +212,7 @@ class Team1320E extends Component {
       .then(response => this.setState({ ties: response }))
   }
 
-  render () {
+  render() {
     return (
       <TeamTemplate
         teamNumber={data.teamNumber}
