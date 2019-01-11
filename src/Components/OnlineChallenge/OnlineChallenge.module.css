@@ -12,7 +12,8 @@
 }
 
 .item > img {
-  flex: 0 1 300px;
+  flex: 0 1 auto;
+  width: 300px;
   margin: 0 40px 40px 0;
 }
 
@@ -24,5 +25,11 @@
   .item > img {
     margin: 0;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .item > img {
+    width: 100%;
   }
 }
