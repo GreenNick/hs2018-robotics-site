@@ -35,5 +35,6 @@
 @media (max-width: 800px) {
   .container {
     grid-template-columns: auto;
+    margin: 20px 10px;
   }
 }

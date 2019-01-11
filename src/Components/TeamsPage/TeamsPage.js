@@ -4,7 +4,7 @@ import Navigation from '../Navigation/Navigation'
 import styles from './TeamsPage.module.css'
 
 class TeamsPage extends Component {
-  render() {
+  render () {
     return (
       <main>
         <h1 className='headerText'>Teams</h1>
