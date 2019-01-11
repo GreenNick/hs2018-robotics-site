@@ -22,7 +22,7 @@ class TeamsPage extends Component {
               to='/Teams/1320B'
               className={styles.teamContainer}>
               <img
-                src='/Images/TeamImages/1320D.JPG'
+                src='/Images/Teams/1320B/Team.jpg'
                 alt='' />
               <h3>1320B</h3>
             </Link>
