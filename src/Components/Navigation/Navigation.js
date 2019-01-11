@@ -75,8 +75,9 @@ class Navigation extends Component {
           <ul className={styles.navItems}>
             <li><Link style={linkStyle} to='/TuckerHigh'>Tucker High</Link></li>
             <li><Link style={linkStyle} to='/2019Season'>2019 Season</Link></li>
-            <li><Link style={linkStyle} to='/History'>History</Link></li>
             <li><Link style={linkStyle} to='/Teams'>Teams</Link></li>
+            <li><Link style={linkStyle} to='/Awards'>Awards</Link></li>
+            <li><Link style={linkStyle} to='/PhotoGallery'>Photo Gallery</Link></li>
             <li><Link style={linkStyle} to='/Contact'>Contact</Link></li>
           </ul> }
       </nav>

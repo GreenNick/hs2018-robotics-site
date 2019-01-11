@@ -22,22 +22,22 @@ const PhotoGallery = () => {
         <ul className={styles.container}>
           {
             photos.map((photo, i) => {
-              const randNum = Math.floor(Math.random() * 4)
+              const randNum = Math.floor(Math.random() * 3)
               let style = {}
               switch (randNum) {
                 case 0:
                   style.gridRow = 'span 1'
                   style.gridColumn = 'span 1'
                   break
+                // case 1:
+                //   style.gridRow = 'span 2'
+                //   style.gridColumn = 'span 1'
+                //   break
                 case 1:
-                  style.gridRow = 'span 2'
-                  style.gridColumn = 'span 1'
-                  break
-                case 2:
                   style.gridRow = 'span 1'
                   style.gridColumn = 'span 2'
                   break
-                case 3:
+                case 2:
                   style.gridRow = 'span 2'
                   style.gridColumn = 'span 2'
                   break

@@ -3,7 +3,6 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import HomePage from './Components/HomePage/HomePage'
 import NavTuckerHigh from './Components/NavTuckerHigh/NavTuckerHigh'
 import Nav2019Season from './Components/Nav2019Season/Nav2019Season'
-import NavHistory from './Components/NavHistory/NavHistory'
 import TeamsPage from './Components/TeamsPage/TeamsPage'
 import Contact from './Components/Contact/Contact'
 import Team1320A from './Components/TeamsPage/Team1320A/Team1320A'
@@ -38,9 +37,8 @@ class App extends Component {
           <Route path='/2019Season/Calendar' component={Calendar} exact />
           <Route path='/2019Season/TuckerTournament' component={TuckerTournament} exact />
           <Route path='/2019Season/OnlineChallenge' component={OnlineChallenge} exact />
-          <Route path='/History' component={NavHistory} exact />
-          <Route path='/History/Awards' component={Awards} exact />
-          <Route path='/History/PhotoGallery' component={PhotoGallery} exact />
+          <Route path='/Awards' component={Awards} exact />
+          <Route path='/PhotoGallery' component={PhotoGallery} exact />
           <Route path='/Teams' component={TeamsPage} exact />
           <Route path='/Teams/1320A' component={Team1320A} exact />
           <Route path='/Teams/1320B' component={Team1320B} exact />
