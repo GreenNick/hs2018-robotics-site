@@ -4,129 +4,182 @@ import Navigation from '../Navigation/Navigation'
 
 const events = [
   {
-    name: 'School Year Begins',
-    date: '8/6/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
-    src: ''
-  },
-  {
     name: 'South Forsyth Tournament',
     date: '10/6/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'South Forsyth High School',
+    address1: '585 Peachtree Parkway',
+    address2: 'Cumming, Georgia 30041',
+    teams: '1320A, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'DeKalb League I',
     date: '10/16/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Dunwoody High School',
+    address1: '5035 Vermack Road',
+    address2: 'Dunwoody, Georgia 30338',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'Tucker Tournament',
     date: '10/20/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Tucker High School',
+    address1: '5036 Lavista Road',
+    address2: 'Tucker, Georgia 30084',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'Cross Keys Tournament',
     date: '10/27/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Cross Keys High School',
+    address1: '1626 North Druid Hills Road Northeast',
+    address2: 'Atlanta, Georgia 30319',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'TSA Fall Leadership Conference',
     date: '11/9/2018 - 11/11/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Jekyll Island Convention Center',
+    address1: '75 Beachview Drive North',
+    address2: 'Jekyll Island, Georgia 31527',
+    teams: '1320A, 1320C',
     src: ''
   },
   {
     name: 'Arabia Mountain Tournament',
     date: '11/17/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    address1: '6610 Browns Mill Road',
+    address2: 'Lithonia, Georgia 30038',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'DeKalb League II',
     date: '11/27/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Dunwoody High School',
+    address1: '5035 Vermack Road',
+    address2: 'Dunwoody, Georgia 30338',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'Alcovy Tournament',
     date: '12/1/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Alcovy High School',
+    address1: '14567 Georgia 36',
+    address2: 'Covington, Georgia 30014',
+    teams: '1320A, 1320B, 1320C',
     src: ''
   },
   {
     name: 'Towers Tournament',
     date: '12/8/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Towers High School',
+    address1: '3919 Brookcrest Circle',
+    address2: 'Decatur, Georgia 30032',
+    teams: '1320A, 1320E',
     src: ''
   },
   {
     name: 'North Forsyth Tournament',
     date: '12/8/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'North Forsyth High School',
+    address1: '3635 Coal Mountain Drive',
+    address2: 'Cumming, Georgia 30028',
+    teams: '1320B, 1320C, 1320D',
     src: ''
   },
   {
     name: 'Clarkston Tournament',
     date: '12/15/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Clarkston High School',
+    address1: '618 North Indian creek',
+    address2: 'Clarkston, Georgia 30021',
+    teams: '1320E',
     src: ''
   },
   {
     name: 'Berkmar Tournament',
     date: '12/15/2018',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Berkmar High School',
+    address1: '405 Pleasant Hill Road',
+    address2: 'Lilburn, Georgia 30047',
+    teams: '1320A, 1320B, 1320C, 1320D',
     src: ''
   },
   {
     name: 'Savannah Tournament',
     date: '1/5/2019',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Savannah Mall',
+    address1: '14045 Abercorn Street',
+    address2: 'Savannah, Georgia 31419',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'DeKalb League III',
     date: '1/8/2019',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Dunwoody High School',
+    address1: '5035 Vermack Road',
+    address2: 'Dunwoody, Georgia 30338',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'Chamblee Tournament',
     date: '1/12/2019',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Chamblee High School',
+    address1: '3688 Chamblee Dunwoody Road',
+    address2: 'Chamblee, Georgia 30341',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'DeKalb League IV',
     date: '1/15/2019',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Dunwoody High School',
+    address1: '5035 Vermack Road',
+    address2: 'Dunwoody, Georgia 30338',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'DeKalb League Championship',
     date: '1/19/2019',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Dunwoody High School',
+    address1: '5035 Vermack Road',
+    address2: 'Dunwoody, Georgia 30338',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'VEX State - Georgia',
     date: '2/8/2019 - 2/9/2019',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Ola High School',
+    address1: '357 North Ola Road',
+    address2: 'McDonough, Georgia 30252',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: ''
   },
   {
     name: 'TSA State - Georgia',
     date: '3/14/2019 - 3/16/2019',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'The Classic Center',
+    address1: '300 N Thomas Street',
+    address2: 'Athens, GA 30601',
+    teams: '1320A, 1320C',
     src: ''
   },
   {
     name: 'VEX Worlds',
     date: '4/24/2019 - 4/27/2019',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+    venue: 'Kentucky Exposition Center',
+    address1: '937 Phillips Lane',
+    address2: 'Louisville, Kentucky 40209',
+    teams: 'TBD',
     src: ''
   }
 ]
@@ -141,7 +194,12 @@ const Calendar = () => {
           <article className={styles.article}>
             <h3>{event.name}</h3>
             <p style={{ color: '#353535' }}>{event.date}</p>
-            <p>{event.desc}</p>
+            <p>
+              {event.venue} <br />
+              {event.address1} <br />
+              {event.address2}
+            </p>
+            <p>Participating teams: {event.teams}</p>
           </article>
           <img src={event.src} alt=''/>
         </div>
