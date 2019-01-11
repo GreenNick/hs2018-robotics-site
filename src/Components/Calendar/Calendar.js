@@ -181,6 +181,15 @@ const events = [
     address2: 'Louisville, Kentucky 40209',
     teams: 'TBD',
     src: ''
+  },
+  {
+    name: 'TSA Nationals',
+    date: '4/24/2019 - 4/27/2019',
+    venue: 'Gaylord National Resort',
+    address1: '201 Waterfront Street',
+    address2: 'National Harbor, Maryland 20745',
+    teams: 'TBD',
+    src: ''
   }
 ]
 
