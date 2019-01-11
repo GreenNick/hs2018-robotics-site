@@ -23,6 +23,10 @@ class HomePage extends Component {
       this.setState(prevState => ({ pageIndex: prevState.pageIndex + 1 }))
   }
 
+  homeHandleClick = () => {
+    this.setState({ pageIndex: 0 })
+  }
+
   render () {
     const background = this.state.pageIndex === 0
       ? styles.landing
@@ -39,7 +43,7 @@ class HomePage extends Component {
             : <Join /> }
         <PageIndicator
           pageIndex={this.state.pageIndex} />
-        <Navigation />
+        <Navigation homeHandleClick={this.homeHandleClick} />
         <PageButton onClick={this.handleClick} />
       </main>
     )
