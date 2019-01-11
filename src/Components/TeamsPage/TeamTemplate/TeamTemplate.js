@@ -87,6 +87,7 @@ const TeamTemplate = props => {
             </p>
           </div>
           <div>
+            <h3>Win/Loss/Tie Ratio</h3>
             <Doughnut
               data={{
                 labels: ['Wins', 'Losses', 'Ties'],

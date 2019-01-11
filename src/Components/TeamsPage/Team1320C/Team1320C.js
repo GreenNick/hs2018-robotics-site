@@ -5,7 +5,7 @@ const data = {
   teamNumber: '1320C',
   teamImage: '/Images/Teams/1320C/Team.jpg',
   robotImage: '/Images/Teams/1320C/Robot.jpg',
-  overviewDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deserunt minima corrupti cupiditate doloremque quae, consectetur eum! Nisi quidem perspiciatis eaque, dolor explicabo ullam natus sed ratione facilis dolores architecto? Neque repellendus debitis distinctio nulla nobis totam sint quam amet rerum cupiditate molestias at blanditiis sapiente, labore illum quisquam sunt minus nostrum aperiam iste ea voluptatibus perferendis. Autem, nostrum. Ipsum?',
+  overviewDesc: "1320C is the STEM senior team that has gone to Worlds for the past five years and hopes to go to the world this year as well. The team works well together and strives to push everyone's success forward and make the robotics program an institution of research. The team focuses on refining the design process and working through many prototypes and iterations in addition to working with international teams through our Blitz Alliance.",
   teamMembers: [
     {
       name: 'Mamadou Ly',
@@ -41,7 +41,7 @@ const data = {
     {
       name: 'Kenny Vu',
       job: 'Member-in-training',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      desc: 'Kenny is an amazing member who is training to carry on the Legacy of 1320C. Sam is teaching Kenny how to program, Mamadou is teaching him to build, Kelly about statistics, Deborah about analysis, and James is teaching him about design. Once the seniors of the team leave, Kenny will be the only one left to teach others about the lessons learned. Kenny is a vital member to help in the robot pits and on the competition area.',
       src: '/Images/Teams/1320C/Kenny.jpg'
     }
   ]

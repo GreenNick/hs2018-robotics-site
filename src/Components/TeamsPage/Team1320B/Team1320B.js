@@ -173,7 +173,7 @@ class Team1320B extends Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=2`)
       .then(response => this.setState({ robotSkillRank: response }))
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=0`)
@@ -194,7 +194,7 @@ class Team1320B extends Component {
       .then(response => this.setState({ ties: response }))
   }
 
-  render() {
+  render () {
     return (
       <TeamTemplate
         teamNumber={data.teamNumber}
