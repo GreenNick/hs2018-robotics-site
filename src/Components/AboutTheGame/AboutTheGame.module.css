@@ -2,11 +2,6 @@
   display: block;
 }
 
-.img {
-  background: white;
-  box-shadow: none;
-}
-
 .gamePieces {
   display: flex;
   flex-wrap: wrap;

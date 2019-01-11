@@ -22,7 +22,7 @@ const AwardsTemplate = props => {
               </button>
             </div>
           </div>
-          <img key={props.title} className={styles.img} src={props.src} alt={props.alt} />
+          <img key={props.title} id='svg' className={styles.animate} src={props.src} alt={props.alt} />
         </section>
         <div className={styles.graphs}>
           <div className={styles.year}>

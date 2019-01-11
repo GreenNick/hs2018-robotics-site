@@ -12,7 +12,7 @@ const AboutTheGame = () => {
             <h2>Turning Point</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate? Provident iusto, nam molestias saepe a ad atque tempora. Unde modi quam dignissimos! Error reiciendis ab, deserunt ad labore fugiat repellat vitae! Et pariatur odit molestiae, nesciunt animi sed exercitationem. Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?</p>
           </div>
-          <img className={styles.img} src='/Images/svg/Field.svg' alt='A VEX Turning Point field' />
+          <img id='svg' src='/Images/svg/Field.svg' alt='A VEX Turning Point field' />
         </section>
         <section className={styles.gameContainer}>
           <h2>Game Pieces</h2>

@@ -5,9 +5,7 @@
   padding: 0 20px;
 }
 
-.img {
-  background: white;
-  box-shadow: none;
+.animate {
   animation: load-in 800ms ease-in-out;
 }
 
@@ -59,5 +57,13 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .graphs {
+    padding: 0 10px;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
   }
 }
