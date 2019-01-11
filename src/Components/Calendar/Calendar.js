@@ -10,7 +10,7 @@ const events = [
     address1: '585 Peachtree Parkway',
     address2: 'Cumming, Georgia 30041',
     teams: '1320A, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/SouthForsyth.jpg'
   },
   {
     name: 'DeKalb League I',
@@ -19,7 +19,7 @@ const events = [
     address1: '5035 Vermack Road',
     address2: 'Dunwoody, Georgia 30338',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/Dunwoody.jpg'
   },
   {
     name: 'Tucker Tournament',
@@ -28,7 +28,7 @@ const events = [
     address1: '5036 Lavista Road',
     address2: 'Tucker, Georgia 30084',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/Tucker.jpg'
   },
   {
     name: 'Cross Keys Tournament',
@@ -37,7 +37,7 @@ const events = [
     address1: '1626 North Druid Hills Road Northeast',
     address2: 'Atlanta, Georgia 30319',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/CrossKeys.jpg'
   },
   {
     name: 'TSA Fall Leadership Conference',
@@ -46,7 +46,7 @@ const events = [
     address1: '75 Beachview Drive North',
     address2: 'Jekyll Island, Georgia 31527',
     teams: '1320A, 1320C',
-    src: ''
+    src: '/Images/Calendar/GeorgiaTSA.jpg'
   },
   {
     name: 'Arabia Mountain Tournament',
@@ -54,7 +54,7 @@ const events = [
     address1: '6610 Browns Mill Road',
     address2: 'Lithonia, Georgia 30038',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/ArabiaMountain.jpg'
   },
   {
     name: 'DeKalb League II',
@@ -63,7 +63,7 @@ const events = [
     address1: '5035 Vermack Road',
     address2: 'Dunwoody, Georgia 30338',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/Dunwoody.jpg'
   },
   {
     name: 'Alcovy Tournament',
@@ -72,7 +72,7 @@ const events = [
     address1: '14567 Georgia 36',
     address2: 'Covington, Georgia 30014',
     teams: '1320A, 1320B, 1320C',
-    src: ''
+    src: '/Images/Calendar/Alcovy.jpg'
   },
   {
     name: 'Towers Tournament',
@@ -81,7 +81,7 @@ const events = [
     address1: '3919 Brookcrest Circle',
     address2: 'Decatur, Georgia 30032',
     teams: '1320A, 1320E',
-    src: ''
+    src: '/Images/Calendar/Towers.jpg'
   },
   {
     name: 'North Forsyth Tournament',
@@ -90,7 +90,7 @@ const events = [
     address1: '3635 Coal Mountain Drive',
     address2: 'Cumming, Georgia 30028',
     teams: '1320B, 1320C, 1320D',
-    src: ''
+    src: '/Images/Calendar/NorthForsyth.jpg'
   },
   {
     name: 'Clarkston Tournament',
@@ -99,7 +99,7 @@ const events = [
     address1: '618 North Indian creek',
     address2: 'Clarkston, Georgia 30021',
     teams: '1320E',
-    src: ''
+    src: '/Images/Calendar/Clarkston.jpg'
   },
   {
     name: 'Berkmar Tournament',
@@ -108,7 +108,7 @@ const events = [
     address1: '405 Pleasant Hill Road',
     address2: 'Lilburn, Georgia 30047',
     teams: '1320A, 1320B, 1320C, 1320D',
-    src: ''
+    src: '/Images/Calendar/Berkmar.jpg'
   },
   {
     name: 'Savannah Tournament',
@@ -117,7 +117,7 @@ const events = [
     address1: '14045 Abercorn Street',
     address2: 'Savannah, Georgia 31419',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/GeorgiaTech.jpg'
   },
   {
     name: 'DeKalb League III',
@@ -126,7 +126,7 @@ const events = [
     address1: '5035 Vermack Road',
     address2: 'Dunwoody, Georgia 30338',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/Dunwoody.jpg'
   },
   {
     name: 'Chamblee Tournament',
@@ -135,7 +135,7 @@ const events = [
     address1: '3688 Chamblee Dunwoody Road',
     address2: 'Chamblee, Georgia 30341',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/Chamblee.jpg'
   },
   {
     name: 'DeKalb League IV',
@@ -144,7 +144,7 @@ const events = [
     address1: '5035 Vermack Road',
     address2: 'Dunwoody, Georgia 30338',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/Dunwoody.jpg'
   },
   {
     name: 'DeKalb League Championship',
@@ -153,7 +153,7 @@ const events = [
     address1: '5035 Vermack Road',
     address2: 'Dunwoody, Georgia 30338',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/Dunwoody.jpg'
   },
   {
     name: 'VEX State - Georgia',
@@ -162,7 +162,7 @@ const events = [
     address1: '357 North Ola Road',
     address2: 'McDonough, Georgia 30252',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
-    src: ''
+    src: '/Images/Calendar/Ola.jpg'
   },
   {
     name: 'TSA State - Georgia',
@@ -171,7 +171,7 @@ const events = [
     address1: '300 N Thomas Street',
     address2: 'Athens, GA 30601',
     teams: '1320A, 1320C',
-    src: ''
+    src: '/Images/Calendar/GeorgiaTSA.jpg'
   },
   {
     name: 'VEX Worlds',
@@ -180,7 +180,7 @@ const events = [
     address1: '937 Phillips Lane',
     address2: 'Louisville, Kentucky 40209',
     teams: 'TBD',
-    src: ''
+    src: '/Images/Calendar/Worlds.jpg'
   },
   {
     name: 'TSA Nationals',
@@ -189,7 +189,7 @@ const events = [
     address1: '201 Waterfront Street',
     address2: 'National Harbor, Maryland 20745',
     teams: 'TBD',
-    src: ''
+    src: '/Images/Calendar/TSA.jpg'
   }
 ]
 
@@ -210,7 +210,7 @@ const Calendar = () => {
             </p>
             <p>Participating teams: {event.teams}</p>
           </article>
-          <img src={event.src} alt=''/>
+          <img src={event.src} alt='' />
         </div>
       )
     })
@@ -219,7 +219,7 @@ const Calendar = () => {
     <main>
       <h1 className='headerText'>Calendar</h1>
       <div className='wrapper'>
-        { calendarArray }
+        {calendarArray}
       </div>
       <Navigation dark={true} />
     </main>
