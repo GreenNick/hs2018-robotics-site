@@ -200,7 +200,7 @@ select {
       "nav nav nav"
       "lg header rg"
       "lg section rg";
-    background-size: auto 90%;
+    background: linear-gradient(to bottom right, #0097A7, #BB6BD9);
   }
   
   nav {
