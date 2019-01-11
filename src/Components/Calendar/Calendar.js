@@ -131,7 +131,7 @@ const events = [
   {
     name: 'Chamblee Tournament',
     date: '1/12/2019',
-    venue: 'Chamblee High School',
+    venue: 'Chamblee Charter High School',
     address1: '3688 Chamblee Dunwoody Road',
     address2: 'Chamblee, Georgia 30341',
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',

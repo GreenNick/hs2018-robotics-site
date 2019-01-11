@@ -16,7 +16,7 @@ const data = {
     {
       name: 'Chris Maclin',
       job: 'Builder',
-      desc: 'Chris is extremely hard-working and dedicated. He frequently makes necessary adjustments to the robot and inputs innovative design ideas to further improve the performance of te robot.',
+      desc: 'Chris is extremely hard-working and dedicated. He frequently makes necessary adjustments to the robot and inputs innovative design ideas to further improve the performance of the robot.',
       src: '/Images/Teams/1320A/Chris.jpg'
     },
     {
