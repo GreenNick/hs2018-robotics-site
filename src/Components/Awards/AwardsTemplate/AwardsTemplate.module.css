@@ -64,6 +64,9 @@
   .graphs {
     padding: 0 10px;
     grid-template-columns: 1fr;
-    grid-gap: 0;
+  }
+
+  .year {
+    margin-bottom: 0;
   }
 }

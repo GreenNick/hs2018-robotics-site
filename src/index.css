@@ -220,6 +220,10 @@ select {
     margin: 20px 10px;
   }
 
+  section > img {
+    grid-row: 1 / 2;
+  }
+
   h1 {
     font-size: 56px;
   }
