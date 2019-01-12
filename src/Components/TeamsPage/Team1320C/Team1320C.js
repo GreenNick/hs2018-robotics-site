@@ -4,7 +4,7 @@ import TeamTemplate from '../TeamTemplate/TeamTemplate'
 const data = {
   teamNumber: '1320C',
   teamImage: '/Images/Teams/1320C/Team.jpg',
-  robotImage: '/Images/Teams/1320C/Robot.jpg',
+  robotImage: '/Images/Teams/1320C/Robot.JPG',
   overviewDesc: "1320C is the STEM senior team that has gone to Worlds for the past five years and hopes to go to the world this year as well. The team works well together and strives to push everyone's success forward and make the robotics program an institution of research. The team focuses on refining the design process and working through many prototypes and iterations in addition to working with international teams through our Blitz Alliance.",
   teamMembers: [
     {
@@ -192,7 +192,7 @@ class Team1320C extends Component {
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=2`)
       .then(response => this.setState({ robotSkillRank: response }))
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=0`)
@@ -213,7 +213,7 @@ class Team1320C extends Component {
       .then(response => this.setState({ ties: response }))
   }
 
-  render () {
+  render() {
     return (
       <TeamTemplate
         teamNumber={data.teamNumber}
