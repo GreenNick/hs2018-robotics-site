@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import HamburgerButton from './HamburgerButton/HamburgerButton'
 import HomeButton from './HomeButton/HomeButton'
-import { bool } from 'prop-types'
+import { bool, func } from 'prop-types'
 import styles from './Navigation.module.css'
 
 const linkStyle = {
@@ -17,7 +17,12 @@ class Navigation extends Component {
   }
 
   static propTypes = {
-    dark: bool
+    dark: bool,
+    homeHandleClick: func
+  }
+
+  static defaultProps = {
+    home: false
   }
 
   handleClick = () => {
@@ -69,7 +74,7 @@ class Navigation extends Component {
           }
           className={styles.buttonContainer} >
           <HamburgerButton onClick={this.handleClick} />
-          <HomeButton />
+          <HomeButton onClick={this.props.homeHandleClick} />
         </div>
         { (this.state.active) &&
           <ul className={styles.navItems}>
