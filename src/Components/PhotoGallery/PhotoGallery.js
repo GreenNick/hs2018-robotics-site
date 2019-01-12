@@ -3,7 +3,7 @@ import styles from './PhotoGallery.module.css'
 import Navigation from '../Navigation/Navigation'
 
 const photos = [
-  { src: '', date: 0 },
+  { src: '/Images/PhotoGallery/1web.jpg', date: 0 },
   { src: '', date: 0 },
   { src: '', date: 0 },
   { src: '', date: 0 },
@@ -48,7 +48,7 @@ const PhotoGallery = () => {
 
               return (
                 <li key={i} style={style}>
-                  <img src={photo.src} alt= '' />
+                  <img src={photo.src} alt='' />
                 </li>
               )
             })
