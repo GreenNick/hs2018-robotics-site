@@ -156,6 +156,24 @@ const events = [
     src: '/Images/Calendar/Dunwoody.jpg'
   },
   {
+    name: 'Signature Event: Night at the Museum',
+    date: '1/25/2019 - 1/26/2019',
+    venue: 'Udvar-Hazy Air and Space Museum',
+    address1: '14390 Air and Space Museum Pkwy',
+    address2: 'Chantilly, Virginia 20151',
+    teams: 'TBD',
+    src: '/Images/Calendar/Virginia.jpg'
+  },
+  {
+    name: 'Signature Event: University Of South Florida',
+    date: '2/04/2019',
+    venue: 'University of South Florida',
+    address1: '4202 East Fowler Avenue',
+    address2: 'Tampa, Florida 33620',
+    teams: '1320C',
+    src: '/Images/Calendar/Florida.jpg'
+  },
+  {
     name: 'VEX State - Georgia',
     date: '2/8/2019 - 2/9/2019',
     venue: 'Ola High School',
