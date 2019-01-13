@@ -47,6 +47,7 @@
   grid-area: img;
   width: 150px;
   height: 150px;
+  object-fit: cover;
   background: pink;
   margin: auto 20px auto auto;
   box-shadow: #757575 1px 1px 2px;
