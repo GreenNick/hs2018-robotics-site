@@ -21,17 +21,21 @@
 .modal > div {
   margin: auto 0;
   display: flex;
-  max-width: 90%;
+}
+
+.modal img {
+  max-width: 80vw;
+  max-height: 60vh;
 }
 
 .close {
-  width: 40px;
+  width: 20px;
   padding: 5px;
 }
 
 .close > div {
   display: flex;
-  height: 40px;
+  height: 20px;
   justify-content: center;
   cursor: pointer;
 }
