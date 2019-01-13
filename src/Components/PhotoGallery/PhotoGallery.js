@@ -73,11 +73,13 @@ class PhotoGallery extends Component {
 
     return (
       <main>
-        <div style={modalStyle} className={styles.modal}>
-          <img src={`/Images/PhotoGallery/${this.state.img}`} alt='' />
-          <div className={styles.close}>
-            <div onClick={this.handleClose}>
-              <span className={styles.bar}></span>
+        <div id='modal' onClick={this.handleClose} style={modalStyle} className={styles.modal}>
+          <div>
+            <img src={`/Images/PhotoGallery/${this.state.img}`} alt='' />
+            <div className={styles.close}>
+              <div onClick={this.handleClose}>
+                <span className={styles.bar}></span>
+              </div>
             </div>
           </div>
         </div>
