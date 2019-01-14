@@ -12,7 +12,8 @@
 }
 
 .item > img {
-  flex: 0 1 auto;
+  flex: 0 1 300px;
+  height: 300px;
   width: 300px;
   object-fit: contain;
   margin: 0 40px 40px 0;
