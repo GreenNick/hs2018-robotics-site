@@ -18,7 +18,7 @@ const AboutTheGame = () => {
         <section className={styles.gameContainer}>
           <h2>Game Pieces</h2>
           <div className={styles.gamePieces}>
-            <img src='#' alt='' />
+            <img src='/Images/AboutTheGame/Flags.png' alt='' />
             <div>
               <h3>Flags</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate?
@@ -27,7 +27,7 @@ const AboutTheGame = () => {
             </div>
           </div>
           <div className={styles.gamePieces}>
-            <img src='#' alt='' />
+            <img src='/Images/AboutTheGame/Caps.png' alt='' />
             <div>
               <h3>Caps</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate?
@@ -36,7 +36,7 @@ const AboutTheGame = () => {
             </div>
           </div>
           <div className={styles.gamePieces}>
-            <img src='#' alt='' />
+            <img src='/Images/AboutTheGame/Platforms.png' alt='' />
             <div>
               <h3>Platforms</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate?
