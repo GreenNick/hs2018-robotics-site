@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import styles from './AboutUs.module.css'
+import Footer from '../Footer/Footer'
 
 const AboutUs = () => {
   return (
@@ -49,6 +50,7 @@ const AboutUs = () => {
           <img src='#' alt='' />
         </section>
       </div>
+      <Footer />
       <Navigation dark={true} />
     </main>
   )
