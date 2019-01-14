@@ -53,7 +53,14 @@ h6 {
 
 .link {
   text-decoration: none;
+  padding-top: 10px;
   color: white;
+  border-left: #0097A7 2px solid;
+  transition: border-bottom 100ms ease-in-out;
+}
+
+.link:hover {
+  border-bottom: white 2px solid;
 }
 
 p {
@@ -101,9 +108,14 @@ footer ul {
   padding: 0;
 }
 
+footer li {
+  line-height: 1.4;
+}
+
 footer p {
   color: white;
   margin: 0 20px;
+  line-height: 1.4;
   font-size: 16px;
 }
 
