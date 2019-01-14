@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 
 const Footer = () => {
@@ -9,38 +10,38 @@ const Footer = () => {
       </div> */}
       <div className={styles.container}>
         <div>
-          <h6>Tucker High</h6>
+          <h6><Link className='link' to='/TuckerHigh'>Tucker High</Link></h6>
           <ul>
-            <li>About Us</li>
-            <li>Teachers</li>
-            <li>Diversity</li>
-            <li>Outreach</li>
-            <li>Incoming Members</li>
+            <li><Link className='link' to='/TuckerHigh/AboutUs'>About Us</Link></li>
+            <li><Link className='link' to='/TuckerHigh/Teachers'>Teachers</Link></li>
+            <li><Link className='link' to='/TuckerHigh/Diversity'>Diversity</Link></li>
+            <li><Link className='link' to='/TuckerHigh/Outreach'>Outreach</Link></li>
+            <li><Link className='link' to='/TuckerHigh/IncomingMembers'>Incoming Members</Link></li>
           </ul>
         </div>
         <div>
-          <h6>2019 Season</h6>
+          <h6><Link className='link' to='/2019Season'>2019 Season</Link></h6>
           <ul>
-            <li>About the Game</li>
-            <li>Calendar</li>
-            <li>Tucker Tournament</li>
-            <li>Online Challenge</li>
+            <li><Link className='link' to='/2019Season/AboutTheGame'>About the Game</Link></li>
+            <li><Link className='link' to='/2019Season/Calendar'>Calendar</Link></li>
+            <li><Link className='link' to='/2019Season/TuckerTournament'>Tucker Tournament</Link></li>
+            <li><Link className='link' to='/2019Season/OnlineChallenge'>Online Challenge</Link></li>
           </ul>
         </div>
         <div>
-          <h6>Teams</h6>
+          <h6><Link className='link' to='/Teams'>Teams</Link></h6>
           <ul>
-            <li>1320A</li>
-            <li>1320B</li>
-            <li>1320C</li>
-            <li>1320D</li>
-            <li>1320E</li>
+            <li><Link className='link' to='/Teams/1320A'>1320A</Link></li>
+            <li><Link className='link' to='/Teams/1320B'>1320B</Link></li>
+            <li><Link className='link' to='/Teams/1320C'>1320C</Link></li>
+            <li><Link className='link' to='/Teams/1320D'>1320D</Link></li>
+            <li><Link className='link' to='/Teams/1320E'>1320E</Link></li>
           </ul>
         </div>
         <div>
-          <h6>Awards</h6>
-          <h6>Photo Gallery</h6>
-          <h6>Contact</h6>
+          <h6><Link className='link' to='/Awards'>Awards</Link></h6>
+          <h6><Link className='link' to='/PhotoGallery'>Photo Gallery</Link></h6>
+          <h6><Link className='link' to='/Contact'>Contact</Link></h6>
         </div>
       </div>
       <div className={styles.contact}>

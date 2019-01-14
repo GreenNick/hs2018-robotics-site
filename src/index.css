@@ -51,6 +51,11 @@ h6 {
   font-size: 20px;
 }
 
+.link {
+  text-decoration: none;
+  color: white;
+}
+
 p {
   font-family: 'Fira Sans';
   color: #757575;
