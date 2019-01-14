@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './AboutTheGame.module.css'
 import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
 
 const AboutTheGame = () => {
   return (
@@ -45,6 +46,7 @@ const AboutTheGame = () => {
           </div>
         </section>
       </div>
+      <Footer />
       <Navigation dark={true} />
     </main>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
 
 const IncomingMembers = () => {
   return (
@@ -16,6 +17,7 @@ const IncomingMembers = () => {
           </div>
         </section>
       </div>
+      <Footer />
       <Navigation dark={true} />
     </main>
   )

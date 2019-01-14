@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styles from './PhotoGallery.module.css'
 import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
 
 class PhotoGallery extends Component {
   state = {
@@ -89,6 +90,7 @@ class PhotoGallery extends Component {
             {imageArray.reverse()}
           </ul>
         </div>
+        <Footer />
         <Navigation dark={true} />
       </main>
     )

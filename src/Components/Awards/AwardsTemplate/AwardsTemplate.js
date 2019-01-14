@@ -3,6 +3,7 @@ import { string, number, func } from 'prop-types'
 import { Bar, Pie } from 'react-chartjs-2'
 import Navigation from '../../Navigation/Navigation'
 import styles from './AwardsTemplate.module.css'
+import Footer from '../../Footer/Footer'
 
 const AwardsTemplate = props => {
   return (
@@ -73,6 +74,7 @@ const AwardsTemplate = props => {
           </div>
         </div>
       </div>
+      <Footer />
       <Navigation dark={true} />
     </main>
   )

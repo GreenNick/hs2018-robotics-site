@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styles from './Diversity.module.css'
 import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
 
 class Diversity extends Component {
   render () {
@@ -38,6 +39,7 @@ class Diversity extends Component {
             </ul>
           </section>
         </div>
+        <Footer />
         <Navigation dark={true} />
       </main>
     )

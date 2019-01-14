@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Navigation from '../Navigation/Navigation'
 import styles from './TeamsPage.module.css'
+import Footer from '../Footer/Footer'
 
 class TeamsPage extends Component {
   render () {
@@ -52,6 +53,7 @@ class TeamsPage extends Component {
             </Link>
           </div>
         </div>
+        <Footer />
         <Navigation dark={true} />
       </main>
     )

@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import styles from './TuckerTournament.module.css'
+import Footer from '../Footer/Footer'
 
 const TuckerTournament = () => {
   return (
@@ -47,6 +48,7 @@ const TuckerTournament = () => {
           </div>
         </section>
       </div>
+      <Footer />
       <Navigation dark={true} />
     </main>
   )
