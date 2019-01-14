@@ -38,7 +38,7 @@ class Awards extends Component {
   state = {
     awardIndex: 0,
     teams: { teamA: {}, teamB: {}, teamC: {}, teamD: {}, teamE: {} },
-    years: { excellence: {}, design: {}, champion: {}, skills: {}, judges: {} }
+    years: { excellence: {}, champion: {}, design: {}, skills: {}, judges: {} }
   }
 
   handleNextClick = () => {
@@ -103,10 +103,10 @@ class Awards extends Component {
         return {
           excellence: team.filter(obj =>
             obj.name === 'Excellence Award (VRC/VEXU)' || obj.name === 'Excellence Award (High School)').length,
-          design: team.filter(obj =>
-            obj.name === 'Design Award (VRC/VEXU)').length,
           champion: team.filter(obj =>
             obj.name === 'Tournament Champions (VRC/VEXU)').length,
+          design: team.filter(obj =>
+            obj.name === 'Design Award (VRC/VEXU)').length,
           skills: team.filter(obj =>
             obj.name === 'Robot Skills Champion (VRC/VEXU)' || obj.name === 'Robot Skills Winner (VRC/VEXU)').length,
           judges: team.filter(obj =>
@@ -132,8 +132,8 @@ class Awards extends Component {
       .then(res => {
         const awards = []
         awards.push(res.filter(obj => obj.name === 'Excellence Award (VRC/VEXU)'))
-        awards.push(res.filter(obj => obj.name === 'Design Award (VRC/VEXU)'))
         awards.push(res.filter(obj => obj.name === 'Tournament Champions (VRC/VEXU)'))
+        awards.push(res.filter(obj => obj.name === 'Design Award (VRC/VEXU)'))
         awards.push(res.filter(obj => obj.name === 'Robot Skills Champion (VRC/VEXU)'))
         awards.push(res.filter(obj => obj.name === 'Judges Award (VRC/VEXU)'))
         return awards
@@ -142,9 +142,9 @@ class Awards extends Component {
         return {
           excellence: res[0].reduce(this.reduceAwards,
             { 2010: 0, 2011: 0, 2012: 0, 2013: 0, 2014: 0, 2015: 0, 2016: 0, 2017: 0, 2018: 0 }),
-          design: res[1].reduce(this.reduceAwards,
+          champion: res[1].reduce(this.reduceAwards,
             { 2010: 0, 2011: 0, 2012: 0, 2013: 0, 2014: 0, 2015: 0, 2016: 0, 2017: 0, 2018: 0 }),
-          champion: res[2].reduce(this.reduceAwards,
+          design: res[2].reduce(this.reduceAwards,
             { 2010: 0, 2011: 0, 2012: 0, 2013: 0, 2014: 0, 2015: 0, 2016: 0, 2017: 0, 2018: 0 }),
           skills: res[3].reduce(this.reduceAwards,
             { 2010: 0, 2011: 0, 2012: 0, 2013: 0, 2014: 0, 2015: 0, 2016: 0, 2017: 0, 2018: 0 }),
@@ -156,7 +156,7 @@ class Awards extends Component {
   }
 
   render () {
-    const awardsArray = ['excellence', 'design', 'champion', 'skills', 'judges']
+    const awardsArray = ['excellence', 'champion', 'design', 'skills', 'judges']
 
     return (
       <AwardsTemplate
