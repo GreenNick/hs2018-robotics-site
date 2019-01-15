@@ -8,7 +8,7 @@ const IncomingMembers = () => {
       <h1 className='headerText'>Incoming Members</h1>
       <div className='wrapper'>
         <section>
-          <img src='#' alt='' />
+          <img src='/Images/IncomingMembers/Training.jpg' alt='' />
           <div>
             <h2>Training</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate?

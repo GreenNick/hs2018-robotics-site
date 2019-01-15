@@ -9,7 +9,7 @@ const AboutUs = () => {
       <h1 className='headerText'>About Us</h1>
       <div className='wrapper'>
         <section>
-          <img src='#' alt='' />
+          <img src='/Images/AboutUs/OurSchool.jpg' alt='' />
           <div>
             <h2>Our School</h2>
             <p>Tucker High is a public high school in DeKalb County, Georgia. The school was first established in 1916 and has since grown to 1,800 enrolled students. The student body is very diverse with a large immigrant population. We have a variety of advanced programs such as IB and STEM. Our school maintains a balance of academics, athletics, and extracurricular activities. We have both Vex and TSA after school clubs. We greatly value STEM subjects and always put in maximum effort when working on our projects.</p>
@@ -47,7 +47,7 @@ const AboutUs = () => {
             Provident iusto, nam molestias saepe a ad atque tempora. Unde modi quam dignissimos! Error reiciendis ab, deserunt ad labore fugiat repellat vitae! Et pariatur odit molestiae, nesciunt animi sed exercitationem.
             Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?</p>
           </div>
-          <img src='#' alt='' />
+          <img src='/Images/AboutUs/OurHistory.jpg' alt='' />
         </section>
       </div>
       <Footer />

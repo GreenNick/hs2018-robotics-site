@@ -4,7 +4,7 @@ import Navigation from '../Navigation/Navigation'
 import Footer from '../Footer/Footer'
 
 class Diversity extends Component {
-  render () {
+  render() {
     return (
       <main>
         <h1 className='headerText'>Diversity</h1>
@@ -25,7 +25,7 @@ class Diversity extends Component {
               Provident iusto, nam molestias saepe a ad atque tempora. Unde modi quam dignissimos! Error reiciendis ab, deserunt ad labore fugiat repellat vitae! Et pariatur odit molestiae, nesciunt animi sed exercitationem.
               Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?</p>
             </div>
-            <img src='#' alt='' />
+            <img src='/Images/Diversity/GirlsAndSTEM.jpg' alt='' />
           </section>
           <section className={styles.students}>
             <h2>Student Body</h2>
