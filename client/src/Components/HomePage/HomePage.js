@@ -27,20 +27,22 @@ class HomePage extends Component {
     this.setState({ pageIndex: 0 })
   }
 
+  handleArrows = event => {
+    if (event.key === 'ArrowRight') {
+      this.state.pageIndex < 4 &&
+        this.setState(prevState => ({ pageIndex: prevState.pageIndex + 1 }))
+    } else if (event.key === 'ArrowLeft') {
+      this.state.pageIndex > 0 &&
+        this.setState(prevState => ({ pageIndex: prevState.pageIndex - 1 }))
+    }
+  }
+
   componentDidMount () {
-    window.addEventListener('keyup', e => {
-      if (e.key === 'ArrowRight') {
-        this.state.pageIndex < 4 &&
-          this.setState(prevState => ({ pageIndex: prevState.pageIndex + 1 }))
-      } else if (e.key === 'ArrowLeft') {
-        this.state.pageIndex > 0 &&
-          this.setState(prevState => ({ pageIndex: prevState.pageIndex - 1 }))
-      }
-    })
+    window.addEventListener('keyup', this.handleArrows)
   }
 
   componentWillUnmount () {
-    window.removeEventListener('keyup')
+    window.removeEventListener('keyup', this.handleArrows)
   }
 
   render () {
