@@ -13,6 +13,8 @@ const AwardsTemplate = props => {
         <section>
           <div className={styles.textContainer}>
             <h2>{props.title}</h2>
+            <blockquote cite='https://www.roboticseducation.org/documents/2018/06/vrc-awards-appendix-c-turning-point.pdf'>{props.quote}</blockquote>
+            <cite>VEX Robotics Competition Turning Point - Appendix C</cite>
             <p>{props.desc}</p>
             <div className={styles.container}>
               <button className={styles.button} style={{ transform: 'rotate(180deg)' }} onClick={props.onPrevClick}>
@@ -26,7 +28,7 @@ const AwardsTemplate = props => {
           <img key={props.title} id='svg' className={styles.animate} src={props.src} alt={props.alt} />
         </section>
         <div className={styles.graphs}>
-          <div className={styles.year}>
+          <div className={`${styles.year} animate`}>
             <h3 className={styles.heading}>Awards Won by Year</h3>
             <Bar
               data={{
@@ -44,7 +46,7 @@ const AwardsTemplate = props => {
                 }
               }} />
           </div>
-          <div className={styles.team}>
+          <div className={`${styles.team} animate`}>
             <h3 className={styles.heading}>Team Breakdown</h3>
             <Pie
               data={{
@@ -84,6 +86,7 @@ AwardsTemplate.propTypes = {
   onNextClick: func,
   onPrevClick: func,
   title: string,
+  quote: string,
   desc: string,
   src: string,
   alt: string,

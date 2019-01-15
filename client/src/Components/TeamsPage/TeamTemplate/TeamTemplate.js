@@ -48,7 +48,7 @@ const TeamTemplate = props => {
           {teamMemberArray}
         </section>
         <div className={styles.statContainer}>
-          <div>
+          <div className='animate'>
             <h2>Statistics</h2>
             <p>
               Driver Skills Rank: {
@@ -87,7 +87,7 @@ const TeamTemplate = props => {
               } <br />
             </p>
           </div>
-          <div>
+          <div className='animate'>
             <h3>Win/Loss/Tie Ratio</h3>
             <Doughnut
               data={{

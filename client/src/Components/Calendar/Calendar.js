@@ -219,7 +219,7 @@ const Calendar = () => {
         <div
           className={styles.eventContainer}
           key={i}>
-          <article className={styles.article}>
+          <article className={`${styles.article} animate`}>
             <h3>{event.name}</h3>
             <p style={{ color: '#353535' }}>{event.date}</p>
             <p>
@@ -229,7 +229,7 @@ const Calendar = () => {
             </p>
             <p>Participating teams: {event.teams}</p>
           </article>
-          <img src={event.src} alt='' />
+          <img className='animate' src={event.src} alt='' />
         </div>
       )
     })

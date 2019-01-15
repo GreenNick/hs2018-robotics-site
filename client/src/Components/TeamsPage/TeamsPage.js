@@ -13,7 +13,7 @@ class TeamsPage extends Component {
           <div className={styles.container}>
             <Link
               to='/Teams/1320A'
-              className={styles.teamContainer}>
+              className={`${styles.teamContainer} animate`}>
               <img
                 src='/Images/Teams/1320A/Team.jpg'
                 alt='' />
@@ -21,7 +21,7 @@ class TeamsPage extends Component {
             </Link>
             <Link
               to='/Teams/1320B'
-              className={styles.teamContainer}>
+              className={`${styles.teamContainer} animate`}>
               <img
                 src='/Images/Teams/1320B/Team.jpg'
                 alt='' />
@@ -29,7 +29,7 @@ class TeamsPage extends Component {
             </Link>
             <Link
               to='/Teams/1320C'
-              className={styles.teamContainer}>
+              className={`${styles.teamContainer} animate`}>
               <img
                 src='/Images/Teams/1320C/Team.jpg'
                 alt='' />
@@ -37,7 +37,7 @@ class TeamsPage extends Component {
             </Link>
             <Link
               to='/Teams/1320D'
-              className={styles.teamContainer}>
+              className={`${styles.teamContainer} animate`}>
               <img
                 src='/Images/Teams/1320D/Team.jpg'
                 alt='' />
@@ -45,7 +45,7 @@ class TeamsPage extends Component {
             </Link>
             <Link
               to='/Teams/1320E'
-              className={styles.teamContainer}>
+              className={`${styles.teamContainer} animate`}>
               <img
                 src='/Images/Teams/1320E/Team.jpg'
                 alt='' />

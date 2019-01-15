@@ -51,6 +51,17 @@ h6 {
   font-size: 20px;
 }
 
+blockquote {
+  color: #0097A7;
+  font-family: 'Fira Sans';
+}
+
+cite {
+  margin-bottom: 20px;
+  font-family: 'Fira Sans';
+  color: #353535;
+}
+
 a {
   text-decoration: none;
   color: #0097A7;
@@ -141,6 +152,7 @@ section {
   display: grid;
   grid-gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  animation: section-load-in 800ms ease-in-out;
 }
 
 section > img {
@@ -149,7 +161,6 @@ section > img {
   height: 500px;
   object-fit: cover;
   border-radius: 2px;
-  background: pink;
   box-shadow: #757575 1px 1px 2px;
 }
 
@@ -249,6 +260,10 @@ select {
   margin: 40px 20px 0;
 }
 
+.animate {
+  animation: section-load-in 800ms ease-in-out;
+}
+
 @media (max-width: 1000px) {
   main {
     grid-template-areas:
@@ -314,5 +329,17 @@ select {
 
   input[type='tel'] {
     width: 100%;
+  }
+}
+
+@keyframes section-load-in {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

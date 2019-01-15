@@ -12,16 +12,57 @@ class Join extends Component {
     stemPrice: 0,
     vexActive: false,
     tsaActive: false,
-    stemActive: false
+    stemActive: false,
+    name: '',
+    email: '',
+    phone: '',
+    grade: 'freshman'
   }
 
-  handleTextChange = event => {
+  handleSubmit = event => {
+    event.preventDefault()
+    const { vexActive, tsaActive, stemActive, name, email, phone, grade } = this.state
+
+    fetch('/api/forms/join', {
+      method: 'POST',
+      body: JSON.stringify({
+        vexActive,
+        tsaActive,
+        stemActive,
+        name,
+        email,
+        phone,
+        grade
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(this.setState({
+      vexActive: false,
+      tsaActive: false,
+      stemActive: false,
+      vexPrice: 30,
+      tsaPrice: 30,
+      stemPrice: 0,
+      name: '',
+      email: '',
+      phone: '',
+      grade: 'freshman'
+    }))
+  }
+
+  handleTelChange = event => {
     event.target.value = event.target.value.replace(/\D/, '')
     if (event.target.value.length === 10) {
       event.target.value = `(${event.target.value.slice(0, 3)}) ${event.target.value.slice(3, 6)}-${event.target.value.slice(6)}`
     } else {
       event.target.value = event.target.value.replace(/\D/g, '')
     }
+    this.setState({ phone: event.target.value })
+  }
+
+  handleChange = event => {
+    this.setState({ [event.target.name]: event.target.value })
   }
 
   handleVexClick = () => {
@@ -78,7 +119,13 @@ class Join extends Component {
                 buttonActive={this.state.stemActive} />
             </div>
             <InterestForm
-              onChange={this.handleTextChange} />
+              onTelChange={this.handleTelChange}
+              onChange={this.handleChange}
+              onSubmit={this.handleSubmit}
+              name={this.state.name}
+              email={this.state.email}
+              phone={this.state.phone}
+              grade={this.state.grade} />
           </SectionInput>
           <SectionDues
             subtotal={subtotal.toFixed(2)} />

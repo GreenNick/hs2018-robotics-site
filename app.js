@@ -9,6 +9,41 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'client/build')))
 
+app.post('/api/forms/join', (req, res) => {
+  const htmlEmail = `
+    <h3>Contact</h3>
+      <p>Name: ${req.body.name}</p>
+      <p>Email: ${req.body.email}</p>
+      <p>Phone: ${req.body.phone}</p>
+      <p>Grade: ${req.body.grade}</p>
+    <h3>Selected Programs</h3>
+      <p>STEM: ${req.body.stemActive}</p>
+      <p>TSA: ${req.body.tsaActive}</p>
+      <p>VEX: ${req.body.vexActive}</p>
+  `
+
+  let transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+      type: 'OAuth2',
+      user: process.env.EMAIL_USER,
+      clientId: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
+      refreshToken: process.env.REFRESH_TOKEN
+    }
+  })
+
+  let mailOptions = {
+    to: process.env.EMAIL_USER,
+    subject: 'Contact Message',
+    html: htmlEmail
+  }
+
+  transporter.sendMail(mailOptions)
+})
+
 app.post('/api/forms/contact', (req, res) => {
   const htmlEmail = `
     <h3>Contact</h3>

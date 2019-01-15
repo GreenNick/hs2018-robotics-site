@@ -20,6 +20,7 @@ import Awards from './Components/Awards/Awards'
 import PhotoGallery from './Components/PhotoGallery/PhotoGallery'
 import OnlineChallenge from './Components/OnlineChallenge/OnlineChallenge'
 import IncomingMembers from './Components/IncomingMembers/IncomingMembers'
+import Outreach from './Components/Outreach/Outreach'
 
 class App extends Component {
   render () {
@@ -31,6 +32,7 @@ class App extends Component {
           <Route path='/TuckerHigh/AboutUs' component={AboutUs} exact />
           <Route path='/TuckerHigh/Teachers' component={Teachers} exact />
           <Route path='/TuckerHigh/Diversity' component={Diversity} exact />
+          <Route path='/TuckerHigh/Outreach' component={Outreach} exact />
           <Route path='/TuckerHigh/IncomingMembers' component={IncomingMembers} exact />
           <Route path='/2019Season' component={Nav2019Season} exact />
           <Route path='/2019Season/AboutTheGame' component={AboutTheGame} exact />

@@ -27,6 +27,24 @@ class HomePage extends Component {
     this.setState({ pageIndex: 0 })
   }
 
+  handleArrows = event => {
+    if (event.key === 'ArrowRight') {
+      this.state.pageIndex < 4 &&
+        this.setState(prevState => ({ pageIndex: prevState.pageIndex + 1 }))
+    } else if (event.key === 'ArrowLeft') {
+      this.state.pageIndex > 0 &&
+        this.setState(prevState => ({ pageIndex: prevState.pageIndex - 1 }))
+    }
+  }
+
+  componentDidMount () {
+    window.addEventListener('keyup', this.handleArrows)
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('keyup', this.handleArrows)
+  }
+
   render () {
     const background = this.state.pageIndex === 0
       ? styles.landing
@@ -39,7 +57,7 @@ class HomePage extends Component {
         { this.state.pageIndex === 0
           ? <Landing />
           : this.state.pageIndex < 4
-            ? <Clubs pageId={this.state.pageIndex - 1} />
+            ? <Clubs key={this.state.pageIndex - 1} pageId={this.state.pageIndex - 1} />
             : <Join /> }
         <PageIndicator
           pageIndex={this.state.pageIndex} />
