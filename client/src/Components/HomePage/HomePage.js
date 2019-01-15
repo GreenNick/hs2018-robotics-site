@@ -57,7 +57,7 @@ class HomePage extends Component {
         { this.state.pageIndex === 0
           ? <Landing />
           : this.state.pageIndex < 4
-            ? <Clubs pageId={this.state.pageIndex - 1} />
+            ? <Clubs key={this.state.pageIndex - 1} pageId={this.state.pageIndex - 1} />
             : <Join /> }
         <PageIndicator
           pageIndex={this.state.pageIndex} />

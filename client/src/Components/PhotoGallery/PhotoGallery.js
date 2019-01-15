@@ -62,7 +62,7 @@ class PhotoGallery extends Component {
         }
 
         return (
-          <li onClick={this.handleClick} key={i + 1} style={style}>
+          <li className='animate' onClick={this.handleClick} key={i + 1} style={style}>
             <img src={`/Images/PhotoGallery/${i + 1}web.jpg`} alt= '' />
           </li>
         )

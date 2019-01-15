@@ -26,7 +26,7 @@ const AwardsTemplate = props => {
           <img key={props.title} id='svg' className={styles.animate} src={props.src} alt={props.alt} />
         </section>
         <div className={styles.graphs}>
-          <div className={styles.year}>
+          <div className={`${styles.year} animate`}>
             <h3 className={styles.heading}>Awards Won by Year</h3>
             <Bar
               data={{
@@ -44,7 +44,7 @@ const AwardsTemplate = props => {
                 }
               }} />
           </div>
-          <div className={styles.team}>
+          <div className={`${styles.team} animate`}>
             <h3 className={styles.heading}>Team Breakdown</h3>
             <Pie
               data={{
