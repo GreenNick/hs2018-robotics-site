@@ -19,7 +19,9 @@ app.post('/api/forms/contact', (req, res) => {
   `
 
   let transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
       type: 'OAuth2',
       user: process.env.EMAIL_USER,
