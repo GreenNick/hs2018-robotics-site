@@ -27,6 +27,22 @@ class HomePage extends Component {
     this.setState({ pageIndex: 0 })
   }
 
+  componentDidMount () {
+    window.addEventListener('keyup', e => {
+      if (e.key === 'ArrowRight') {
+        this.state.pageIndex < 4 &&
+          this.setState(prevState => ({ pageIndex: prevState.pageIndex + 1 }))
+      } else if (e.key === 'ArrowLeft') {
+        this.state.pageIndex > 0 &&
+          this.setState(prevState => ({ pageIndex: prevState.pageIndex - 1 }))
+      }
+    })
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('keyup')
+  }
+
   render () {
     const background = this.state.pageIndex === 0
       ? styles.landing
