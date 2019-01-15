@@ -22,13 +22,13 @@ const data = {
     {
       name: 'Nicholas Bowers',
       job: 'Notebook Manager',
-      desc: 'Nick is the notebook manager for 1320D. Throughout his four years in VEX, he has become extree=mely skilled at recording data and sketching ideas. Although he is not an artist by nature, he has learned how to skillfully draft in a way that allows us to convey ideas to each other and to judges.',
+      desc: 'Nick is the notebook manager for 1320D. Throughout his four years in VEX, he has become extremely skilled at recording data and sketching ideas. Although he is not an artist by nature, he has learned how to draft in a way that allows us to convey ideas to each other and to judges. Nick is also the lead programmer behind the Tucker Robotigers website.',
       src: '/Images/Teams/1320D/Nicholas.jpg'
     },
     {
       name: 'Luma Younis',
       job: 'Binder Manager',
-      desc: 'Luma is the binder manager for 1320D. Her eye for asthetics and her affinity woth visauls and grahpics make her the obvious choice for organizing and designing a good VEX binder. As she has three years of experience doing this, she has gotten very skilled at intuitively organizing information.',
+      desc: 'Luma is the binder manager for 1320D. Her eye for aesthetics and her affinity with visuals and graphics make her the obvious choice for organizing and designing a good VEX binder. As she has three years of experience doing this, she has gotten very skilled at intuitively organizing information.',
       src: '/Images/Teams/1320D/Luma.jpg'
     },
     {
