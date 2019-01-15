@@ -10,7 +10,7 @@ class Diversity extends Component {
         <h1 className='headerText'>Diversity</h1>
         <div className='wrapper'>
           <section>
-            <img src='#' alt='' />
+            <img src='/Images/Diversity/Cultures.jpg' alt='' />
             <div>
               <h2>Cultures</h2>
               <p>Tucker High School is home to rich cultural diversity. Students from around the globe share their unique identities which account for a major portion of our school’s name itself. Tucker High School’s diverse population is important when it comes to prospering in the many different clubs and organizations we have, in addition to VEX and TSA. Diversity opens us up to new perspectives and imparts different ways to approach problems. This approach to problem-solving is especially valuable in the STEM field which is often far too homogenous. Our school’s ability to encourage this diversity, and often students of minority, has allowed students to pursue their unheard ambitions and seek futures in the STEM field. In doing so, we hope to raise a new generation of engineers with a unique outlook on the world.</p>
