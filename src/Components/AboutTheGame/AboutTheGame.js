@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './AboutTheGame.module.css'
 import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
 
 const AboutTheGame = () => {
   return (
@@ -43,8 +44,10 @@ const AboutTheGame = () => {
               Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?</p>
             </div>
           </div>
+          <p><cite><a rel='noopener noreferrer' target='_blank' href='https://www.vexforum.com/index.php/33583-jason-s-turning-point-field-renders/0'>Jason's Turning Point Field Renders</a></cite> by jmmckinney, permission with attribution granted on VEX Forums</p>
         </section>
       </div>
+      <Footer />
       <Navigation dark={true} />
     </main>
   )

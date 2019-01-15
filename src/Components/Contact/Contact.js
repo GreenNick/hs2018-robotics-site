@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Navigation from '../Navigation/Navigation'
 import styles from './Contact.module.css'
+import Footer from '../Footer/Footer'
 
 class Contact extends Component {
   render () {
@@ -50,6 +51,7 @@ class Contact extends Component {
             </div>
           </section>
         </div>
+        <Footer />
         <Navigation dark={true} />
       </main>
     )

@@ -3,6 +3,7 @@ import { array, string, number } from 'prop-types'
 import { Doughnut } from 'react-chartjs-2'
 import Navigation from '../../Navigation/Navigation'
 import styles from './TeamTemplate.module.css'
+import Footer from '../../Footer/Footer'
 
 const headerStyle = {
   height: 550,
@@ -119,6 +120,7 @@ const TeamTemplate = props => {
           </div>
         </div>
       </div>
+      <Footer />
       <Navigation dark={true} />
     </main>
   )

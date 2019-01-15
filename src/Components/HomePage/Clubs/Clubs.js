@@ -5,7 +5,7 @@ import BasicSection from '../../BasicSection/BasicSection'
 const sectionContent = [
   {
     heading: 'What is VEX?',
-    paragraph: 'Vex is an global robotics competition owned and hosted by Innovation First International, Inc. It is the largest robotics competition in the world with thousands of competing teams. Every year, a new game is developed by Vex and it is your job to design and build a robot to solve these unique problems in order to win. Vex is highly competitive and it is expected of you to put in a significant amount of time and effort. It is an incredible amount of fun and it is very satisfying to see all your hard work come to fruition. If you are willing to take on the heavy responsibility, Vex Robotics is a very rewarding experience.',
+    paragraph: 'Vex is a global robotics competition owned and hosted by Innovation First International, Inc. It is the largest robotics competition in the world with thousands of competing teams. Every year, a new game is developed by Vex and it is your job to design and build a robot to solve these unique problems in order to win. Vex is highly competitive and it is expected of you to put in a significant amount of time and effort. It is an incredible amount of fun and it is very satisfying to see all your hard work come to fruition. If you are willing to take on the heavy responsibility, Vex Robotics is a very rewarding experience.',
     src: '/Images/Homepage/VEX.jpg',
     alt: ''
   },

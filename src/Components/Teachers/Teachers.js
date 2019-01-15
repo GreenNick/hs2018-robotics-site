@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Teachers.module.css'
 import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
 
 const Teachers = () => {
   return (
@@ -46,6 +47,7 @@ const Teachers = () => {
         </article>
       </div>
       <Navigation dark={true} />
+      <Footer />
     </main>
   )
 }

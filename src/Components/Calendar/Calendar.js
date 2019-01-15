@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Calendar.module.css'
 import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
 
 const events = [
   {
@@ -239,6 +240,7 @@ const Calendar = () => {
       <div className='wrapper'>
         {calendarArray}
       </div>
+      <Footer />
       <Navigation dark={true} />
     </main>
   )
