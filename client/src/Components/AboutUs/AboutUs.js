@@ -23,21 +23,21 @@ const AboutUs = () => {
               <img src='/Images/svg/DetIcon.svg' alt='Hammer, symbolizing determination' />
             </div>
             <h3>Determination</h3>
-            <p>Nick -Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi minima sequi similique reprehenderit quibusdam modi aspernatur officiis inventore, deleniti unde excepturi, est dolorem? Aliquid saepe eius obcaecati fugit dolorum?</p>
+            <p>Determination is the will to keep working no matter how bleak the situation may seem. It is a concept which is constantly pushing us to strive to the top. We always try to stay focused on a clear objective, and we work to the best of our abilities to achieve that goal.</p>
           </div>
           <div className={styles.valueContainer}>
             <div className={styles.icon}>
               <img src='/Images/svg/CopIcon.svg' alt='Shaking hands, symbolizing solidarity' />
             </div>
             <h3>Solidarity</h3>
-            <p>Nick - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi minima sequi similique reprehenderit quibusdam modi aspernatur officiis inventore, deleniti unde excepturi, est dolorem? Aliquid saepe eius obcaecati fugit dolorum?</p>
+            <p>Solidarity means working together to achieve a common goal that benefits all. It is the glue that unites teams and keeps their productivity high. We believe it is important to learn each other's strengths and weaknesses to maximize results and grow as individuals.</p>
           </div>
           <div className={styles.valueContainer}>
             <div className={styles.icon}>
               <img src='/Images/svg/IntIcon.svg' alt='Fountain pen, symbolizing integrity' />
             </div>
             <h3>Integrity</h3>
-            <p>Nick - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi minima sequi similique reprehenderit quibusdam modi aspernatur officiis inventore, deleniti unde excepturi, est dolorem? Aliquid saepe eius obcaecati fugit dolorum?</p>
+            <p>Integrity is the internal obligation to be honest to yourself and to others. We view cheating as totally unacceptable and damaging to your team. We all have a moral imperative to stay true to the spirit of the game so that we can develop further as engineers.</p>
           </div>
         </section>
         <section>
