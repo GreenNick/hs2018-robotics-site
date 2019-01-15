@@ -4,6 +4,37 @@ import styles from './Contact.module.css'
 import Footer from '../Footer/Footer'
 
 class Contact extends Component {
+  state = {
+    name: '',
+    email: '',
+    message: ''
+  }
+
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
+  handleSubmit = e => {
+    e.preventDefault()
+    const { name, email, message } = this.state
+
+    fetch('/api/forms/contact', {
+      method: 'POST',
+      body: JSON.stringify({
+        name,
+        email,
+        message
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(this.setState({
+      name: '',
+      email: '',
+      message: ''
+    }))
+  }
+
   render () {
     return (
       <main>
@@ -12,23 +43,29 @@ class Contact extends Component {
             <h2>Contact</h2>
             <div className={styles.form}>
               <h3 className={styles.heading}>Send us a message</h3>
-              <form>
+              <form onSubmit={this.handleSubmit}>
                 <label htmlFor='name'>Name</label>
                 <input
+                  onChange={this.handleChange}
+                  value={this.state.name}
                   className={styles.input}
                   type='text'
-                  id='name'
+                  name='name'
                   placeholder='Enter your full name' />
                 <label htmlFor='email'>Email</label>
-                <input
+                  <input
+                  onChange={this.handleChange}
+                  value={this.state.email}
                   className={styles.input}
                   type='email'
-                  id='email'
+                  name='email'
                   placeholder='Enter your email address' />
                 <label htmlFor='message'>Message</label>
                 <textarea
+                  onChange={this.handleChange}
+                  value={this.state.message}
                   className={styles.input}
-                  id='message'
+                  name='message'
                   placeholder="Tell us what's on your mind"
                   rows='12'></textarea>
                 <input
