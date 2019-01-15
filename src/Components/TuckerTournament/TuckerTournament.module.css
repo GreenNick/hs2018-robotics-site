@@ -14,7 +14,9 @@
 .clubs > img {
   flex: 0 1 300px;
   margin: 0 40px 40px 0;
-  background-color: pink;
+  object-fit: contain;
+  height: 300px;
+  width: 300px;
 }
 
 .clubs > div {

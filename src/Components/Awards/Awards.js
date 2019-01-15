@@ -89,7 +89,7 @@ class Awards extends Component {
     return acc
   }
 
-  componentDidMount() {
+  componentDidMount () {
     const awardData = Promise.all([
       this.fetchData(`https://api.vexdb.io/v1/get_awards?team=1320A`),
       this.fetchData(`https://api.vexdb.io/v1/get_awards?team=1320B`),
@@ -155,7 +155,7 @@ class Awards extends Component {
       .then(res => this.setState({ years: res }))
   }
 
-  render() {
+  render () {
     const awardsArray = ['excellence', 'champion', 'design', 'skills', 'judges']
 
     return (
