@@ -26,12 +26,20 @@ class Diversity extends Component {
           <section className={styles.students}>
             <h2>Student Body</h2>
             <ul className={styles.collage}>
-              <li><img src='#' alt='' /></li>
-              <li><img src='#' alt='' /></li>
-              <li><img src='#' alt='' /></li>
-              <li><img src='#' alt='' /></li>
-              <li><img src='#' alt='' /></li>
-              <li><img src='#' alt='' /></li>
+              <li><img src='/Images/Diversity/Justin.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Nick.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Deborah.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Mamadou.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Jonah.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Tanjid.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Grant.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Akbar.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Collin.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Gabe.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/James.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Eric.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Sam.jpg' alt='' /></li>
+              <li><img src='/Images/Diversity/Nabojeet.jpg' alt='' /></li>
             </ul>
           </section>
         </div>
