@@ -4,31 +4,31 @@ import AwardsTemplate from './AwardsTemplate/AwardsTemplate'
 const awards = [
   {
     title: 'Excellence Award',
-    desc: 'Justin/Momo - Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate? Provident iusto, nam molestias saepe a ad atque tempora. Unde modi quam dignissimos! Error reiciendis ab, deserunt ad labore fugiat repellat vitae! Et pariatur odit molestiae, nesciunt animi sed exercitationem. Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?',
+    desc: '"The Excellence Award is the highest award presented in the VEX Robotics Competition. This award is presented to a team that exemplifies overall excellence in creating a high quality VEX Robotics program. This team is a strong contender in numerous award categories. Excellence winners must have an engineering notebook."',
     src: '/Images/svg/Awards/ExcellenceAward.svg',
     alt: 'A metal trophy with a plaque reading VEX Robotics Competition Excellence Award'
   },
   {
     title: 'Tournament Champion',
-    desc: 'Justin/Momo - Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate? Provident iusto, nam molestias saepe a ad atque tempora. Unde modi quam dignissimos! Error reiciendis ab, deserunt ad labore fugiat repellat vitae! Et pariatur odit molestiae, nesciunt animi sed exercitationem. Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?',
+    desc: '"The Tournament Champions Award is presented to the winning alliance of the VRC tournament."',
     src: '/Images/svg/Awards/ChampionAward.svg',
     alt: 'A metal trophy with a plaque reading VEX Robotics Competition Tournment Champion'
   },
   {
     title: 'Design Award',
-    desc: 'Justin/Momo - Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate? Provident iusto, nam molestias saepe a ad atque tempora. Unde modi quam dignissimos! Error reiciendis ab, deserunt ad labore fugiat repellat vitae! Et pariatur odit molestiae, nesciunt animi sed exercitationem. Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?',
+    desc: '"The Design Award is presented to a team that demonstrates an organized and professional approach to the design process, project and time management and team organization.Only teams that submit Engineering Notebooks are eligible for the Design Award."',
     src: '/Images/svg/Awards/DesignAward.svg',
     alt: 'A metal trophy with a plaque reading VEX Robotics Competition Design Award'
   },
   {
     title: 'Robot Skills Champion',
-    desc: 'Justin/Momo - Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate? Provident iusto, nam molestias saepe a ad atque tempora. Unde modi quam dignissimos! Error reiciendis ab, deserunt ad labore fugiat repellat vitae! Et pariatur odit molestiae, nesciunt animi sed exercitationem. Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?',
+    desc: '"The Robot Skills Champion Award is presented to the team with the highest combined Programming and Driving Skills Challenge score.A team’s combined score will be determined by adding their highest Programming Skills score and their highest Driving Skills score at a single competition.Teams competing in only one of the two skills challenges will receive a zero score in the challenge in which they did not participate."',
     src: '/Images/svg/Awards/SkillsAward.svg',
     alt: 'A metal trophy with a plaque reading VEX Robotics Competition Robot Skills Champion'
   },
   {
     title: 'Judges Award',
-    desc: 'Justin/Momo - Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate? Provident iusto, nam molestias saepe a ad atque tempora. Unde modi quam dignissimos! Error reiciendis ab, deserunt ad labore fugiat repellat vitae! Et pariatur odit molestiae, nesciunt animi sed exercitationem. Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?',
+    desc: '"The Judges Award is presented to a team that the Judges determine is deserving of special recognition. Judges consider a number of possible criteria for this award, such as team displays of special attributes, exemplary effort and perseverance at the event, or team accomplishments or endeavors throughout the season that may not fit under existing awards, but are nonetheless deserving of special recognition."',
     src: '/Images/svg/Awards/JudgesAward.svg',
     alt: 'A metal trophy with a plaque reading VEX Robotics Competition Judges Award'
   }

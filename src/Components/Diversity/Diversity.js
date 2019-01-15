@@ -13,17 +13,13 @@ class Diversity extends Component {
             <img src='#' alt='' />
             <div>
               <h2>Cultures</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate?
-              Provident iusto, nam molestias saepe a ad atque tempora. Unde modi quam dignissimos! Error reiciendis ab, deserunt ad labore fugiat repellat vitae! Et pariatur odit molestiae, nesciunt animi sed exercitationem.
-              Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?</p>
+              <p>Tucker High School is home to rich cultural diversity. Students from around the globe share their unique identities which account for a major portion of our school’s name itself. Tucker High School’s diverse population is important when it comes to prospering in the many different clubs and organizations we have, in addition to VEX and TSA. Diversity opens us up to new perspectives and imparts different ways to approach problems. This approach to problem-solving is especially valuable in the STEM field which is often far too homogenous. Our school’s ability to encourage this diversity, and often students of minority, has allowed students to pursue their unheard ambitions and seek futures in the STEM field. In doing so, we hope to raise a new generation of engineers with a unique outlook on the world.</p>
             </div>
           </section>
           <section>
             <div>
               <h2>Girls and STEM</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate?
-              Provident iusto, nam molestias saepe a ad atque tempora. Unde modi quam dignissimos! Error reiciendis ab, deserunt ad labore fugiat repellat vitae! Et pariatur odit molestiae, nesciunt animi sed exercitationem.
-              Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?</p>
+              <p>With the growing demand for careers in the STEM field, the demand for girls in the STEM field is also increasing. Girls are full of untapped potential in the STEM world. Because these fields of study are predominantly male, talents possessed by girls in the STEM field may sometimes go unseen. This disregard for their talents does not allow for girls to pursue their ambitions in the STEM field, acting as hindrances to the STEM world. By overlooking their strengths and capacities, the STEM world will remain handicapped from reaching the fullest of our abilities. We hope to help remedy this by encouraging girls to pursue STEM as a career path, by introducing STEM-driven organizations, such as VEX and TSA. By fostering a healthy environment at our school, we aim to provide an efficient learning environment for girls who may not always feel comfortable in pursuing careers in the STEM field.  In doing so, we hope to see the world move in this positive direction.</p>
             </div>
             <img src='/Images/Diversity/GirlsAndSTEM.jpg' alt='' />
           </section>

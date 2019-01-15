@@ -10,14 +10,14 @@ const data = {
     {
       name: 'Mamadou Ly',
       job: 'Captain / Builder / Driver',
-      desc: "Mamadou's wonderful building skills are matched by his passion and dedication to robotics and the program that he has worked to build up. He has spearheaded new records and has brought the success of the Tucker Robotigers to new heights. Mamadou is a STEM student and hopes to study biomedical engineering in college. If his passion for changing the world is anything like his dedication to robotics, the world will be in safe hands.",
+      desc: "Mamadou's wonderful building skills are matched by his passion and dedication to robotics and the program that he has worked to build up. He has spearheaded new records and has brought the success of the Tucker Robotigers to new heights. Mamadou is a STEM student and hopes to study biomedical engineering in college.",
       src: '/Images/Teams/1320C/Mamadou.jpg'
 
     },
     {
       name: 'Sam Torbert',
       job: 'Programmer',
-      desc: 'Sam is the programmer for 1320C. He is one of the most innovative and spectacular members of the Tucker Robotics Program. Sam is a STEM senior and hopes to study aerospace engineering in the Fall. He is able to solve many problems through programming to allow the driver to focus on the game and is constantly re-iterating to create greater efficiency within the Robotics program.',
+      desc: 'Sam is a STEM senior and hopes to study aerospace engineering in the Fall. He is able to solve many problems through programming to allow the driver to focus on the game and is constantly re-iterating to create greater efficiency within the Robotics program.',
       src: '/Images/Teams/1320C/Sam.jpg'
     },
     {
@@ -29,19 +29,19 @@ const data = {
     {
       name: 'Deborah Sodiya',
       job: 'Binder Manager',
-      desc: 'Deborah Sodiya is a researcher, statistician, and manager for professional documentation for 1320C. Deborah is a determined and creative researcher who is constantly figuring out ways to benefit the process and the larger student body and community. Deborah will study mechanical engineering and build a new world for the future to remember.',
+      desc: 'Deborah Sodiya is a researcher and manager for professional documentation for 1320C. She is a determined and creative researcher who is always figuring out ways to benefit the design process. Deborah hopes study mechanical engineering after high school.',
       src: '/Images/Teams/1320C/Deborah.jpg'
     },
     {
       name: 'Kelly Vu',
       job: 'Binder Assistant',
-      desc: 'Kelly Vu is a drafter and manager for the professional documentation for 1320C. Kelly is an excellent designer and is an expert on displaying valuable detail and information with little effort. She has been a valuable member of the team when drafting the preliminary sketches for the robots for brainstorming and communicating production plans to our advisor. Kelly hopes to study biology at the University of Georgia, where she will begin her large positive impact.',
+      desc: 'Kelly Vu is a drafter and manager for the professional documentation for 1320C. Kelly is an expert on displaying detail and information. She has been a valuable member of the team when drafting the preliminary sketches for the robots for brainstorming. Kelly hopes to study biology at the University of Georgia.',
       src: '/Images/Teams/1320C/Kelly.jpg'
     },
     {
       name: 'Kenny Vu',
       job: 'Member-in-training',
-      desc: 'Kenny is an amazing member who is training to carry on the Legacy of 1320C. Sam is teaching Kenny how to program, Mamadou is teaching him to build, Kelly about statistics, Deborah about analysis, and James is teaching him about design. Once the seniors of the team leave, Kenny will be the only one left to teach others about the lessons learned. Kenny is a vital member to help in the robot pits and on the competition area.',
+      desc: 'Kenny is an amazing member who is training to carry on the legacy of 1320C. All the members of 1320C are teaching Kenny about their field. Once the seniors of the team leave, Kenny will be the only one left to teach others about the lessons learned. Kenny is a vital member to help in the robot pits and on the competition area.',
       src: '/Images/Teams/1320C/Kenny.jpg'
     }
   ]

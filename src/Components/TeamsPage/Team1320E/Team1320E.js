@@ -5,42 +5,42 @@ const data = {
   teamNumber: '1320E',
   teamImage: '/Images/Teams/1320E/Team.jpg',
   robotImage: '/Images/Teams/1320E/Robot.jpg',
-  overviewDesc: 'As part of the Tucker Tiger’s VEX program, we are happy to represent team 1320E. We are a team of seven people each holding a specific job. Carter Foley serves as the captain of the team providing organization while also being a builder. Working alongside him are William and Jared, both who are builders specializing a specific area of the robot. Nigel, a second- year robotics programmer, takes on the lead again and is in charge of driver control as well as making many autonomous to select from. Zorée switched courses from being programmer her previous years, to documenting the daily notebook and working on the binder. Helping her is Evan Lazaro, who does binder research and draws for the daily entries.',
+  overviewDesc: 'As part of the Tucker Tiger’s VEX program, we are happy to represent team 1320E. We are a team of seven people each holding a specific job. Carter Foley serves as the captain of the team providing organization while also being a builder. Working alongside him is William, who is a builder specializing a specific area of the robot. Nigel, a second-year robotics programmer, takes on the lead again and is in charge of driver control as well as making many autonomous to select from. Zorée switched courses from being programmer her previous years, to documenting the daily notebook and working on the binder. Helping her is Evan Lazaro, who does binder research and draws for the daily entries.',
   teamMembers: [
     {
       name: 'Carter Foley',
       job: 'Captain / Builder / Driver',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      desc: 'Carter is the team captain and main builder of 1320E. This is his third year in VEX, and he hopes to pass on his knowledge to others by being the leader of our majority freshman team. Carter’s charismatic personality and strong leadership skills will help him greatly in this venture',
       src: '/Images/Teams/1320E/Carter.jpg'
     },
     {
       name: 'William Thomas',
       job: 'Builder',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      desc: 'Will is a builder for 1320E and this is his third year in VEX. Although he was previously a driver, he hopes to expand his skills this year by transitioning to the role of builder. His experience as a driver will help him to understand how to efficiently design a robot that is intuitive to drive',
       src: '/Images/Teams/1320E/William.jpg'
     },
     {
       name: 'Nigel Hoffman',
       job: 'Programmer',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      desc: 'Nigel is the programmer for 1320E. This is his second year in VEX, and he continues to learn a lot about programming. Nigel is the youngest established programmer in Tucker VEX, so he will be the one to carry on the legacy of programming at Tucker.',
       src: '/Images/Teams/1320E/Nigel.jpg'
-    },
-    {
-      name: 'Evan Leatass',
-      job: 'Notebook Manager / Binder Manager',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
-      src: '/Images/Teams/1320E/Evan.jpg'
     },
     {
       name: 'Zorée Litzenburg',
       job: 'Notebook Manager / Binder Manager',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      desc: 'Zorée is the head notebook and binder manager. This is her third year participating in VEX. In previous year she was a programmer, but this year she decided to put her experience with VEX towards creating high quality documentation for 1320E. She uses her excellent photography skills to make 1320E’s binder stand out.',
       src: '/Images/Teams/1320E/Zoree.jpg'
+    },
+    {
+      name: 'Evan Lazaro',
+      job: 'Notebook Manager / Binder Manager',
+      desc: 'Evan works to help manage both the binder and the engineering notebook for 1320E. This is his first year in VEX, but he has quickly become skilled recording and showing infomrmation at the team. He shows great potential to become one of Tucker VEX’s best notebook/binder managers.',
+      src: '/Images/Teams/1320E/Evan.jpg'
     },
     {
       name: 'Adam Shavkin',
       job: 'Member-in-training',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet delectus esse necessitatibus alias, possimus, exercitationem voluptatum molestias sint et eos! Iusto nisi est eaque quis labore voluptatum rerum mollitia.',
+      desc: 'Adam works with all the members of 1320E to learn, but is primarily a builder. He assists Carter and Will, both helping create a higher quality robot and learning a lot along the way. Adam is very diligent and is always looking for a way to help. Adam shows great potential to become a skilled member of Tucker VEX.',
       src: '/Images/Teams/1320E/Adam.jpg'
     }
   ]
@@ -191,7 +191,7 @@ class Team1320E extends Component {
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=2`)
       .then(response => this.setState({ robotSkillRank: response }))
     this.fetchSkillRank(`https://api.vexdb.io/v1/get_skills?season_rank=true&team=${data.teamNumber}&season=current&type=0`)
@@ -212,7 +212,7 @@ class Team1320E extends Component {
       .then(response => this.setState({ ties: response }))
   }
 
-  render () {
+  render() {
     return (
       <TeamTemplate
         teamNumber={data.teamNumber}
