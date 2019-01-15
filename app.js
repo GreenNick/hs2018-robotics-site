@@ -21,13 +21,16 @@ app.post('/api/forms/contact', (req, res) => {
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
+      type: 'OAuth2',
       user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS
+      clientId: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
+      refreshToken: process.env.REFRESH_TOKEN
     }
   })
 
   let mailOptions = {
-    to: 'tuckerrobotigers@gmail.com',
+    to: process.env.EMAIL_USER,
     subject: 'Contact Message',
     text: req.body.message,
     html: htmlEmail
