@@ -1,0 +1,17 @@
+{
+  "name": "ths-robotics-2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "Nicholas Bowers",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemailer": "^5.1.1"
+  }
+}
