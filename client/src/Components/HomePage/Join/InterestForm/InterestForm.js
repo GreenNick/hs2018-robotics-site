@@ -4,27 +4,35 @@ import styles from './InterestForm.module.css'
 
 const InterestForm = props => {
   return (
-    <form>
+    <form onSubmit={props.onSubmit}>
       <label htmlFor='name'>Name</label>
       <input
+        onChange={props.onChange}
+        value={props.name}
         type='text'
-        id='name'
+        name='name'
         placeholder='Enter your full name' />
       <label htmlFor='email'>Email</label>
       <input
+        onChange={props.onChange}
+        value={props.email}
         type='email'
-        id='email'
+        name='email'
         placeholder='Enter your email address' />
-      <label htmlFor='phone-number'>Phone Number</label>
+      <label htmlFor='phone'>Phone Number</label>
       <input
+        value={props.phone}
         type='tel'
-        id='phone-number'
+        name='phone'
         placeholder='(XXX) XXX-XXXX'
         maxLength='14'
-        onChange={props.onChange} />
-      <label htmlFor='grade-level'>Grade Level</label>
+        onChange={props.onTelChange} />
+      <label htmlFor='grade'>Grade Level</label>
       <div className={styles.selectContainer}>
-        <select id='grade-level' >
+        <select
+          onChange={props.onChange}
+          value={props.grade}
+          name='grade' >
           <option value='freshman'>Freshman</option>
           <option value='sophomore'>Sophomore</option>
           <option value='junior'>Junior</option>
