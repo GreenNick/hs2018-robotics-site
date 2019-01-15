@@ -5,7 +5,7 @@ const data = {
   teamNumber: '1320D',
   teamImage: '/Images/Teams/1320D/Team.jpg',
   robotImage: '/Images/Teams/1320D/Robot.jpg',
-  overviewDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deserunt minima corrupti cupiditate doloremque quae, consectetur eum! Nisi quidem perspiciatis eaque, dolor explicabo ullam natus sed ratione facilis dolores architecto? Neque repellendus debitis distinctio nulla nobis totam sint quam amet rerum cupiditate molestias at blanditiis sapiente, labore illum quisquam sunt minus nostrum aperiam iste ea voluptatibus perferendis. Autem, nostrum. Ipsum?',
+  overviewDesc: '1320D, one of five VEX Robotics teams at Tucker High School, is an outstanding team. Each one of our members brings their own unique skills and individuality to make the team unlike any other. Our team consists of six participants, Grant, Justin, Nick, Jonah, Luma, and Sanjeena, four of whom are seniors and will be graduating after this year’s competition. Over years, throughout all competitions and tournaments, days of hard work, and a few failures, our team has gotten stronger and more devoted to accomplishing more than the previous year. Each one of our team members put in a countless number of hours in order to showcase our strengths and capabilities at VEX competitions. Throughout all of this, we have learned to grow as a family and develop friendships that will last a lifetime. ',
   teamMembers: [
     {
       name: 'Grant Duffee',

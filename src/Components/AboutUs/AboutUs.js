@@ -43,9 +43,7 @@ const AboutUs = () => {
         <section>
           <div>
             <h2>Our History</h2>
-            <p>Justin - Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus aspernatur saepe itaque sint mollitia dolore, rem ratione reprehenderit harum quasi maiores corrupti, nisi voluptates beatae alias tenetur consequatur voluptate?
-            Provident iusto, nam molestias saepe a ad atque tempora. Unde modi quam dignissimos! Error reiciendis ab, deserunt ad labore fugiat repellat vitae! Et pariatur odit molestiae, nesciunt animi sed exercitationem.
-            Soluta beatae neque accusantium id numquam quasi, laboriosam ab facilis culpa, quibusdam impedit optio ea tempore eaque hic. Similique consectetur dolore totam reiciendis nulla corrupti incidunt consequuntur mollitia aperiam nihil?</p>
+            <p>Tucker High School’s VEX Robotics program was established in 2010 and has excelled ever since. Throughout multiple different games and multiple different teams, Tucker High School Robotics has consistently performed well and has been improving yearly since its inception. Many alumni contributed to our program’s success, including members such as Thomas Lebeskal, Samuale Ossire, BJ Barclay, Zion Hunte, Amyn Said, Daniel Wade, and Gabriel Harris. Without these prominent alumni and others, our robotics program would not where it is today. Additionally, numerous advisors we’ve had over the years, such as Mr. Booth and Mr. Hicks have greatly contributed to our success by helping to transfer previous years’ knowledge to incoming students</p>
           </div>
           <img src='/Images/AboutUs/OurHistory.jpg' alt='' />
         </section>
