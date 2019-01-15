@@ -51,6 +51,17 @@ h6 {
   font-size: 20px;
 }
 
+blockquote {
+  color: #0097A7;
+  font-family: 'Fira Sans';
+}
+
+cite {
+  margin-bottom: 20px;
+  font-family: 'Fira Sans';
+  color: #353535;
+}
+
 a {
   text-decoration: none;
   color: #0097A7;

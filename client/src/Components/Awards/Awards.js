@@ -4,31 +4,36 @@ import AwardsTemplate from './AwardsTemplate/AwardsTemplate'
 const awards = [
   {
     title: 'Excellence Award',
-    desc: '"The Excellence Award is the highest award presented in the VEX Robotics Competition. This award is presented to a team that exemplifies overall excellence in creating a high quality VEX Robotics program. This team is a strong contender in numerous award categories. Excellence winners must have an engineering notebook."    Due to this being the top award available it is also the most contested. In order to stay in the mix for this award we do our best in all aspects of vex. We try to be top five in our skills score, tournament standings, and design notebook.',
+    quote: '"The Excellence Award is the highest award presented in the VEX Robotics Competition. This award is presented to a team that exemplifies overall excellence in creating a high quality VEX Robotics program. This team is a strong contender in numerous award categories. Excellence winners must have an engineering notebook."',
+    desc: 'Due to this being the top award available it is also the most contested. In order to stay in the mix for this award we do our best in all aspects of vex. We try to be top five in our skills score, tournament standings, and design notebook.',
     src: '/Images/svg/Awards/ExcellenceAward.svg',
     alt: 'A metal trophy with a plaque reading VEX Robotics Competition Excellence Award'
   },
   {
     title: 'Tournament Champion',
-    desc: '"The Tournament Champions Award is presented to the winning alliance of the VRC tournament."     This award is highest robot performance award available. Our teams develop their robots for this award through constant improvements to there designs and practice. Through these iterations ours robots fulfill their potential allowing them to score the maximum possible in the allotted time.  ',
+    quote: '"The Tournament Champions Award is presented to the winning alliance of the VRC tournament."',
+    desc: 'This award is highest robot performance award available. Our teams develop their robots for this award through constant improvements to there designs and practice. Through these iterations our robots fulfill their potential allowing them to score the maximum possible in the allotted time.  ',
     src: '/Images/svg/Awards/ChampionAward.svg',
     alt: 'A metal trophy with a plaque reading VEX Robotics Competition Tournment Champion'
   },
   {
     title: 'Design Award',
-    desc: '"The Design Award is presented to a team that demonstrates an organized and professional approach to the design process, project and time management and team organization.Only teams that submit Engineering Notebooks are eligible for the Design Award.     The design award is a selective award that is presented to one team every tournament. This award is very prestigious and is sought after by all teams in vex robotics. Our organization prepares for this award category by maintaining an organized and professional notebook that accurately represents the robots we build."',
+    quote: '"The Design Award is presented to a team that demonstrates an organized and professional approach to the design process, project and time management and team organization. Only teams that submit Engineering Notebooks are eligible for the Design Award."',
+    desc: 'The design award is a selective award that is presented to one team every tournament. This award is very prestigious and is sought after by all teams in vex robotics. Our organization prepares for this award category by maintaining an organized and professional notebook that accurately represents the robots we build.',
     src: '/Images/svg/Awards/DesignAward.svg',
     alt: 'A metal trophy with a plaque reading VEX Robotics Competition Design Award'
   },
   {
     title: 'Robot Skills Champion',
-    desc: '"The Robot Skills Champion Award is presented to the team with the highest combined Programming and Driving Skills Challenge score.A team’s combined score will be determined by adding their highest Programming Skills score and their highest Driving Skills score at a single competition.Teams competing in only one of the two skills challenges will receive a zero score in the challenge in which they did not participate."    Our organization competes in this category by practicing nonstop. For the drivers portion of skill we have our members practicing the course with hopes of attaining a perfect score. For the programming portion we have coders on teams that plan out a course and begin making minute long autonomous programs that are high scoring and consistent. The only way to excel in skills is long ours of practice and testing.',
+    quote: '"The Robot Skills Champion Award is presented to the team with the highest combined Programming and Driving Skills Challenge score. A team’s combined score will be determined by adding their highest Programming Skills score and their highest Driving Skills score at a single competition. Teams competing in only one of the two skills challenges will receive a zero score in the challenge in which they did not participate."',
+    desc: 'Our organization competes in this category by practicing nonstop. For the drivers portion of skill we have our members practicing the course with hopes of attaining a perfect score. For the programming portion we have coders on teams that plan out a course and begin making minute long autonomous programs that are high scoring and consistent. The only way to excel in skills is long ours of practice and testing.',
     src: '/Images/svg/Awards/SkillsAward.svg',
     alt: 'A metal trophy with a plaque reading VEX Robotics Competition Robot Skills Champion'
   },
   {
     title: 'Judges Award',
-    desc: '"The Judges Award is presented to a team that the Judges determine is deserving of special recognition. Judges consider a number of possible criteria for this award, such as team displays of special attributes, exemplary effort and perseverance at the event, or team accomplishments or endeavors throughout the season that may not fit under existing awards, but are nonetheless deserving of special recognition."     The judges award has been overlooked by tucker for many years now. While it is a selective award it isn’t as prestigious as the other awards.As a result we prepare to compete for other awards such as the excellence and design awards and if we are not able to obtain this award we fall into this category. Additionally, due to the flexible critera, it is very difficult to attempt to get judges.',
+    quote: '"The Judges Award is presented to a team that the Judges determine is deserving of special recognition. Judges consider a number of possible criteria for this award, such as team displays of special attributes, exemplary effort and perseverance at the event, or team accomplishments or endeavors throughout the season that may not fit under existing awards, but are nonetheless deserving of special recognition."',
+    desc: 'The judges award has been overlooked by tucker for many years now. While it is a selective award it isn’t as prestigious as the other awards. As a result we prepare to compete for other awards such as the excellence and design awards and if we are not able to obtain this award we fall into this category. Additionally, due to the flexible critera, it is very difficult to attempt to get judges.',
     src: '/Images/svg/Awards/JudgesAward.svg',
     alt: 'A metal trophy with a plaque reading VEX Robotics Competition Judges Award'
   }
@@ -163,6 +168,7 @@ class Awards extends Component {
         onNextClick={this.handleNextClick}
         onPrevClick={this.handlePrevClick}
         title={awards[this.state.awardIndex].title}
+        quote={awards[this.state.awardIndex].quote}
         desc={awards[this.state.awardIndex].desc}
         src={awards[this.state.awardIndex].src}
         alt={awards[this.state.awardIndex].alt}

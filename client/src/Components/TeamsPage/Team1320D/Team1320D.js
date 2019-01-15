@@ -16,7 +16,7 @@ const data = {
     {
       name: 'Justin Wade',
       job: 'Co-Captain / Programmer',
-      desc: 'Justin is the co-captain and programmer for 1320D. During his time in VEX, he has learned how program. He is now one of the most skilled programmers at Tucker, and is always helping other members. Justin’s programming allows him to create advanced programming skills and autonomous programs to help 1320D excel.',
+      desc: 'Justin is the co-captain and programmer for 1320D. During his time in VEX, he has learned to how program. He is now one of the most skilled programmers at Tucker, and is always helping other members. Justin’s programming allows him to create advanced programming skills and autonomous programs to help 1320D excel.',
       src: '/Images/Teams/1320D/Justin.jpg'
     },
     {
