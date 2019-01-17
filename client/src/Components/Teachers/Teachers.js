@@ -31,7 +31,7 @@ const Teachers = () => {
           </figure>
           <div className={`${styles.textContainer} animate`}>
             <h2>Ms. Todd</h2>
-            <h3>Biology Teacher / Example University / X Years Teaching</h3>
+            <h3>Biology Teacher / Auburn University / 10 Years Teaching</h3>
             <p>Ms. Todd is the founder and coordinator for the Tucker High School STEM Program. She is very passionate about helping students to excel in STEM based fields and does whatever she can to help students. The success of the STEM program at Tucker High School is largely due to Ms. Todd’s passion for helping students. Ms. Todd is also a biology teacher who primarily teaches freshman students. She helps acclimate new students to high school, and introduces them to her passion for biology.</p>
           </div>
         </article>
