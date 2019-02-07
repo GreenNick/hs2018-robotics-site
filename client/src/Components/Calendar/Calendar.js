@@ -156,15 +156,15 @@ const events = [
     teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: '/Images/Calendar/Dunwoody.jpg'
   },
-  {
-    name: 'Signature Event: Night at the Museum',
-    date: '1/25/2019 - 1/26/2019',
-    venue: 'Udvar-Hazy Air and Space Museum',
-    address1: '14390 Air and Space Museum Pkwy',
-    address2: 'Chantilly, Virginia 20151',
-    teams: 'TBD',
-    src: '/Images/Calendar/Virginia.jpg'
-  },
+  // {
+  //   name: 'Signature Event: Night at the Museum',
+  //   date: '1/25/2019 - 1/26/2019',
+  //   venue: 'Udvar-Hazy Air and Space Museum',
+  //   address1: '14390 Air and Space Museum Pkwy',
+  //   address2: 'Chantilly, Virginia 20151',
+  //   teams: 'TBD',
+  //   src: '/Images/Calendar/Virginia.jpg'
+  // },
   {
     name: 'Berkmar Tournament',
     date: '2/2/2019',
@@ -207,7 +207,7 @@ const events = [
     venue: 'Kentucky Exposition Center',
     address1: '937 Phillips Lane',
     address2: 'Louisville, Kentucky 40209',
-    teams: 'TBD',
+    teams: '1320C, TBD',
     src: '/Images/Calendar/Worlds.jpg'
   },
   {
