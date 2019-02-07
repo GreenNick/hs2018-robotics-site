@@ -166,6 +166,15 @@ const events = [
     src: '/Images/Calendar/Virginia.jpg'
   },
   {
+    name: 'Berkmar Tournament',
+    date: '2/2/2019',
+    venue: 'Berkmar High School',
+    address1: '405 Pleasant Hill Road',
+    address2: 'Lilburn, Georgia 30047',
+    teams: '1320A, 1320C, 1320D, 1320E',
+    src: '/Images/Calendar/Berkmar.jpg'
+  },
+  {
     name: 'Signature Event: University Of South Florida',
     date: '2/04/2019',
     venue: 'University of South Florida',
