@@ -207,7 +207,7 @@ const events = [
     venue: 'Kentucky Exposition Center',
     address1: '937 Phillips Lane',
     address2: 'Louisville, Kentucky 40209',
-    teams: '1320C, TBD',
+    teams: '1320A, 1320B, 1320C, 1320D, 1320E',
     src: '/Images/Calendar/Worlds.jpg'
   },
   {
@@ -216,7 +216,7 @@ const events = [
     venue: 'Gaylord National Resort',
     address1: '201 Waterfront Street',
     address2: 'National Harbor, Maryland 20745',
-    teams: 'TBD',
+    teams: 'N/A',
     src: '/Images/Calendar/TSA.jpg'
   }
 ]
